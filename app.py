@@ -185,7 +185,7 @@ with home_tab:
         ### 📚 Project Details
         **Course:** Data Analytics  
         **Type:** Marketing Dashboard  
-        **Year:** 2025
+        **Year:** 2025  
         **Institution:** SP Jain School of Global Management, Dubai Campus
         """)
         st.markdown('</div>', unsafe_allow_html=True)
