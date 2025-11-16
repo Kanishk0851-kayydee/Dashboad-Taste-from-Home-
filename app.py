@@ -72,6 +72,12 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
+st.markdown(
+    """
+    <style>
+    * {cursor: pointer !important;}
+    </style>
+    """, unsafe_allow_html=True)
 
 # Load data
 @st.cache_data
