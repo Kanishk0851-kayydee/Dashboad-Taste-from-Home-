@@ -196,7 +196,7 @@ try:
             💰 **Affordable Pricing** - Starting from AED 22-25 for students, AED 28-35 for professionals
 
             ### 🎭 Our Emotional Promise
-            > *"Making Dubai feel more like home, one meal at a time."*
+            > **"Making Dubai feel more like home, one meal at a time."**
 
             We don't just deliver meals—we deliver **comfort, belonging, and a taste of home** 
             to everyone who misses authentic, home-cooked food.
@@ -220,7 +220,7 @@ try:
             **Project Members:**
             - 👨‍💼 **Kanishk**
             - 👩‍💼 **Kinjal**
-            - 👩‍💼 **Khushi Lodhi**
+            - 👩‍💼 **Khushi**
             - 👨‍💼 **Karan**
             - 👨‍💼 **Mohak**
 
@@ -229,7 +229,7 @@ try:
             ### 📚 Project Details
             **Course:** Data Analytics  
             **Project Type:** Marketing Dashboard  
-            **Institution:** MBA Program  
+            **Institution:** SP Jain School of Global Management, Dubai Campus 
             **Year:** 2025
 
             ---
