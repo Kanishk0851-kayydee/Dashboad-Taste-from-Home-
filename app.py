@@ -183,7 +183,7 @@ with home_tab:
         **Project Members:**
         - Kanishk
         - Kinjal
-        - Khushi Lodhi
+        - Khushi
         - Karan
         - Mohak
 
@@ -193,6 +193,7 @@ with home_tab:
         **Course:** Data Analytics  
         **Type:** Marketing Dashboard  
         **Year:** 2025
+        **Institution:** SP Jain School of Global Management, Dubai
         """)
         st.markdown('</div>', unsafe_allow_html=True)
 
