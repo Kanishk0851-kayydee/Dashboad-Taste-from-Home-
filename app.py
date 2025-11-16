@@ -99,7 +99,7 @@ def generate_sample_data():
     df['WTP_Per_Meal_AED'] = df['WTP_Per_Meal_AED'].clip(lower=10, upper=60)
     df['Interested'] = (df['Interest_Level'] >= 4).astype(int)
     return df
-
+  
 df = load_data()
 
 st.markdown('<h1 class="main-header">🍽️ Taste From Home: Marketing Analytics Dashboard</h1>', unsafe_allow_html=True)
