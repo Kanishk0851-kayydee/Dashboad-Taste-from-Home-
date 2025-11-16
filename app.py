@@ -247,15 +247,14 @@ try:
 
         col_a, col_b, col_c = st.columns(3)
         with col_a:
-            st.info("""📍 **Launch Location**  
-Dubai Academic City & JLT
-""")
+           st.info("""📍 **Launch Location**  
+Dubai Academic City & JLT""")
         with col_b:
-            st.success("🎯 **Target Market**  
-600+ Survey Respondents Analyzed")
+            st.success("""🎯 **Target Market**  
+600+ Survey Respondents Analyzed""")
         with col_c:
-            st.warning("💰 **Pricing Strategy**  
-AED 22-35 per meal")
+           st.warning("""💰 **Pricing Strategy**  
+AED 22–35 per meal""")
 
         st.markdown("---")
         st.markdown("""
