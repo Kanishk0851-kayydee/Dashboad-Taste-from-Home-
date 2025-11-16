@@ -260,218 +260,28 @@ with tab1:
 # ============================================
 # TAB 2: ML ALGORITHMS & PERFORMANCE
 # ============================================
-with tab2:
-    st.header("🤖 Machine Learning Algorithms & Performance Metrics")
-    st.markdown("**Apply classification and clustering algorithms with one click**")
+# Create ML tabs
+cl_tab, clust_tab, reg_tab = st.tabs([
+    "🎯 Classification", 
+    "🔍 Clustering", 
+    "💰 Regression"
+])
 
-    if st.button("🚀 Run All ML Algorithms", type="primary"):
-        with st.spinner("Training models... Please wait..."):
+# === Classification Tab ===
+with cl_tab:
+    st.header("Classification Models")
+    # Place your code for LabelEncoder, feature extraction, train-test split, and classifiers here
+    # Include classification metrics and charts
 
-            # Prepare data for ML
-            df_ml = df.copy()
+# === Clustering Tab ===
+with clust_tab:
+    st.header("Clustering (K-Means)")
+    # Place your code for selecting features, scaling, running KMeans, and plotting clusters here
 
-            # Encode categorical variables
-            le = LabelEncoder()
-            categorical_cols = ['Age_Group', 'Gender', 'Nationality', 'Status', 'Location', 
-                               'Living_Situation', 'Monthly_Food_Budget_AED', 'Cooking_Frequency',
-                               'Current_Spending_Per_Meal_AED', 'Delivery_Frequency', 'Meals_Per_Week']
-
-            for col in categorical_cols:
-                df_ml[col + '_Encoded'] = le.fit_transform(df_ml[col])
-
-            # Features for classification
-            feature_cols = [col for col in df_ml.columns if col.endswith('_Encoded')] +                           ['Interest_Level', 'Subscription_Preference', 'WTP_Per_Meal_AED',
-                           'Taste_Satisfaction', 'Healthiness_Satisfaction', 'Affordability_Satisfaction',
-                           'Convenience_Satisfaction', 'Variety_Satisfaction']
-
-            X = df_ml[feature_cols]
-            y = df_ml['Interested']
-
-            # Train-test split
-            X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
-
-            # ===== CLASSIFICATION MODELS =====
-            st.subheader("🎯 Classification Models: Predicting Customer Interest")
-
-            models = {
-                'Logistic Regression': LogisticRegression(max_iter=1000, random_state=42),
-                'Decision Tree': DecisionTreeClassifier(random_state=42),
-                'Random Forest': RandomForestClassifier(n_estimators=100, random_state=42),
-                'Gradient Boosting': GradientBoostingClassifier(n_estimators=100, random_state=42)
-            }
-
-            results = []
-
-            for model_name, model in models.items():
-                model.fit(X_train, y_train)
-                y_pred = model.predict(X_test)
-
-                accuracy = accuracy_score(y_test, y_pred)
-                precision = precision_score(y_test, y_pred)
-                recall = recall_score(y_test, y_pred)
-                f1 = f1_score(y_test, y_pred)
-
-                # Cross-validation
-                cv_scores = cross_val_score(model, X, y, cv=5, scoring='accuracy')
-
-                results.append({
-                    'Model': model_name,
-                    'Accuracy': accuracy,
-                    'Precision': precision,
-                    'Recall': recall,
-                    'F1-Score': f1,
-                    'CV Score (mean)': cv_scores.mean(),
-                    'CV Score (std)': cv_scores.std()
-                })
-
-            results_df = pd.DataFrame(results)
-            st.dataframe(results_df.style.highlight_max(axis=0, subset=['Accuracy', 'Precision', 'Recall', 'F1-Score']), use_container_width=True)
-
-            # Visualize model comparison
-            st.markdown("### Model Performance Comparison")
-            fig_models = go.Figure()
-            metrics = ['Accuracy', 'Precision', 'Recall', 'F1-Score']
-            for metric in metrics:
-                fig_models.add_trace(go.Bar(
-                    name=metric,
-                    x=results_df['Model'],
-                    y=results_df[metric],
-                    text=results_df[metric].round(3),
-                    textposition='auto'
-                ))
-            fig_models.update_layout(
-                title='Classification Model Performance',
-                barmode='group',
-                height=500
-            )
-            st.plotly_chart(fig_models, use_container_width=True)
-
-            # Best model details
-            best_model = models['Random Forest']
-            best_model.fit(X_train, y_train)
-            y_pred_best = best_model.predict(X_test)
-
-            st.markdown("### 🏆 Best Model: Random Forest - Detailed Metrics")
-            col1, col2 = st.columns(2)
-
-            with col1:
-                st.markdown("**Confusion Matrix**")
-                cm = confusion_matrix(y_test, y_pred_best)
-                fig_cm = px.imshow(cm, text_auto=True, color_continuous_scale='Blues',
-                                   labels=dict(x="Predicted", y="Actual"),
-                                   title="Confusion Matrix")
-                st.plotly_chart(fig_cm, use_container_width=True)
-
-            with col2:
-                st.markdown("**Classification Report**")
-                report = classification_report(y_test, y_pred_best, output_dict=True)
-                report_df = pd.DataFrame(report).transpose()
-                st.dataframe(report_df.style.format("{:.3f}"), use_container_width=True)
-
-            # Feature Importance
-            st.markdown("### 📊 Feature Importance Analysis")
-            feature_importance = pd.DataFrame({
-                'Feature': feature_cols,
-                'Importance': best_model.feature_importances_
-            }).sort_values('Importance', ascending=False).head(10)
-
-            fig_imp = px.bar(feature_importance, x='Importance', y='Feature', orientation='h',
-                            title='Top 10 Most Important Features',
-                            color='Importance', color_continuous_scale='Viridis')
-            st.plotly_chart(fig_imp, use_container_width=True)
-
-            # ===== CLUSTERING =====
-            st.markdown("---")
-            st.subheader("🔍 K-Means Clustering: Customer Segmentation")
-
-            # Prepare clustering data
-            cluster_features = ['WTP_Per_Meal_AED', 'Interest_Level', 'Subscription_Preference',
-                               'Taste_Satisfaction', 'Affordability_Satisfaction']
-            X_cluster = df[cluster_features].copy()
-
-            scaler = StandardScaler()
-            X_cluster_scaled = scaler.fit_transform(X_cluster)
-
-            # Apply K-Means
-            kmeans = KMeans(n_clusters=4, random_state=42, n_init=10)
-            df['Cluster'] = kmeans.fit_predict(X_cluster_scaled)
-
-            # Cluster summary
-            cluster_summary = df.groupby('Cluster').agg({
-                'WTP_Per_Meal_AED': 'mean',
-                'Interest_Level': 'mean',
-                'Interested': 'sum',
-                'Status': 'count'
-            }).reset_index()
-            cluster_summary.columns = ['Cluster', 'Avg_WTP', 'Avg_Interest', 'Interested_Count', 'Total']
-            cluster_summary['Cluster_Name'] = ['Budget Seekers', 'High Value', 'Undecided', 'Premium Enthusiasts']
-
-            st.dataframe(cluster_summary, use_container_width=True)
-
-            # Visualize clusters
-            fig_cluster = px.scatter(
-                df,
-                x='WTP_Per_Meal_AED',
-                y='Interest_Level',
-                color='Cluster',
-                size='Subscription_Preference',
-                title='Customer Segments: WTP vs Interest Level',
-                labels={'Cluster': 'Customer Segment'},
-                color_continuous_scale='Portland'
-            )
-            st.plotly_chart(fig_cluster, use_container_width=True)
-
-            # ===== REGRESSION =====
-            st.markdown("---")
-            st.subheader("💰 Regression: Predicting Willingness to Pay")
-
-            # Prepare regression data
-            y_reg = df_ml['WTP_Per_Meal_AED']
-            X_reg = df_ml[feature_cols].drop(columns=['WTP_Per_Meal_AED'], errors='ignore')
-
-            X_train_reg, X_test_reg, y_train_reg, y_test_reg = train_test_split(
-                X_reg, y_reg, test_size=0.3, random_state=42
-            )
-
-            lr_model = LinearRegression()
-            lr_model.fit(X_train_reg, y_train_reg)
-            y_pred_reg = lr_model.predict(X_test_reg)
-
-            rmse = np.sqrt(mean_squared_error(y_test_reg, y_pred_reg))
-            mae = mean_absolute_error(y_test_reg, y_pred_reg)
-            r2 = r2_score(y_test_reg, y_pred_reg)
-
-            col1, col2, col3 = st.columns(3)
-            with col1:
-                st.metric("RMSE", f"{rmse:.2f} AED")
-            with col2:
-                st.metric("MAE", f"{mae:.2f} AED")
-            with col3:
-                st.metric("R² Score", f"{r2:.3f}")
-
-            # Actual vs Predicted
-            reg_comparison = pd.DataFrame({
-                'Actual': y_test_reg.values,
-                'Predicted': y_pred_reg
-            })
-
-            fig_reg = px.scatter(
-                reg_comparison,
-                x='Actual',
-                y='Predicted',
-                title='Actual vs Predicted WTP',
-                labels={'Actual': 'Actual WTP (AED)', 'Predicted': 'Predicted WTP (AED)'},
-                trendline='ols'
-            )
-            fig_reg.add_trace(go.Scatter(
-                x=[10, 60], y=[10, 60],
-                mode='lines',
-                name='Perfect Prediction',
-                line=dict(dash='dash', color='red')
-            ))
-            st.plotly_chart(fig_reg, use_container_width=True)
-
-            st.success("✅ All models trained successfully!")
+# === Regression Tab ===
+with reg_tab:
+    st.header("Regression (Predict WTP)")
+    # Place your regression code including train-test split, running LinearRegression, calculating RMSE, MAE, R², and plotting results here
 
 # ============================================
 # TAB 3: CUSTOMER PREDICTION
