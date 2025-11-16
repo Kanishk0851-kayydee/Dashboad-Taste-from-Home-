@@ -247,8 +247,9 @@ try:
 
         col_a, col_b, col_c = st.columns(3)
         with col_a:
-            st.info("📍 **Launch Location**  
-Dubai Academic City & JLT")
+            st.info("""📍 **Launch Location**  
+Dubai Academic City & JLT
+""")
         with col_b:
             st.success("🎯 **Target Market**  
 600+ Survey Respondents Analyzed")
