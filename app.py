@@ -12,8 +12,10 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.metrics import (accuracy_score, precision_score, recall_score, 
                              f1_score, confusion_matrix, classification_report,
                              mean_squared_error, r2_score, mean_absolute_error)
+import google.generativeai as genai
 import warnings
 import os
+
 warnings.filterwarnings('ignore')
 
 # Page configuration
@@ -70,14 +72,15 @@ st.markdown("""
         border-left: 4px solid #4ECDC4;
         margin: 15px 0;
     }
+    .ai-response-box {
+        background-color: #f0f8ff;
+        padding: 15px;
+        border-radius: 8px;
+        border-left: 4px solid #FF6B6B;
+        margin: 15px 0;
+    }
 </style>
 """, unsafe_allow_html=True)
-st.markdown(
-    """
-    <style>
-    * {cursor: pointer !important;}
-    </style>
-    """, unsafe_allow_html=True)
 
 # Load data
 @st.cache_data
@@ -132,12 +135,13 @@ st.markdown('<p class="subtitle">Data-Driven Insights for Home-Cooked Meal Deliv
 st.markdown("---")
 
 # Main tabs
-home_tab, insights_tab, ml_tab, pred_tab, upload_tab = st.tabs([
+home_tab, insights_tab, ml_tab, pred_tab, upload_tab, ai_tab = st.tabs([
     "🏠 Home",
     "📊 Marketing Insights",
     "🤖 ML Algorithms",
     "🎯 Prediction",
-    "📤 Upload & Predict"
+    "📤 Upload & Predict",
+    "💬 Ask AI"
 ])
 
 # ============================================
@@ -189,7 +193,7 @@ with home_tab:
         **Project Members:**
         - Kanishk
         - Kinjal
-        - Khushi
+        - Khushi Lodhi
         - Karan
         - Mohak
 
@@ -198,8 +202,7 @@ with home_tab:
         ### 📚 Project Details
         **Course:** Data Analytics  
         **Type:** Marketing Dashboard  
-        **Year:** 2025  
-        **Institution:** SP Jain School of Global Management, Dubai
+        **Year:** 2025
         """)
         st.markdown('</div>', unsafe_allow_html=True)
 
@@ -214,12 +217,11 @@ with home_tab:
         st.warning("💰 Pricing: AED 22-35 per meal")
 
 # ============================================
-# TAB 1: MARKETING INSIGHTS (WITH FILTERS INSIDE)
+# TAB 1: MARKETING INSIGHTS
 # ============================================
 with insights_tab:
     st.header("📊 Marketing Insights Dashboard")
 
-    # FILTERS DIRECTLY IN THIS TAB (NOT SIDEBAR)
     st.markdown('<div class="filter-box">', unsafe_allow_html=True)
     st.markdown("**🎯 Filter Your Audience:**")
 
@@ -239,7 +241,6 @@ with insights_tab:
 
     st.markdown('</div>', unsafe_allow_html=True)
 
-    # Apply filters
     filtered_df = df.copy()
     if 'All' not in selected_status:
         filtered_df = filtered_df[filtered_df['Status'].isin(selected_status)]
@@ -250,7 +251,6 @@ with insights_tab:
 
     st.markdown("---")
 
-    # Metrics
     col1, col2, col3, col4 = st.columns(4)
     with col1:
         st.metric("📊 Respondents", len(filtered_df))
@@ -266,14 +266,12 @@ with insights_tab:
 
     st.markdown("---")
 
-    # Chart 1
     st.subheader("📈 Chart 1: Interest by Age & Budget")
     fig1 = px.sunburst(filtered_df, path=['Age_Group', 'Monthly_Food_Budget_AED'],
                       values='Interested', color='Interest_Level', color_continuous_scale='RdYlGn')
     fig1.update_layout(height=500)
     st.plotly_chart(fig1, use_container_width=True)
 
-    # Chart 2
     st.markdown("---")
     st.subheader("📈 Chart 2: Delivery Frequency vs Spending")
     bubble_data = filtered_df.groupby(['Delivery_Frequency', 'Current_Spending_Per_Meal_AED']).agg({
@@ -283,7 +281,6 @@ with insights_tab:
     fig2.update_layout(height=500)
     st.plotly_chart(fig2, use_container_width=True)
 
-    # Chart 3
     st.markdown("---")
     st.subheader("📈 Chart 3: Location Market Potential")
     location_data = filtered_df.groupby('Location').agg({
@@ -295,7 +292,6 @@ with insights_tab:
     fig3.update_layout(title='Market Size by Location', barmode='group', height=500, xaxis_tickangle=-45)
     st.plotly_chart(fig3, use_container_width=True)
 
-    # Chart 4
     st.markdown("---")
     st.subheader("📈 Chart 4: Satisfaction Gap")
     satisfaction_cols = ['Taste_Satisfaction', 'Healthiness_Satisfaction', 'Affordability_Satisfaction', 
@@ -308,7 +304,6 @@ with insights_tab:
     fig4.update_layout(height=400)
     st.plotly_chart(fig4, use_container_width=True)
 
-    # Chart 5
     st.markdown("---")
     st.subheader("📈 Chart 5: WTP by Nationality & Status")
     fig5 = px.box(filtered_df, x='Nationality', y='WTP_Per_Meal_AED', color='Status')
@@ -316,12 +311,11 @@ with insights_tab:
     st.plotly_chart(fig5, use_container_width=True)
 
 # ============================================
-# TAB 2: ML ALGORITHMS (WITH FILTERS INSIDE)
+# TAB 2: ML ALGORITHMS
 # ============================================
 with ml_tab:
     st.header("🤖 ML Algorithms & Performance")
 
-    # FILTERS DIRECTLY IN THIS TAB
     st.markdown('<div class="filter-box">', unsafe_allow_html=True)
     st.markdown("**🎯 Filter Your Data:**")
 
@@ -339,7 +333,6 @@ with ml_tab:
 
     st.markdown('</div>', unsafe_allow_html=True)
 
-    # Apply ML filters
     ml_df = df.copy()
     if 'All' not in ml_status:
         ml_df = ml_df[ml_df['Status'].isin(ml_status)]
@@ -350,10 +343,8 @@ with ml_tab:
 
     st.markdown("---")
 
-    # ML Sub-tabs
     ml_tab1, ml_tab2, ml_tab3 = st.tabs(["🎯 Classification", "🔍 Clustering", "💰 Regression"])
 
-    # Classification
     with ml_tab1:
         st.subheader("Classification Models")
         if st.button("🚀 Run Classification", key="run_classify"):
@@ -407,7 +398,6 @@ with ml_tab:
                 st.plotly_chart(fig_imp, use_container_width=True)
                 st.success("✅ Done!")
 
-    # Clustering
     with ml_tab2:
         st.subheader("K-Means Clustering")
         if st.button("🔍 Run Clustering", key="run_cluster"):
@@ -427,7 +417,6 @@ with ml_tab:
                 st.plotly_chart(fig_clus, use_container_width=True)
                 st.success("✅ Done!")
 
-    # Regression
     with ml_tab3:
         st.subheader("Regression Analysis")
         if st.button("💰 Run Regression", key="run_regress"):
@@ -453,7 +442,7 @@ with ml_tab:
                 col1, col2, col3 = st.columns(3)
                 col1.metric("RMSE", f"{np.sqrt(mean_squared_error(y_test, y_pred)):.2f}")
                 col2.metric("MAE", f"{mean_absolute_error(y_test, y_pred):.2f}")
-                col3.metric("R²", f"{r2_score(y_test, y_pred):.3f}")
+                col3.metric("R2", f"{r2_score(y_test, y_pred):.3f}")
 
                 fig_reg = px.scatter(x=y_test, y=y_pred, labels={'x':'Actual', 'y':'Predicted'},
                                     title='Actual vs Predicted', trendline='ols')
@@ -536,6 +525,39 @@ with upload_tab:
             result = pd.concat([new_data, pd.DataFrame(predictions)], axis=1)
             st.dataframe(result)
             st.download_button("Download", result.to_csv(index=False), "predictions.csv", "text/csv")
+
+# ============================================
+# TAB 5: ASK AI (GEMINI)
+# ============================================
+with ai_tab:
+    st.header("💬 Ask AI About This Project")
+    st.markdown("Ask questions about Taste From Home, our data analysis, ML models, or business strategy!")
+
+    api_key_col, _ = st.columns([2, 1])
+    with api_key_col:
+        user_api_key = st.text_input("Enter your Google Gemini API Key", value="", type="password")
+
+    st.markdown('<div class="filter-box">', unsafe_allow_html=True)
+    user_question = st.text_area("Ask your question:", placeholder="e.g., What are our key market segments?")
+    st.markdown('</div>', unsafe_allow_html=True)
+
+    if st.button("🚀 Get Response", type="primary"):
+        if not user_api_key:
+            st.error("Enter your Gemini API Key")
+        elif not user_question:
+            st.error("Ask a question")
+        else:
+            with st.spinner("Thinking..."):
+                try:
+                    genai.configure(api_key=user_api_key)
+                    model = genai.GenerativeModel('gemini-pro')
+                    response = model.generate_content(user_question)
+
+                    st.markdown('<div class="ai-response-box">', unsafe_allow_html=True)
+                    st.markdown(f"**🤖 Response:**\n\n{response.text}")
+                    st.markdown('</div>', unsafe_allow_html=True)
+                except Exception as e:
+                    st.error(f"Error: {str(e)}")
 
 st.markdown("---")
 st.markdown("**Taste From Home Dashboard** | Group 7 | © 2025")
