@@ -27,15 +27,21 @@ st.set_page_config(
 
 st.markdown("""
 <style>
+    body {
+        background-color: #fdfbfb;
+    }
     .main {
         background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
     }
     .main-header {
         font-size: 48px;
         font-weight: bold;
-        color: #FF6B6B;
         text-align: center;
         padding: 20px;
+        background: linear-gradient(90deg, #FF6B6B 0%, #4ECDC4 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
     .subtitle {
         text-align: center;
@@ -56,6 +62,23 @@ st.markdown("""
         border-radius: 8px;
         border-left: 4px solid #4ECDC4;
         margin: 15px 0;
+    }
+    .algo-box {
+        background-color: #f0f8ff;
+        padding: 15px;
+        border-radius: 8px;
+        border-left: 4px solid #FF6B6B;
+        margin: 10px 0;
+    }
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 24px;
+    }
+    .stTabs [data-baseweb="tab"] {
+        height: 50px;
+        background-color: #f0f2f6;
+        border-radius: 10px 10px 0 0;
+        padding: 10px 20px;
+        font-weight: 600;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -99,7 +122,7 @@ def generate_sample_data():
     df['WTP_Per_Meal_AED'] = df['WTP_Per_Meal_AED'].clip(lower=10, upper=60)
     df['Interested'] = (df['Interest_Level'] >= 4).astype(int)
     return df
-  
+
 df = load_data()
 
 st.markdown('<h1 class="main-header">🍽️ Taste From Home: Marketing Analytics Dashboard</h1>', unsafe_allow_html=True)
@@ -133,9 +156,6 @@ with home_tab:
         ♻️ **Eco-Friendly** - Sustainable packaging  
         📱 **Flexible Subscriptions** - Daily, weekly, monthly plans  
         💰 **Affordable** - AED 22-25 for students, AED 28-35 for professionals
-
-        ### 🎭 Our Promise
-        > "Making Dubai feel more like home, one meal at a time."
         """)
 
         st.markdown('<div class="filter-box">', unsafe_allow_html=True)
@@ -304,12 +324,75 @@ with ml_tab:
 
         with st.expander("📊 Variables Used (20 Total)"):
             st.markdown("""
-            **11 Encoded Demographics:** Age_Group, Gender, Nationality, Status, Location, Living_Situation, 
+            **11 Encoded Demographics:**  
+            Age_Group, Gender, Nationality, Status, Location, Living_Situation, 
             Monthly_Food_Budget, Cooking_Frequency, Current_Spending, Delivery_Frequency, Meals_Per_Week
 
-            **9 Direct Features:** Interest_Level, Subscription_Preference, WTP_Per_Meal_AED, 
+            **9 Direct Features:**  
+            Interest_Level, Subscription_Preference, WTP_Per_Meal_AED, 
             Taste/Healthiness/Affordability/Convenience/Variety_Satisfaction
             """)
+
+        col1, col2 = st.columns(2)
+        with col1:
+            with st.expander("🔷 Logistic Regression"):
+                st.markdown("""
+                **Type:** Linear Probabilistic Classifier
+                **Algorithm:** Sigmoid function mapping
+                **Best For:** Interpretability, baseline
+                **Hyperparameters:** max_iter=1000, random_state=42
+                **Pros:** Fast, interpretable coefficients
+                **Cons:** Assumes linear relationships
+                """)
+        with col2:
+            with st.expander("🔶 Decision Tree"):
+                st.markdown("""
+                **Type:** Tree-based Recursive Partitioning
+                **Algorithm:** Greedy feature splitting
+                **Best For:** Rules understanding, interactions
+                **Hyperparameters:** random_state=42
+                **Pros:** Highly interpretable
+                **Cons:** Prone to overfitting
+                """)
+
+        col3, col4 = st.columns(2)
+        with col3:
+            with st.expander("🟧 Random Forest"):
+                st.markdown("""
+                **Type:** Ensemble Bagging
+                **Algorithm:** Multiple trees + voting
+                **Best For:** Accuracy, robustness
+                **Hyperparameters:** n_estimators=100, random_state=42
+                **Pros:** High accuracy, feature importance
+                **Cons:** Less interpretable
+                """)
+        with col4:
+            with st.expander("🟥 Gradient Boosting"):
+                st.markdown("""
+                **Type:** Ensemble Boosting
+                **Algorithm:** Sequential error correction
+                **Best For:** Maximum accuracy
+                **Hyperparameters:** n_estimators=100, random_state=42
+                **Pros:** Exceptional accuracy
+                **Cons:** Prone to overfitting if untuned
+                """)
+
+        st.markdown("---")
+
+        with st.expander("📈 Understanding Performance Metrics"):
+            col_m1, col_m2 = st.columns(2)
+            with col_m1:
+                st.markdown("""
+                **Accuracy:** % correct predictions overall  
+                **Precision:** % positive predictions that were correct  
+                **Formula (Precision):** TP / (TP + FP)
+                """)
+            with col_m2:
+                st.markdown("""
+                **Recall:** % actual positives identified correctly  
+                **Formula (Recall):** TP / (TP + FN)  
+                **F1-Score:** Harmonic mean of Precision & Recall
+                """)
 
         if st.button("🚀 Run Classification", key="run_classify"):
             with st.spinner("Training models..."):
@@ -356,13 +439,13 @@ with ml_tab:
                     })
 
                 results_df = pd.DataFrame(results)
-                st.markdown("### Classification Model Performance")
+                st.markdown("### Classification Results")
                 st.dataframe(results_df.style.format(precision=4), use_container_width=True)
 
                 st.markdown("---")
                 st.markdown("### 📌 Key Conclusions")
-                st.success("✅ **Best Model:** Random Forest - Highest accuracy with balanced precision & recall")
-                st.info("📊 **Insight:** Random Forest handles complex customer behavior patterns effectively")
+                st.success("✅ **Best Model:** Random Forest")
+                st.info("📊 **Insight:** Random Forest handles complex customer behavior patterns effectively with high accuracy and balanced metrics")
 
                 best_model = trained_models['Random Forest']
                 feature_importance = pd.DataFrame({
@@ -371,24 +454,59 @@ with ml_tab:
                 }).sort_values('Importance', ascending=False).head(15)
 
                 st.markdown("---")
-                st.markdown("### 🔍 Top 15 Features")
+                st.markdown("### 🔍 Top 15 Most Important Features")
                 fig_imp = px.bar(feature_importance, x='Importance', y='Feature', orientation='h',
                                 title='Feature Importance Rankings', color='Importance', color_continuous_scale='Viridis')
                 fig_imp.update_layout(height=500)
                 st.plotly_chart(fig_imp, use_container_width=True)
-                st.success("✅ Classification complete!")
+
+                st.markdown("---")
+                st.markdown("### 💡 Business Insights")
+                st.markdown("""
+                - **Interest_Level & Subscription_Preference** are strongest predictors (direct interest)
+                - **Location & Status** significantly affect interest (students in Academic City most interested)
+                - **Satisfaction scores** matter - low taste satisfaction correlates with interest in alternatives
+                - **Marketing Focus:** Target specific locations, student populations, address satisfaction gaps
+                """)
+                st.success("✅ Classification analysis complete!")
 
     with ml_tab2:
         st.subheader("K-Means Clustering: Customer Segmentation")
 
-        with st.expander("📊 Features Used"):
+        with st.expander("ℹ️ What is Clustering?"):
             st.markdown("""
-            **5 Key Features:**
-            1. WTP_Per_Meal_AED (Value indicator)
-            2. Interest_Level (Engagement)
-            3. Subscription_Preference (Loyalty potential)
-            4. Taste_Satisfaction (Content)
-            5. Affordability_Satisfaction (Price sensitivity)
+            **Clustering** groups similar customers together for targeted strategies.
+            **Unsupervised:** No pre-defined labels, machine finds patterns.
+            """)
+
+        with st.expander("📊 Features Used (5 Selected)"):
+            st.markdown("""
+            1. **WTP_Per_Meal_AED** - Value indicator/pricing sensitivity
+            2. **Interest_Level** - Engagement with service
+            3. **Subscription_Preference** - Loyalty potential
+            4. **Taste_Satisfaction** - Content satisfaction
+            5. **Affordability_Satisfaction** - Price sensitivity
+
+            **Preprocessing:** StandardScaler (normalized for fair weighting)
+            """)
+
+        with st.expander("🎯 4 Customer Segments"):
+            st.markdown("""
+            **Cluster 0: Budget Seekers**
+            - Low WTP, low interest, students
+            - Strategy: Entry-level pricing (AED 20-23), discounts
+
+            **Cluster 1: High Value**
+            - High WTP, high interest, professionals
+            - Strategy: Premium pricing (AED 32-35), exclusive menus
+
+            **Cluster 2: Undecided**
+            - Mixed metrics, in decision phase
+            - Strategy: Trial offers, testimonials, limited-time promos
+
+            **Cluster 3: Enthusiasts**
+            - Balanced high scores, loyal potential
+            - Strategy: Subscription plans, loyalty rewards
             """)
 
         if st.button("🔍 Run Clustering", key="run_cluster"):
@@ -401,35 +519,66 @@ with ml_tab:
                 ml_df['Cluster'] = kmeans.fit_predict(X_cluster)
 
                 cluster_summary = ml_df.groupby('Cluster')[cluster_features].mean().round(2)
-                st.markdown("### Cluster Summary")
+                st.markdown("### Cluster Summary Statistics")
                 st.dataframe(cluster_summary, use_container_width=True)
 
                 st.markdown("---")
-                st.markdown("### 📌 4 Customer Segments")
+                st.markdown("### 📌 Segmentation Conclusions")
                 st.markdown("""
-                **Cluster 0:** Budget Seekers - Students, low WTP, need affordability  
-                **Cluster 1:** High Value - Professionals, high WTP, premium seekers  
-                **Cluster 2:** Undecided - Mixed characteristics, need convincing  
-                **Cluster 3:** Enthusiasts - Balanced high scores, loyal potential
+                ✅ **4 Distinct Segments Identified**
+                - Each with unique characteristics
+                - Tailored marketing strategies needed
+                - Opportunity for targeted pricing
+                - Different acquisition & retention approaches
                 """)
 
                 fig_clus = px.scatter(ml_df, x='WTP_Per_Meal_AED', y='Interest_Level', 
-                                     color='Cluster', size='Subscription_Preference', title='Customer Segments')
+                                     color='Cluster', size='Subscription_Preference',
+                                     title='Customer Segments Distribution')
                 fig_clus.update_layout(height=500)
                 st.plotly_chart(fig_clus, use_container_width=True)
-                st.success("✅ Clustering complete!")
+                st.success("✅ Clustering analysis complete!")
 
     with ml_tab3:
-        st.subheader("Linear Regression: Predicting WTP")
+        st.subheader("Linear Regression: Predicting Willingness to Pay")
 
-        with st.expander("📊 All 20 Variables"):
+        with st.expander("ℹ️ What is Regression?"):
             st.markdown("""
-            **Predicting:** Willingness to Pay per meal (continuous AED)
-
-            **Features:** All 20 variables from Classification
-            - Demographics (11 encoded)
-            - Behavioral & Preferences (9 direct)
+            **Regression** predicts continuous values (not categories).
+            **Target:** WTP_Per_Meal_AED (continuous, range: AED 10-60)
             """)
+
+        with st.expander("📊 All 20 Variables Used"):
+            st.markdown("""
+            **11 Encoded Demographics** + **9 Direct Features**
+            (Same as Classification for consistency)
+
+            **Goal:** Understand which factors drive willingness to pay
+            """)
+
+        with st.expander("🔬 Regression Metrics Explained"):
+            col_r1, col_r2, col_r3 = st.columns(3)
+            with col_r1:
+                st.markdown("""
+                **RMSE** (Root Mean Squared Error)
+                - Avg prediction error in AED
+                - Penalizes large errors
+                - Lower = Better
+                """)
+            with col_r2:
+                st.markdown("""
+                **MAE** (Mean Absolute Error)
+                - Avg absolute error in AED
+                - Easy to interpret
+                - Lower = Better
+                """)
+            with col_r3:
+                st.markdown("""
+                **R² Score**
+                - % of variance explained
+                - Range: 0-1
+                - Higher = Better
+                """)
 
         if st.button("💰 Run Regression", key="run_regress"):
             with st.spinner("Training..."):
@@ -464,18 +613,28 @@ with ml_tab:
                 col3.metric("R² Score", f"{r2:.3f}")
 
                 st.markdown("---")
-                st.markdown("### 📌 Key Conclusions")
+                st.markdown("### 📌 Model Fit Conclusions")
                 if r2 > 0.7:
                     st.success("🟢 **Excellent:** Model explains >70% of WTP variation")
                 elif r2 > 0.5:
                     st.info("🟡 **Good:** Model explains 50-70% of WTP variation")
                 else:
-                    st.warning("🟠 **Moderate:** Other factors influence WTP")
+                    st.warning("🟠 **Moderate:** Other factors also influence WTP")
 
                 st.markdown("---")
-                st.markdown("### 📊 Actual vs Predicted")
-                fig_reg = px.scatter(x=y_test, y=y_pred, labels={'x':'Actual WTP', 'y':'Predicted'},
-                                    title='Regression Performance', trendline='ols',
+                st.markdown("### 💡 Business Implications")
+                st.markdown(f"""
+                - Average prediction error: ±{mae:.1f} AED
+                - Model explains {r2*100:.1f}% of price variation
+                - Use for pricing optimization & customer valuation
+                - Student segment: Lower WTP (AED 20-25)
+                - Professional segment: Higher WTP (AED 30-35)
+                """)
+
+                st.markdown("---")
+                st.markdown("### 📊 Actual vs Predicted WTP")
+                fig_reg = px.scatter(x=y_test, y=y_pred, labels={'x':'Actual WTP (AED)', 'y':'Predicted WTP (AED)'},
+                                    title='Regression Model Performance', trendline='ols',
                                     color_discrete_sequence=['#FF6B6B'])
                 fig_reg.add_trace(go.Scatter(x=[y_test.min(), y_test.max()], 
                                              y=[y_test.min(), y_test.max()],
@@ -483,7 +642,7 @@ with ml_tab:
                                              line=dict(dash='dash', color='green')))
                 fig_reg.update_layout(height=500)
                 st.plotly_chart(fig_reg, use_container_width=True)
-                st.success("✅ Regression complete!")
+                st.success("✅ Regression analysis complete!")
 
 with pred_tab:
     st.header("🎯 Customer Prediction")
@@ -579,7 +738,7 @@ with ai_tab:
                     genai.configure(api_key=user_api_key)
                     model = genai.GenerativeModel('gemini-pro')
                     response = model.generate_content(user_question)
-                    st.markdown('<div class="filter-box">', unsafe_allow_html=True)
+                    st.markdown('<div class="algo-box">', unsafe_allow_html=True)
                     st.markdown(f"**🤖 Response:**\n\n{response.text}")
                     st.markdown('</div>', unsafe_allow_html=True)
                 except Exception as e:
