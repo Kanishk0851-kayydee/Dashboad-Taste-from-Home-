@@ -1,0 +1,601 @@
+Age_Group,Gender,Nationality,Status,Location,Living_Situation,Monthly_Food_Budget_AED,Cooking_Frequency,Current_Spending_Per_Meal_AED,Delivery_Frequency,Interest_Level,Subscription_Preference,WTP_Per_Meal_AED,Meals_Per_Week,Taste_Satisfaction,Healthiness_Satisfaction,Affordability_Satisfaction,Convenience_Satisfaction,Variety_Satisfaction,Interested
+25-34,Male,Southeast Asia,Freelancer/Entrepreneur,JLT,Rented studio/apartment (alone),500-1000,Rarely/Never,10-15,4-6 times a week,4,4,19.39,More than 10,3,2,3,2,4,1
+45-54,Male,Indian Subcontinent,Working Professional (Married),International City,Living with family,1000-1500,4-6 times a week,Less than 10,Rarely,2,4,24.27,5-7,1,4,5,3,3,0
+25-34,Male,Indian Subcontinent,Local University/College Student,JLT,Shared apartment with roommates,500-1000,Daily,30-50,Rarely,5,3,18.94,5-7,2,3,2,4,3,1
+25-34,Male,Indian Subcontinent,International University/College Student,Dubai Academic City,Rented studio/apartment (alone),500-1000,Rarely/Never,10-15,4-6 times a week,4,5,27.38,5-7,1,1,3,4,3,1
+18-24,Male,Middle East/North Africa,Local University/College Student,Bur Dubai/Deira,Rented studio/apartment (alone),500-1000,Daily,30-50,2-3 times a week,2,4,22.49,3-4,2,2,2,4,3,0
+18-24,Male,East Asia,Working Professional (Married),Bur Dubai/Deira,Living with family,500-1000,2-3 times a week,15-20,Rarely,5,2,15.05,3-4,3,2,2,4,3,1
+18-24,Male,Southeast Asia,Working Professional (Bachelor/Single),JLT,Company-provided accommodation,1500-2000,Once a week,Less than 10,Rarely,4,2,37.04,5-7,4,1,3,2,4,1
+35-44,Male,Middle East/North Africa,International University/College Student,Dubai Academic City,University dormitory/hostel,500-1000,2-3 times a week,30-50,2-3 times a week,1,4,23.02,3-4,1,3,4,4,2,0
+25-34,Male,Indian Subcontinent,International University/College Student,Other,Rented studio/apartment (alone),2000-3000,Daily,10-15,2-3 times a week,4,5,16.85,3-4,2,3,3,5,2,1
+25-34,Female,Other,International University/College Student,JLT,University dormitory/hostel,More than 3000,Daily,30-50,2-3 times a week,3,3,25.65,8-10,2,3,4,2,2,0
+18-24,Male,Middle East/North Africa,Working Professional (Bachelor/Single),Bur Dubai/Deira,Rented studio/apartment (alone),1000-1500,Daily,10-15,Once a week,5,5,27.55,8-10,4,3,1,2,1,1
+45-54,Female,Middle East/North Africa,Working Professional (Married),International City,Shared apartment with roommates,500-1000,Once a week,30-50,4-6 times a week,5,4,13.03,3-4,3,1,2,5,1,1
+35-44,Female,Indian Subcontinent,International University/College Student,JLT,Shared apartment with roommates,1000-1500,2-3 times a week,Less than 10,Once a week,5,2,29.65,8-10,2,4,3,4,4,1
+18-24,Male,East Asia,International University/College Student,International City,Shared apartment with roommates,1500-2000,4-6 times a week,15-20,Once a day,4,1,18.62,8-10,3,4,1,5,3,1
+18-24,Female,Southeast Asia,International University/College Student,Dubai Marina,Rented studio/apartment (alone),1000-1500,Once a week,20-30,Once a day,4,2,40.69,5-7,4,4,2,5,3,1
+18-24,Female,Indian Subcontinent,Freelancer/Entrepreneur,Abu Dhabi,Shared apartment with roommates,Less than 500,Rarely/Never,30-50,2-3 times a week,5,4,31.19,3-4,1,1,3,3,3,1
+18-24,Male,Indian Subcontinent,International University/College Student,JLT,Living with family,1000-1500,Daily,30-50,2-3 times a week,2,2,23.8,3-4,2,4,1,4,4,0
+25-34,Male,Southeast Asia,Working Professional (Married),International City,Shared apartment with roommates,1500-2000,2-3 times a week,30-50,2-3 times a week,4,3,21.04,3-4,4,4,2,3,3,1
+25-34,Female,Southeast Asia,Working Professional (Bachelor/Single),International City,University dormitory/hostel,1500-2000,Once a week,30-50,2-3 times a week,4,4,26.16,1-2,3,4,3,1,4,1
+18-24,Female,Indian Subcontinent,Local University/College Student,JLT,Living with family,500-1000,4-6 times a week,10-15,2-3 times a week,2,4,31.9,3-4,2,1,3,4,2,0
+25-34,Male,Europe,International University/College Student,Dubai Academic City,Shared apartment with roommates,1500-2000,4-6 times a week,15-20,4-6 times a week,4,2,26.8,3-4,2,3,4,3,4,1
+18-24,Male,Indian Subcontinent,International University/College Student,International City,Shared apartment with roommates,500-1000,Once a week,15-20,4-6 times a week,5,3,25.26,3-4,2,4,3,4,3,1
+18-24,Male,Middle East/North Africa,Working Professional (Bachelor/Single),Sharjah,Rented studio/apartment (alone),500-1000,Rarely/Never,15-20,Rarely,5,4,27.47,More than 10,2,3,3,3,2,1
+18-24,Male,Europe,Working Professional (Married),JLT,Shared apartment with roommates,2000-3000,Rarely/Never,15-20,2-3 times a week,2,4,22.17,1-2,3,3,4,3,3,0
+25-34,Female,Middle East/North Africa,Working Professional (Bachelor/Single),Dubai Academic City,University dormitory/hostel,500-1000,Once a week,15-20,2-3 times a week,2,5,24.25,5-7,2,4,4,2,3,0
+35-44,Male,Southeast Asia,Working Professional (Bachelor/Single),Ajman,Shared apartment with roommates,500-1000,Once a week,10-15,2-3 times a week,3,2,10.31,5-7,3,2,2,2,1,0
+18-24,Male,Middle East/North Africa,International University/College Student,International City,Company-provided accommodation,Less than 500,2-3 times a week,20-30,Never,5,5,34.79,1-2,4,3,1,2,3,1
+25-34,Female,Indian Subcontinent,Freelancer/Entrepreneur,Abu Dhabi,Rented studio/apartment (alone),2000-3000,Once a week,10-15,4-6 times a week,2,4,29.39,More than 10,1,2,3,2,2,0
+25-34,Male,Americas,Working Professional (Married),Dubai Academic City,Rented studio/apartment (alone),1500-2000,2-3 times a week,15-20,Once a week,5,4,20.81,5-7,2,4,3,5,1,1
+18-24,Male,Middle East/North Africa,International University/College Student,Ajman,Rented studio/apartment (alone),1000-1500,4-6 times a week,15-20,Once a week,2,4,42.19,3-4,2,1,4,2,4,0
+25-34,Female,Africa,Freelancer/Entrepreneur,Bur Dubai/Deira,University dormitory/hostel,1500-2000,Once a week,20-30,2-3 times a week,4,3,27.7,5-7,3,3,3,2,3,1
+18-24,Female,Indian Subcontinent,Working Professional (Bachelor/Single),Sharjah,Shared apartment with roommates,500-1000,2-3 times a week,20-30,Once a day,3,2,18.71,3-4,1,3,3,4,4,0
+18-24,Male,Indian Subcontinent,Working Professional (Bachelor/Single),Other,Living with family,1000-1500,2-3 times a week,20-30,Once a week,5,4,33.85,5-7,3,4,5,4,3,1
+45-54,Male,Indian Subcontinent,Working Professional (Married),Dubai Academic City,University dormitory/hostel,1000-1500,Rarely/Never,10-15,Once a day,3,4,30.18,1-2,4,3,3,2,2,0
+45-54,Male,Southeast Asia,Working Professional (Married),Abu Dhabi,Shared apartment with roommates,Less than 500,Daily,15-20,2-3 times a week,4,4,30.16,8-10,2,4,1,4,3,1
+35-44,Male,Middle East/North Africa,Working Professional (Bachelor/Single),JLT,Shared apartment with roommates,1000-1500,4-6 times a week,10-15,Once a week,3,3,23.59,3-4,4,4,4,4,3,0
+18-24,Male,Africa,International University/College Student,JLT,Shared apartment with roommates,2000-3000,Daily,15-20,4-6 times a week,5,5,30.6,5-7,5,1,2,2,5,1
+18-24,Male,Middle East/North Africa,Local University/College Student,JLT,Other,Less than 500,Once a week,15-20,Rarely,5,4,24.91,3-4,1,2,4,3,2,1
+25-34,Male,Americas,Freelancer/Entrepreneur,Dubai Marina,University dormitory/hostel,500-1000,Once a week,Less than 10,Once a day,2,1,31.45,5-7,1,1,5,5,4,0
+25-34,Male,Indian Subcontinent,International University/College Student,Dubai Academic City,Shared apartment with roommates,500-1000,2-3 times a week,10-15,Rarely,5,3,11.76,5-7,5,2,3,4,4,1
+18-24,Male,Africa,Local University/College Student,Dubai Marina,University dormitory/hostel,500-1000,Once a week,30-50,2-3 times a week,4,4,23.53,3-4,5,3,3,4,3,1
+25-34,Male,East Asia,Local University/College Student,Dubai Marina,Other,2000-3000,2-3 times a week,30-50,4-6 times a week,2,4,40.78,5-7,1,4,3,1,4,0
+18-24,Male,East Asia,Local University/College Student,Sharjah,University dormitory/hostel,1000-1500,Once a week,15-20,4-6 times a week,4,4,20.86,3-4,1,4,2,3,2,1
+45-54,Male,East Asia,Working Professional (Bachelor/Single),Sharjah,Shared apartment with roommates,1000-1500,2-3 times a week,Less than 10,Rarely,2,5,22.17,8-10,1,1,2,3,5,0
+18-24,Male,Southeast Asia,Freelancer/Entrepreneur,JLT,Living with family,1500-2000,2-3 times a week,10-15,Once a day,5,3,23.42,3-4,5,1,3,2,3,1
+25-34,Female,Southeast Asia,International University/College Student,Dubai Academic City,Rented studio/apartment (alone),500-1000,Rarely/Never,15-20,4-6 times a week,5,3,17.28,8-10,1,3,4,3,1,1
+18-24,Female,Indian Subcontinent,International University/College Student,Dubai Academic City,Shared apartment with roommates,1000-1500,4-6 times a week,30-50,2-3 times a week,2,5,10.0,8-10,2,3,3,4,4,0
+25-34,Female,Indian Subcontinent,International University/College Student,Dubai Academic City,Shared apartment with roommates,1000-1500,Daily,10-15,Once a week,4,5,25.16,3-4,4,2,2,3,3,1
+25-34,Female,Europe,Freelancer/Entrepreneur,International City,Shared apartment with roommates,1000-1500,Once a week,20-30,2-3 times a week,5,4,28.09,3-4,1,4,3,4,3,1
+18-24,Male,Southeast Asia,Working Professional (Bachelor/Single),JLT,Shared apartment with roommates,More than 3000,Rarely/Never,10-15,Once a day,5,5,26.58,3-4,3,4,4,4,3,1
+45-54,Male,East Asia,International University/College Student,Dubai Academic City,University dormitory/hostel,1500-2000,2-3 times a week,More than 50,4-6 times a week,4,1,25.84,8-10,2,2,3,3,1,1
+35-44,Male,Middle East/North Africa,Working Professional (Married),Abu Dhabi,Shared apartment with roommates,1000-1500,Daily,15-20,4-6 times a week,5,5,27.34,3-4,4,4,3,4,3,1
+45-54,Female,Indian Subcontinent,Working Professional (Married),Dubai Marina,Shared apartment with roommates,1500-2000,2-3 times a week,20-30,4-6 times a week,4,3,35.18,5-7,2,2,4,2,4,1
+35-44,Female,Indian Subcontinent,Working Professional (Married),JLT,Shared apartment with roommates,500-1000,2-3 times a week,15-20,2-3 times a week,4,2,25.48,8-10,3,3,3,4,1,1
+25-34,Male,Southeast Asia,Freelancer/Entrepreneur,Dubai Marina,Rented studio/apartment (alone),Less than 500,4-6 times a week,20-30,Once a week,5,2,22.41,3-4,3,2,3,2,2,1
+45-54,Male,Middle East/North Africa,International University/College Student,International City,Company-provided accommodation,500-1000,Once a week,10-15,4-6 times a week,4,3,24.75,5-7,1,1,4,1,1,1
+18-24,Male,Indian Subcontinent,Working Professional (Married),JLT,Rented studio/apartment (alone),500-1000,Rarely/Never,10-15,2-3 times a week,4,3,31.63,3-4,1,4,2,4,2,1
+18-24,Male,Middle East/North Africa,Working Professional (Bachelor/Single),Bur Dubai/Deira,University dormitory/hostel,1000-1500,2-3 times a week,30-50,2-3 times a week,4,3,38.3,1-2,2,2,5,3,3,1
+18-24,Female,Indian Subcontinent,Working Professional (Married),JLT,University dormitory/hostel,1000-1500,2-3 times a week,30-50,Rarely,5,2,21.97,8-10,2,3,1,5,4,1
+18-24,Female,Middle East/North Africa,Working Professional (Married),JLT,Company-provided accommodation,2000-3000,2-3 times a week,30-50,Rarely,5,3,27.79,1-2,4,2,1,3,4,1
+25-34,Male,Indian Subcontinent,Working Professional (Married),Other,Shared apartment with roommates,1000-1500,Daily,20-30,Once a week,4,4,29.71,3-4,4,1,4,3,3,1
+18-24,Prefer not to say,East Asia,Working Professional (Bachelor/Single),Ajman,University dormitory/hostel,1000-1500,Rarely/Never,20-30,4-6 times a week,3,3,19.06,8-10,2,1,2,3,2,0
+35-44,Female,Indian Subcontinent,International University/College Student,Bur Dubai/Deira,Rented studio/apartment (alone),Less than 500,2-3 times a week,Less than 10,Once a day,4,3,27.16,3-4,3,3,3,3,4,1
+18-24,Male,Middle East/North Africa,Working Professional (Bachelor/Single),Dubai Marina,Rented studio/apartment (alone),Less than 500,2-3 times a week,15-20,2-3 times a week,4,4,15.27,Would not order,3,3,4,3,4,1
+18-24,Male,Indian Subcontinent,Other,Bur Dubai/Deira,Rented studio/apartment (alone),1000-1500,Once a week,15-20,4-6 times a week,3,5,12.85,Would not order,4,2,4,4,3,0
+25-34,Male,Indian Subcontinent,Freelancer/Entrepreneur,Dubai Academic City,Shared apartment with roommates,1000-1500,2-3 times a week,20-30,2-3 times a week,5,4,29.93,3-4,2,3,5,4,3,1
+18-24,Male,Middle East/North Africa,International University/College Student,JLT,University dormitory/hostel,1500-2000,Once a week,15-20,Once a week,4,3,23.93,1-2,2,3,2,4,4,1
+35-44,Male,Middle East/North Africa,International University/College Student,International City,Company-provided accommodation,500-1000,Daily,10-15,Rarely,3,4,28.62,5-7,2,3,3,5,3,0
+18-24,Male,Southeast Asia,International University/College Student,JLT,Shared apartment with roommates,Less than 500,Rarely/Never,20-30,Rarely,2,2,26.86,3-4,2,3,1,2,2,0
+55+,Male,Indian Subcontinent,Working Professional (Married),Dubai Marina,Rented studio/apartment (alone),1000-1500,Rarely/Never,30-50,2-3 times a week,3,2,19.19,1-2,2,4,3,4,3,0
+35-44,Male,Southeast Asia,Working Professional (Married),Dubai Academic City,Rented studio/apartment (alone),500-1000,Once a week,15-20,Once a week,5,3,26.64,5-7,2,3,4,3,1,1
+18-24,Female,Africa,International University/College Student,Abu Dhabi,Rented studio/apartment (alone),Less than 500,Rarely/Never,10-15,2-3 times a week,3,5,17.14,1-2,1,2,2,4,2,0
+Under 18,Male,East Asia,Working Professional (Bachelor/Single),Ajman,Shared apartment with roommates,1500-2000,4-6 times a week,10-15,Once a day,2,2,38.13,8-10,3,1,3,3,2,0
+35-44,Male,Indian Subcontinent,Working Professional (Married),Bur Dubai/Deira,Shared apartment with roommates,500-1000,2-3 times a week,10-15,Once a week,4,1,16.15,1-2,1,2,3,5,1,1
+25-34,Male,Middle East/North Africa,Working Professional (Married),Dubai Marina,Rented studio/apartment (alone),1000-1500,Once a week,15-20,Multiple times a day,3,2,25.43,1-2,1,1,3,4,1,0
+25-34,Prefer not to say,Indian Subcontinent,Working Professional (Bachelor/Single),Ajman,Living with family,500-1000,Once a week,20-30,2-3 times a week,1,5,18.66,1-2,2,3,5,5,1,0
+35-44,Male,Indian Subcontinent,Working Professional (Bachelor/Single),International City,Company-provided accommodation,500-1000,2-3 times a week,20-30,2-3 times a week,3,4,31.56,Would not order,1,2,1,4,3,0
+18-24,Male,Americas,Working Professional (Bachelor/Single),Sharjah,University dormitory/hostel,1000-1500,2-3 times a week,20-30,Once a week,4,3,24.35,5-7,3,2,3,5,4,1
+18-24,Female,Indian Subcontinent,International University/College Student,International City,University dormitory/hostel,1500-2000,Daily,15-20,Once a week,4,4,22.85,8-10,2,3,4,4,5,1
+18-24,Female,Middle East/North Africa,Working Professional (Bachelor/Single),Sharjah,Company-provided accommodation,1000-1500,2-3 times a week,30-50,4-6 times a week,3,4,33.83,3-4,2,2,3,3,2,0
+35-44,Female,Southeast Asia,Working Professional (Bachelor/Single),Dubai Academic City,Living with family,1500-2000,4-6 times a week,10-15,Once a week,4,4,27.24,3-4,2,2,1,2,3,1
+25-34,Male,Southeast Asia,Working Professional (Married),Ajman,Company-provided accommodation,500-1000,Once a week,15-20,4-6 times a week,5,2,31.13,3-4,1,1,3,3,4,1
+18-24,Male,Middle East/North Africa,Working Professional (Bachelor/Single),Abu Dhabi,University dormitory/hostel,1500-2000,4-6 times a week,20-30,2-3 times a week,3,5,19.15,3-4,1,3,2,1,1,0
+18-24,Female,Indian Subcontinent,Working Professional (Married),International City,Rented studio/apartment (alone),500-1000,Daily,10-15,Once a week,3,3,15.76,5-7,4,1,2,3,3,0
+18-24,Female,Indian Subcontinent,International University/College Student,JLT,Rented studio/apartment (alone),1500-2000,2-3 times a week,10-15,Once a week,3,4,27.86,5-7,2,2,4,3,4,0
+18-24,Female,Middle East/North Africa,Working Professional (Bachelor/Single),Other,Rented studio/apartment (alone),1000-1500,Once a week,30-50,Never,4,1,24.45,3-4,2,3,3,3,1,1
+25-34,Female,Indian Subcontinent,International University/College Student,JLT,Shared apartment with roommates,2000-3000,Rarely/Never,15-20,4-6 times a week,5,3,32.01,More than 10,1,3,4,5,4,1
+25-34,Male,Middle East/North Africa,International University/College Student,Ajman,University dormitory/hostel,1000-1500,2-3 times a week,20-30,Once a week,3,3,26.36,1-2,2,3,4,5,4,0
+35-44,Female,Indian Subcontinent,Working Professional (Married),Dubai Marina,Rented studio/apartment (alone),Less than 500,2-3 times a week,Less than 10,2-3 times a week,5,4,28.64,Would not order,3,4,3,2,1,1
+25-34,Male,Indian Subcontinent,Other,JLT,Shared apartment with roommates,Less than 500,Rarely/Never,20-30,Rarely,1,1,14.01,1-2,3,1,1,3,1,0
+18-24,Male,Middle East/North Africa,International University/College Student,Dubai Academic City,Shared apartment with roommates,1500-2000,2-3 times a week,15-20,4-6 times a week,4,4,42.11,3-4,3,2,3,3,1,1
+25-34,Male,Indian Subcontinent,Local University/College Student,Dubai Academic City,Company-provided accommodation,1000-1500,Daily,Less than 10,Once a week,5,2,25.69,3-4,1,2,2,3,2,1
+35-44,Male,Middle East/North Africa,Working Professional (Married),Sharjah,Shared apartment with roommates,1500-2000,2-3 times a week,20-30,2-3 times a week,3,4,32.58,3-4,2,1,4,4,3,0
+25-34,Male,Southeast Asia,International University/College Student,JLT,Living with family,500-1000,Rarely/Never,10-15,4-6 times a week,4,5,20.31,5-7,4,2,2,3,3,1
+35-44,Male,East Asia,Working Professional (Bachelor/Single),Dubai Marina,University dormitory/hostel,500-1000,2-3 times a week,15-20,2-3 times a week,3,4,29.46,3-4,4,2,2,3,2,0
+25-34,Female,Indian Subcontinent,Working Professional (Married),Dubai Marina,Rented studio/apartment (alone),Less than 500,4-6 times a week,10-15,2-3 times a week,5,4,16.58,3-4,1,3,3,4,4,1
+25-34,Male,Indian Subcontinent,Working Professional (Bachelor/Single),Dubai Marina,Other,More than 3000,Daily,10-15,2-3 times a week,1,4,30.62,5-7,2,3,2,4,2,0
+25-34,Female,Indian Subcontinent,International University/College Student,Ajman,University dormitory/hostel,1500-2000,4-6 times a week,15-20,Rarely,5,3,24.15,5-7,1,2,2,2,1,1
+18-24,Male,Southeast Asia,Local University/College Student,Other,University dormitory/hostel,2000-3000,2-3 times a week,10-15,2-3 times a week,2,5,27.23,8-10,1,3,3,4,2,0
+18-24,Male,Southeast Asia,Working Professional (Married),JLT,Shared apartment with roommates,500-1000,Once a week,30-50,Once a week,5,3,32.58,3-4,2,2,1,3,3,1
+18-24,Male,Indian Subcontinent,Working Professional (Bachelor/Single),Sharjah,University dormitory/hostel,1000-1500,Daily,Less than 10,2-3 times a week,3,4,17.14,5-7,1,2,1,3,2,0
+25-34,Male,Europe,International University/College Student,Sharjah,Living with family,1500-2000,Rarely/Never,15-20,Once a day,5,4,21.52,5-7,3,3,2,1,2,1
+18-24,Male,Indian Subcontinent,Working Professional (Married),Dubai Marina,Company-provided accommodation,500-1000,Once a week,10-15,4-6 times a week,3,3,30.66,3-4,2,1,3,3,1,0
+25-34,Male,Middle East/North Africa,International University/College Student,Abu Dhabi,Shared apartment with roommates,1500-2000,Once a week,15-20,2-3 times a week,5,3,43.79,3-4,1,1,3,3,4,1
+45-54,Male,Southeast Asia,Working Professional (Married),Dubai Academic City,Shared apartment with roommates,2000-3000,Rarely/Never,30-50,2-3 times a week,2,4,25.9,3-4,1,2,3,2,5,0
+18-24,Prefer not to say,Africa,International University/College Student,International City,Shared apartment with roommates,2000-3000,Daily,10-15,4-6 times a week,2,5,31.73,1-2,4,4,3,4,2,0
+25-34,Male,Southeast Asia,Freelancer/Entrepreneur,Ajman,Living with family,1500-2000,2-3 times a week,More than 50,2-3 times a week,4,5,26.14,3-4,1,3,2,4,2,1
+35-44,Female,East Asia,Local University/College Student,JLT,University dormitory/hostel,500-1000,Once a week,10-15,2-3 times a week,2,4,42.54,1-2,3,1,4,2,3,0
+18-24,Male,Indian Subcontinent,Local University/College Student,Sharjah,Rented studio/apartment (alone),500-1000,Rarely/Never,20-30,4-6 times a week,2,4,13.02,5-7,2,4,1,1,3,0
+18-24,Female,East Asia,International University/College Student,Ajman,Rented studio/apartment (alone),More than 3000,Once a week,15-20,2-3 times a week,5,5,27.76,5-7,3,3,3,4,2,1
+18-24,Female,Indian Subcontinent,Local University/College Student,International City,Rented studio/apartment (alone),Less than 500,4-6 times a week,30-50,4-6 times a week,5,1,14.0,Would not order,2,3,4,1,4,1
+18-24,Female,Africa,Working Professional (Married),Ajman,Shared apartment with roommates,1500-2000,Rarely/Never,15-20,Rarely,3,2,10.0,5-7,1,4,4,5,3,0
+45-54,Male,Middle East/North Africa,Other,JLT,Rented studio/apartment (alone),1500-2000,Daily,15-20,Rarely,5,4,29.38,1-2,1,2,2,4,3,1
+35-44,Male,East Asia,Local University/College Student,Dubai Marina,University dormitory/hostel,1000-1500,Rarely/Never,10-15,Once a week,4,5,28.12,8-10,1,2,2,3,3,1
+25-34,Male,Middle East/North Africa,Local University/College Student,Bur Dubai/Deira,University dormitory/hostel,More than 3000,Rarely/Never,10-15,Once a day,3,5,24.72,8-10,2,3,3,2,5,0
+35-44,Female,Southeast Asia,Working Professional (Married),Abu Dhabi,Company-provided accommodation,500-1000,4-6 times a week,30-50,Once a week,5,3,26.15,3-4,3,3,1,1,4,1
+35-44,Female,Middle East/North Africa,Freelancer/Entrepreneur,International City,Living with family,500-1000,Once a week,15-20,Once a week,4,1,51.79,5-7,2,3,4,2,1,1
+18-24,Female,Southeast Asia,Working Professional (Bachelor/Single),JLT,University dormitory/hostel,Less than 500,Daily,15-20,Once a week,5,3,24.93,Would not order,1,3,3,2,2,1
+35-44,Male,Indian Subcontinent,Local University/College Student,Bur Dubai/Deira,Shared apartment with roommates,1000-1500,2-3 times a week,20-30,Once a day,3,2,31.08,5-7,2,4,3,4,3,0
+25-34,Female,Indian Subcontinent,Local University/College Student,Bur Dubai/Deira,University dormitory/hostel,500-1000,2-3 times a week,15-20,Once a week,4,3,21.81,More than 10,3,4,1,2,2,1
+35-44,Female,Indian Subcontinent,Working Professional (Bachelor/Single),Bur Dubai/Deira,Shared apartment with roommates,500-1000,Once a week,30-50,Rarely,1,4,29.36,1-2,5,4,3,3,3,0
+35-44,Male,Indian Subcontinent,International University/College Student,International City,Shared apartment with roommates,1500-2000,Rarely/Never,20-30,2-3 times a week,2,1,25.09,1-2,3,4,3,4,4,0
+18-24,Male,Africa,Working Professional (Bachelor/Single),Dubai Academic City,University dormitory/hostel,2000-3000,Once a week,20-30,Once a week,1,5,23.72,3-4,2,4,4,3,3,0
+18-24,Female,Indian Subcontinent,Local University/College Student,JLT,Shared apartment with roommates,500-1000,2-3 times a week,30-50,2-3 times a week,5,3,41.55,5-7,3,1,1,1,5,1
+18-24,Female,Americas,Working Professional (Married),Sharjah,Living with family,1000-1500,Rarely/Never,Less than 10,2-3 times a week,5,4,36.42,8-10,4,2,1,1,2,1
+25-34,Female,Indian Subcontinent,International University/College Student,Dubai Academic City,Rented studio/apartment (alone),2000-3000,Rarely/Never,10-15,Once a day,5,1,28.09,Would not order,4,3,2,1,4,1
+35-44,Male,Indian Subcontinent,Working Professional (Bachelor/Single),Dubai Academic City,Rented studio/apartment (alone),Less than 500,Daily,15-20,Once a week,4,3,10.0,3-4,2,4,1,4,4,1
+35-44,Female,East Asia,Working Professional (Bachelor/Single),Abu Dhabi,University dormitory/hostel,Less than 500,Rarely/Never,10-15,Once a day,3,1,24.11,1-2,1,3,3,3,2,0
+Under 18,Male,Southeast Asia,Working Professional (Bachelor/Single),International City,Company-provided accommodation,500-1000,Daily,20-30,2-3 times a week,2,5,48.62,8-10,2,3,4,4,3,0
+25-34,Male,Middle East/North Africa,International University/College Student,Other,Living with family,1000-1500,Rarely/Never,30-50,4-6 times a week,3,5,25.15,5-7,2,1,2,3,1,0
+25-34,Male,Middle East/North Africa,Working Professional (Bachelor/Single),Bur Dubai/Deira,Living with family,500-1000,4-6 times a week,15-20,2-3 times a week,3,4,35.83,1-2,3,2,4,3,4,0
+18-24,Female,Southeast Asia,Working Professional (Bachelor/Single),Sharjah,Living with family,More than 3000,Daily,15-20,4-6 times a week,5,2,38.54,3-4,2,3,1,3,3,1
+18-24,Female,Indian Subcontinent,Working Professional (Bachelor/Single),Dubai Academic City,Company-provided accommodation,1000-1500,2-3 times a week,More than 50,Once a week,4,5,28.75,5-7,1,1,2,4,2,1
+18-24,Male,Other,Working Professional (Bachelor/Single),International City,Rented studio/apartment (alone),1000-1500,Once a week,15-20,Once a week,1,3,20.27,5-7,3,2,1,2,3,0
+45-54,Male,Americas,Working Professional (Bachelor/Single),Sharjah,University dormitory/hostel,500-1000,2-3 times a week,15-20,4-6 times a week,1,2,10.0,3-4,4,2,2,2,3,0
+18-24,Female,Southeast Asia,Working Professional (Married),Sharjah,Rented studio/apartment (alone),1000-1500,Daily,15-20,Once a day,2,4,32.47,3-4,2,2,4,3,2,0
+25-34,Male,Indian Subcontinent,International University/College Student,Sharjah,Living with family,1500-2000,Once a week,30-50,4-6 times a week,4,5,20.48,Would not order,3,3,1,3,1,1
+25-34,Female,Southeast Asia,Working Professional (Married),International City,Living with family,1500-2000,Rarely/Never,20-30,Rarely,5,1,28.41,5-7,2,2,3,3,3,1
+18-24,Male,Indian Subcontinent,Working Professional (Bachelor/Single),Sharjah,Rented studio/apartment (alone),1500-2000,2-3 times a week,20-30,2-3 times a week,4,2,17.0,3-4,4,3,3,4,3,1
+55+,Male,Indian Subcontinent,International University/College Student,Sharjah,University dormitory/hostel,1000-1500,4-6 times a week,30-50,2-3 times a week,5,5,24.88,3-4,4,1,4,3,4,1
+45-54,Male,Indian Subcontinent,International University/College Student,Bur Dubai/Deira,Shared apartment with roommates,2000-3000,2-3 times a week,15-20,Once a day,4,2,27.27,5-7,2,4,1,4,4,1
+18-24,Male,Middle East/North Africa,Local University/College Student,Sharjah,Company-provided accommodation,1500-2000,Daily,15-20,Once a week,3,2,29.15,3-4,3,2,2,3,3,0
+25-34,Female,Africa,Working Professional (Married),Sharjah,Rented studio/apartment (alone),1500-2000,Rarely/Never,30-50,Rarely,2,4,18.08,1-2,4,3,1,4,4,0
+18-24,Male,Southeast Asia,Working Professional (Married),Bur Dubai/Deira,Rented studio/apartment (alone),Less than 500,Rarely/Never,15-20,Once a week,5,5,36.58,5-7,2,3,3,4,3,1
+18-24,Male,Southeast Asia,Working Professional (Married),International City,Shared apartment with roommates,Less than 500,Once a week,20-30,Once a week,5,4,22.22,3-4,2,2,2,3,3,1
+18-24,Female,Middle East/North Africa,Working Professional (Bachelor/Single),JLT,Shared apartment with roommates,500-1000,2-3 times a week,30-50,Once a day,2,5,13.6,5-7,3,4,4,4,2,0
+25-34,Male,Indian Subcontinent,Local University/College Student,International City,Company-provided accommodation,1500-2000,Once a week,20-30,Once a day,4,4,26.13,1-2,1,3,3,4,2,1
+25-34,Male,Middle East/North Africa,International University/College Student,JLT,Rented studio/apartment (alone),1000-1500,2-3 times a week,20-30,Once a day,4,1,27.28,5-7,2,2,3,3,3,1
+18-24,Female,Americas,Local University/College Student,JLT,Living with family,1000-1500,Rarely/Never,20-30,4-6 times a week,4,5,28.28,3-4,4,1,3,3,1,1
+18-24,Female,Indian Subcontinent,Local University/College Student,International City,Shared apartment with roommates,2000-3000,Once a week,30-50,4-6 times a week,5,3,37.9,1-2,3,4,1,4,3,1
+45-54,Male,Africa,International University/College Student,JLT,Rented studio/apartment (alone),2000-3000,Once a week,15-20,4-6 times a week,4,3,25.11,1-2,2,3,3,4,4,1
+18-24,Female,Middle East/North Africa,International University/College Student,International City,Shared apartment with roommates,2000-3000,Once a week,Less than 10,2-3 times a week,4,4,26.04,More than 10,1,2,5,1,2,1
+18-24,Female,Middle East/North Africa,Working Professional (Bachelor/Single),Sharjah,Rented studio/apartment (alone),500-1000,2-3 times a week,15-20,Rarely,1,3,18.17,8-10,2,2,4,5,3,0
+25-34,Male,Southeast Asia,Working Professional (Married),Abu Dhabi,Shared apartment with roommates,1500-2000,Rarely/Never,20-30,Once a week,1,1,33.56,3-4,2,4,4,1,4,0
+55+,Male,Middle East/North Africa,Other,International City,Shared apartment with roommates,500-1000,2-3 times a week,15-20,Rarely,2,1,28.47,5-7,1,3,4,4,4,0
+18-24,Female,Africa,Freelancer/Entrepreneur,Abu Dhabi,Rented studio/apartment (alone),500-1000,Once a week,20-30,Once a week,1,3,23.64,5-7,3,3,1,4,2,0
+25-34,Female,Africa,Working Professional (Bachelor/Single),Dubai Marina,Company-provided accommodation,500-1000,4-6 times a week,15-20,Once a day,5,5,11.76,Would not order,2,2,2,5,2,1
+35-44,Male,Middle East/North Africa,Local University/College Student,Dubai Academic City,University dormitory/hostel,500-1000,Once a week,20-30,Once a week,5,4,38.56,3-4,2,3,1,1,3,1
+18-24,Female,Indian Subcontinent,Working Professional (Bachelor/Single),International City,Living with family,1000-1500,2-3 times a week,10-15,4-6 times a week,2,5,17.18,5-7,2,2,2,4,3,0
+25-34,Female,Middle East/North Africa,Working Professional (Married),Dubai Marina,Shared apartment with roommates,1500-2000,4-6 times a week,20-30,Once a week,5,3,22.27,1-2,5,2,1,3,1,1
+18-24,Male,Africa,International University/College Student,Sharjah,Shared apartment with roommates,500-1000,Daily,15-20,2-3 times a week,2,3,29.87,3-4,2,3,3,3,2,0
+25-34,Male,Indian Subcontinent,Local University/College Student,Bur Dubai/Deira,University dormitory/hostel,1500-2000,Once a week,10-15,Never,3,2,17.43,Would not order,1,5,3,1,4,0
+25-34,Male,Southeast Asia,Working Professional (Married),International City,Shared apartment with roommates,1000-1500,Once a week,15-20,4-6 times a week,3,2,15.05,5-7,1,2,4,3,3,0
+25-34,Female,Southeast Asia,Local University/College Student,International City,Shared apartment with roommates,500-1000,2-3 times a week,20-30,4-6 times a week,3,3,10.01,3-4,3,2,3,3,5,0
+18-24,Male,Southeast Asia,Working Professional (Bachelor/Single),JLT,University dormitory/hostel,1000-1500,4-6 times a week,15-20,Rarely,3,4,32.77,1-2,3,3,4,2,4,0
+35-44,Female,Indian Subcontinent,Working Professional (Bachelor/Single),Dubai Academic City,Shared apartment with roommates,500-1000,Once a week,10-15,Multiple times a day,4,5,22.64,5-7,2,3,1,4,4,1
+18-24,Female,Southeast Asia,International University/College Student,Dubai Academic City,Company-provided accommodation,1000-1500,Daily,More than 50,Once a week,4,5,50.42,5-7,2,4,1,4,2,1
+18-24,Female,Africa,Local University/College Student,Dubai Academic City,University dormitory/hostel,1000-1500,2-3 times a week,20-30,Once a week,5,2,19.05,3-4,1,3,3,4,4,1
+18-24,Male,Indian Subcontinent,Local University/College Student,Sharjah,Living with family,500-1000,4-6 times a week,30-50,Rarely,1,5,19.63,Would not order,2,1,2,5,1,0
+25-34,Female,Indian Subcontinent,International University/College Student,Abu Dhabi,Shared apartment with roommates,500-1000,4-6 times a week,15-20,Rarely,2,3,22.48,1-2,2,5,2,3,3,0
+25-34,Male,Americas,International University/College Student,JLT,Rented studio/apartment (alone),1000-1500,4-6 times a week,15-20,Rarely,1,2,28.95,3-4,1,3,2,5,3,0
+Under 18,Female,Indian Subcontinent,Working Professional (Married),Ajman,Shared apartment with roommates,2000-3000,2-3 times a week,30-50,Once a day,4,5,23.24,More than 10,1,4,2,4,2,1
+25-34,Male,Africa,International University/College Student,Dubai Academic City,University dormitory/hostel,500-1000,Daily,15-20,Once a week,1,4,31.9,3-4,1,3,3,3,4,0
+18-24,Male,Middle East/North Africa,Working Professional (Bachelor/Single),JLT,University dormitory/hostel,1500-2000,2-3 times a week,20-30,Once a week,5,2,19.17,3-4,1,4,3,2,4,1
+25-34,Female,Indian Subcontinent,International University/College Student,Dubai Academic City,University dormitory/hostel,1500-2000,2-3 times a week,10-15,Once a week,4,3,15.95,5-7,3,1,3,3,1,1
+18-24,Male,Africa,Freelancer/Entrepreneur,Bur Dubai/Deira,University dormitory/hostel,2000-3000,2-3 times a week,15-20,Once a day,4,3,12.61,8-10,1,2,3,3,3,1
+25-34,Male,Middle East/North Africa,International University/College Student,Abu Dhabi,Rented studio/apartment (alone),1500-2000,2-3 times a week,10-15,Once a week,4,4,10.0,1-2,2,4,2,3,2,1
+25-34,Female,Middle East/North Africa,Local University/College Student,Bur Dubai/Deira,Company-provided accommodation,1000-1500,Rarely/Never,10-15,Never,2,4,22.86,More than 10,1,2,2,4,2,0
+45-54,Female,Middle East/North Africa,Working Professional (Married),JLT,Living with family,1500-2000,Daily,Less than 10,Rarely,2,5,24.59,8-10,5,1,2,4,4,0
+18-24,Female,Middle East/North Africa,Working Professional (Married),Bur Dubai/Deira,Rented studio/apartment (alone),2000-3000,2-3 times a week,Less than 10,2-3 times a week,3,1,21.95,1-2,4,4,2,3,2,0
+18-24,Female,Indian Subcontinent,International University/College Student,International City,University dormitory/hostel,1000-1500,Daily,More than 50,Once a day,4,3,36.95,5-7,1,4,3,2,4,1
+18-24,Male,Middle East/North Africa,Working Professional (Married),Ajman,Shared apartment with roommates,500-1000,Daily,10-15,2-3 times a week,3,4,36.82,3-4,2,1,4,4,1,0
+45-54,Male,Americas,Working Professional (Bachelor/Single),Dubai Marina,Shared apartment with roommates,Less than 500,2-3 times a week,20-30,Once a week,2,4,24.32,3-4,1,4,3,3,3,0
+35-44,Male,Indian Subcontinent,Working Professional (Bachelor/Single),JLT,Shared apartment with roommates,1500-2000,2-3 times a week,30-50,Once a week,5,3,12.65,8-10,2,3,2,5,3,1
+18-24,Male,Southeast Asia,International University/College Student,Dubai Marina,Shared apartment with roommates,1500-2000,Rarely/Never,15-20,2-3 times a week,1,4,22.47,Would not order,1,3,3,2,2,0
+25-34,Female,Indian Subcontinent,International University/College Student,Bur Dubai/Deira,Rented studio/apartment (alone),500-1000,2-3 times a week,10-15,Once a day,5,5,22.2,1-2,3,4,3,5,2,1
+35-44,Female,East Asia,Working Professional (Married),International City,Shared apartment with roommates,1000-1500,Rarely/Never,20-30,2-3 times a week,5,5,21.74,3-4,2,2,3,1,4,1
+25-34,Male,Indian Subcontinent,Working Professional (Bachelor/Single),Bur Dubai/Deira,Shared apartment with roommates,1000-1500,Daily,20-30,2-3 times a week,3,5,21.42,3-4,4,1,3,2,4,0
+25-34,Male,Americas,Local University/College Student,Dubai Academic City,Living with family,500-1000,Daily,20-30,Rarely,2,5,21.77,3-4,1,2,3,1,2,0
+18-24,Female,Middle East/North Africa,Working Professional (Married),Bur Dubai/Deira,Living with family,More than 3000,Daily,20-30,Once a week,2,4,23.91,3-4,4,3,3,4,3,0
+18-24,Male,Indian Subcontinent,Working Professional (Married),Sharjah,Shared apartment with roommates,500-1000,4-6 times a week,More than 50,2-3 times a week,5,5,21.92,1-2,3,3,3,4,1,1
+35-44,Female,Indian Subcontinent,International University/College Student,Sharjah,Company-provided accommodation,Less than 500,2-3 times a week,20-30,2-3 times a week,4,3,28.67,5-7,1,4,1,3,2,1
+45-54,Male,Indian Subcontinent,Working Professional (Bachelor/Single),Dubai Marina,Company-provided accommodation,1000-1500,Once a week,15-20,Once a day,5,3,29.88,3-4,2,4,3,5,3,1
+25-34,Female,Middle East/North Africa,International University/College Student,Dubai Marina,Shared apartment with roommates,1500-2000,Daily,20-30,Rarely,5,3,19.71,1-2,1,3,1,4,1,1
+18-24,Male,Indian Subcontinent,Working Professional (Married),International City,Shared apartment with roommates,Less than 500,Rarely/Never,Less than 10,2-3 times a week,5,4,37.17,8-10,2,4,1,4,4,1
+18-24,Female,East Asia,Working Professional (Bachelor/Single),Sharjah,Shared apartment with roommates,1500-2000,Rarely/Never,30-50,2-3 times a week,2,3,19.16,8-10,2,1,5,4,3,0
+25-34,Female,Middle East/North Africa,Freelancer/Entrepreneur,Dubai Academic City,Company-provided accommodation,1000-1500,4-6 times a week,10-15,2-3 times a week,3,5,14.06,3-4,3,1,5,3,4,0
+35-44,Female,Indian Subcontinent,International University/College Student,Dubai Marina,Company-provided accommodation,500-1000,Daily,15-20,Once a week,5,3,30.05,3-4,2,4,1,3,3,1
+35-44,Female,Southeast Asia,International University/College Student,Dubai Academic City,University dormitory/hostel,500-1000,4-6 times a week,30-50,Once a week,3,1,20.46,5-7,4,1,3,5,4,0
+35-44,Female,Southeast Asia,International University/College Student,International City,Shared apartment with roommates,1000-1500,Daily,20-30,Once a week,1,4,29.57,3-4,1,2,2,5,3,0
+25-34,Female,Indian Subcontinent,International University/College Student,Bur Dubai/Deira,Rented studio/apartment (alone),500-1000,Daily,15-20,4-6 times a week,5,1,10.0,3-4,5,3,3,5,3,1
+18-24,Male,Indian Subcontinent,International University/College Student,International City,Shared apartment with roommates,2000-3000,2-3 times a week,15-20,2-3 times a week,4,2,38.14,5-7,1,2,4,5,5,1
+18-24,Female,Indian Subcontinent,Freelancer/Entrepreneur,Sharjah,University dormitory/hostel,1500-2000,4-6 times a week,30-50,Once a day,5,2,32.38,1-2,3,4,5,2,3,1
+35-44,Female,Southeast Asia,International University/College Student,Dubai Academic City,Living with family,More than 3000,2-3 times a week,15-20,Once a week,4,4,15.0,1-2,2,2,3,4,1,1
+25-34,Male,Southeast Asia,International University/College Student,International City,Rented studio/apartment (alone),500-1000,Rarely/Never,30-50,Once a day,2,3,15.17,1-2,1,1,2,3,3,0
+Under 18,Female,Middle East/North Africa,Working Professional (Married),Dubai Marina,Living with family,More than 3000,Once a week,10-15,2-3 times a week,5,4,40.38,1-2,4,2,3,5,4,1
+18-24,Female,East Asia,Local University/College Student,International City,Living with family,1000-1500,Rarely/Never,20-30,Rarely,3,4,21.1,1-2,2,3,2,3,4,0
+25-34,Female,East Asia,Working Professional (Married),Dubai Academic City,Living with family,500-1000,Daily,30-50,Rarely,3,3,20.33,Would not order,3,2,4,3,3,0
+Under 18,Male,Middle East/North Africa,International University/College Student,Bur Dubai/Deira,Shared apartment with roommates,Less than 500,2-3 times a week,10-15,2-3 times a week,4,3,10.0,3-4,3,3,4,3,3,1
+18-24,Male,Africa,Working Professional (Bachelor/Single),International City,Rented studio/apartment (alone),Less than 500,2-3 times a week,15-20,2-3 times a week,1,3,24.19,1-2,2,4,3,3,5,0
+25-34,Prefer not to say,Indian Subcontinent,International University/College Student,Sharjah,University dormitory/hostel,1500-2000,Daily,10-15,Once a day,4,4,25.18,3-4,2,4,2,1,1,1
+25-34,Female,Indian Subcontinent,International University/College Student,International City,Rented studio/apartment (alone),1000-1500,Daily,20-30,Once a week,2,1,32.72,More than 10,3,2,2,5,3,0
+25-34,Male,Indian Subcontinent,Freelancer/Entrepreneur,Dubai Academic City,University dormitory/hostel,500-1000,Once a week,15-20,Once a week,4,1,15.81,5-7,1,2,1,4,2,1
+18-24,Female,Indian Subcontinent,International University/College Student,Sharjah,Rented studio/apartment (alone),1000-1500,Once a week,20-30,4-6 times a week,3,4,14.84,3-4,3,3,4,2,3,0
+25-34,Female,Middle East/North Africa,Working Professional (Bachelor/Single),Dubai Academic City,Shared apartment with roommates,500-1000,2-3 times a week,10-15,2-3 times a week,5,4,30.61,8-10,4,4,3,4,3,1
+18-24,Male,Europe,Local University/College Student,International City,University dormitory/hostel,1000-1500,2-3 times a week,10-15,Rarely,5,2,35.05,3-4,1,5,2,4,1,1
+18-24,Female,Indian Subcontinent,Local University/College Student,JLT,University dormitory/hostel,1000-1500,2-3 times a week,Less than 10,Rarely,2,2,14.43,3-4,1,2,3,3,2,0
+25-34,Male,Indian Subcontinent,Freelancer/Entrepreneur,Dubai Academic City,University dormitory/hostel,1500-2000,Daily,15-20,4-6 times a week,3,5,35.65,3-4,3,3,4,2,3,0
+25-34,Male,Middle East/North Africa,International University/College Student,Sharjah,Rented studio/apartment (alone),1500-2000,2-3 times a week,15-20,2-3 times a week,3,5,27.3,3-4,2,2,1,4,1,0
+35-44,Male,Europe,Working Professional (Bachelor/Single),Dubai Academic City,Living with family,1000-1500,4-6 times a week,30-50,4-6 times a week,2,4,35.73,3-4,2,1,4,4,2,0
+25-34,Female,Indian Subcontinent,Freelancer/Entrepreneur,Sharjah,Shared apartment with roommates,1000-1500,Daily,20-30,Once a day,5,4,26.44,5-7,1,1,4,3,4,1
+25-34,Male,Middle East/North Africa,Working Professional (Bachelor/Single),Ajman,University dormitory/hostel,1000-1500,Rarely/Never,15-20,Rarely,5,4,10.0,3-4,2,2,4,4,2,1
+18-24,Male,Indian Subcontinent,Freelancer/Entrepreneur,JLT,University dormitory/hostel,1500-2000,Once a week,30-50,Once a week,2,5,25.78,5-7,1,3,2,1,3,0
+18-24,Male,Indian Subcontinent,International University/College Student,Ajman,University dormitory/hostel,500-1000,Once a week,20-30,Once a week,3,5,35.48,1-2,2,1,2,3,4,0
+18-24,Male,Americas,Local University/College Student,JLT,University dormitory/hostel,500-1000,4-6 times a week,30-50,Once a day,2,2,19.85,1-2,3,3,2,2,2,0
+18-24,Female,Americas,International University/College Student,Abu Dhabi,Company-provided accommodation,Less than 500,2-3 times a week,15-20,Rarely,4,5,23.9,3-4,2,2,2,2,2,1
+55+,Male,Indian Subcontinent,Working Professional (Married),International City,Shared apartment with roommates,1000-1500,4-6 times a week,10-15,2-3 times a week,2,2,25.59,More than 10,2,3,2,4,3,0
+25-34,Male,Europe,Other,Bur Dubai/Deira,Shared apartment with roommates,1000-1500,Daily,Less than 10,2-3 times a week,5,2,10.0,3-4,5,2,3,5,4,1
+35-44,Female,Southeast Asia,International University/College Student,Dubai Marina,University dormitory/hostel,1500-2000,4-6 times a week,20-30,2-3 times a week,5,4,40.37,5-7,3,1,3,3,4,1
+25-34,Male,Africa,Working Professional (Bachelor/Single),JLT,Shared apartment with roommates,500-1000,Once a week,10-15,Once a day,4,3,19.79,3-4,4,2,4,2,4,1
+35-44,Male,Middle East/North Africa,International University/College Student,Bur Dubai/Deira,Shared apartment with roommates,1000-1500,Once a week,15-20,Once a week,4,5,31.05,1-2,2,2,1,4,4,1
+25-34,Male,Middle East/North Africa,Working Professional (Bachelor/Single),Bur Dubai/Deira,Rented studio/apartment (alone),1500-2000,2-3 times a week,15-20,2-3 times a week,5,1,26.31,1-2,3,3,3,4,2,1
+25-34,Male,Middle East/North Africa,Working Professional (Bachelor/Single),International City,Shared apartment with roommates,1500-2000,2-3 times a week,20-30,4-6 times a week,4,4,37.06,3-4,1,1,4,4,1,1
+25-34,Male,Southeast Asia,Freelancer/Entrepreneur,Dubai Academic City,University dormitory/hostel,1000-1500,Rarely/Never,20-30,4-6 times a week,2,5,30.25,1-2,1,3,4,4,2,0
+18-24,Male,Indian Subcontinent,Working Professional (Bachelor/Single),Bur Dubai/Deira,Shared apartment with roommates,1000-1500,Daily,10-15,4-6 times a week,3,5,25.12,1-2,1,1,4,3,1,0
+25-34,Male,Indian Subcontinent,Local University/College Student,Bur Dubai/Deira,Shared apartment with roommates,500-1000,4-6 times a week,15-20,Once a day,5,2,19.85,5-7,2,3,3,4,3,1
+18-24,Female,Indian Subcontinent,International University/College Student,Abu Dhabi,University dormitory/hostel,2000-3000,2-3 times a week,20-30,2-3 times a week,4,3,33.38,1-2,4,3,4,2,3,1
+18-24,Male,Southeast Asia,International University/College Student,Sharjah,Company-provided accommodation,500-1000,Once a week,More than 50,Rarely,4,4,12.01,5-7,2,1,2,3,1,1
+25-34,Female,Indian Subcontinent,International University/College Student,Abu Dhabi,Rented studio/apartment (alone),2000-3000,Rarely/Never,20-30,Multiple times a day,5,2,32.17,3-4,3,2,3,3,4,1
+18-24,Female,Southeast Asia,International University/College Student,Bur Dubai/Deira,Rented studio/apartment (alone),1500-2000,4-6 times a week,30-50,Once a day,5,5,18.21,5-7,3,1,1,3,2,1
+45-54,Male,Americas,Working Professional (Married),Dubai Academic City,Shared apartment with roommates,1000-1500,Rarely/Never,20-30,2-3 times a week,5,5,37.02,5-7,3,3,1,5,3,1
+45-54,Female,Indian Subcontinent,Working Professional (Bachelor/Single),International City,Shared apartment with roommates,Less than 500,Rarely/Never,20-30,Once a week,2,2,28.29,3-4,2,2,2,4,3,0
+45-54,Male,Southeast Asia,Working Professional (Bachelor/Single),Sharjah,Rented studio/apartment (alone),1000-1500,4-6 times a week,10-15,2-3 times a week,4,2,32.15,3-4,3,3,1,2,2,1
+25-34,Female,Middle East/North Africa,International University/College Student,Bur Dubai/Deira,Rented studio/apartment (alone),1000-1500,2-3 times a week,20-30,2-3 times a week,5,1,27.66,5-7,2,3,2,2,3,1
+Under 18,Male,Africa,Working Professional (Married),International City,Rented studio/apartment (alone),500-1000,2-3 times a week,20-30,2-3 times a week,5,5,12.98,8-10,1,4,2,3,1,1
+45-54,Male,Indian Subcontinent,Working Professional (Married),JLT,University dormitory/hostel,1500-2000,Rarely/Never,20-30,4-6 times a week,4,2,20.11,1-2,5,3,1,3,2,1
+25-34,Male,Southeast Asia,International University/College Student,Abu Dhabi,Shared apartment with roommates,More than 3000,4-6 times a week,15-20,Multiple times a day,2,3,32.38,1-2,1,3,4,4,4,0
+45-54,Prefer not to say,East Asia,Working Professional (Married),Dubai Marina,Shared apartment with roommates,1000-1500,Once a week,15-20,Once a week,5,3,28.33,8-10,1,2,1,5,4,1
+45-54,Male,Europe,Working Professional (Bachelor/Single),JLT,Company-provided accommodation,1500-2000,2-3 times a week,15-20,Once a week,5,4,36.45,3-4,4,4,3,5,2,1
+35-44,Female,Southeast Asia,International University/College Student,JLT,Rented studio/apartment (alone),Less than 500,Once a week,15-20,2-3 times a week,2,1,30.23,5-7,2,3,2,4,2,0
+18-24,Male,Middle East/North Africa,Working Professional (Bachelor/Single),Dubai Academic City,Rented studio/apartment (alone),1000-1500,2-3 times a week,10-15,Once a week,4,2,19.27,3-4,3,2,4,4,3,1
+25-34,Female,Southeast Asia,Working Professional (Bachelor/Single),JLT,University dormitory/hostel,500-1000,2-3 times a week,20-30,Once a week,2,5,20.63,1-2,2,4,4,3,4,0
+35-44,Male,Africa,International University/College Student,JLT,Rented studio/apartment (alone),1000-1500,Rarely/Never,10-15,4-6 times a week,3,5,27.82,5-7,2,2,3,2,2,0
+18-24,Female,Middle East/North Africa,Freelancer/Entrepreneur,International City,University dormitory/hostel,2000-3000,Rarely/Never,10-15,2-3 times a week,1,4,10.0,5-7,2,4,3,3,3,0
+18-24,Male,Indian Subcontinent,Working Professional (Married),Sharjah,Shared apartment with roommates,1500-2000,Rarely/Never,15-20,Once a day,4,1,40.39,3-4,2,4,1,3,4,1
+25-34,Male,Europe,Working Professional (Bachelor/Single),JLT,University dormitory/hostel,Less than 500,Daily,20-30,Once a day,4,3,30.53,3-4,2,1,5,4,3,1
+45-54,Male,Southeast Asia,Working Professional (Bachelor/Single),Sharjah,Rented studio/apartment (alone),1000-1500,Once a week,15-20,Once a week,4,4,36.82,8-10,3,3,4,2,1,1
+25-34,Male,Southeast Asia,Local University/College Student,Ajman,University dormitory/hostel,1000-1500,Daily,10-15,Rarely,4,3,14.36,5-7,2,2,4,3,3,1
+25-34,Female,Indian Subcontinent,Working Professional (Bachelor/Single),Dubai Academic City,Shared apartment with roommates,1000-1500,2-3 times a week,15-20,Rarely,5,5,36.96,1-2,4,2,3,3,2,1
+18-24,Male,Southeast Asia,Working Professional (Bachelor/Single),Bur Dubai/Deira,Company-provided accommodation,1500-2000,2-3 times a week,15-20,Once a week,3,4,44.85,5-7,1,2,2,5,3,0
+25-34,Female,Middle East/North Africa,International University/College Student,JLT,University dormitory/hostel,1500-2000,2-3 times a week,30-50,4-6 times a week,2,1,16.43,5-7,2,3,4,3,3,0
+55+,Male,Southeast Asia,Working Professional (Bachelor/Single),Ajman,Shared apartment with roommates,1000-1500,2-3 times a week,30-50,Once a day,5,5,33.17,8-10,3,2,2,4,4,1
+18-24,Male,Indian Subcontinent,Working Professional (Married),Dubai Academic City,Shared apartment with roommates,1000-1500,Rarely/Never,15-20,Once a week,2,5,27.01,5-7,4,1,3,4,3,0
+25-34,Male,Southeast Asia,Working Professional (Bachelor/Single),Bur Dubai/Deira,University dormitory/hostel,500-1000,Daily,15-20,2-3 times a week,5,1,14.64,1-2,1,3,1,2,2,1
+35-44,Male,Other,International University/College Student,Bur Dubai/Deira,Living with family,500-1000,Once a week,20-30,Once a week,5,4,30.94,5-7,3,1,4,3,2,1
+25-34,Female,Indian Subcontinent,Working Professional (Married),Dubai Academic City,University dormitory/hostel,1000-1500,2-3 times a week,Less than 10,Once a week,4,3,33.67,5-7,4,1,1,5,4,1
+25-34,Male,Americas,International University/College Student,International City,Shared apartment with roommates,1000-1500,Daily,15-20,Once a week,5,3,22.19,1-2,1,2,2,3,1,1
+25-34,Male,Middle East/North Africa,International University/College Student,Bur Dubai/Deira,Rented studio/apartment (alone),1500-2000,4-6 times a week,15-20,Rarely,2,2,36.33,3-4,4,2,3,5,2,0
+18-24,Female,Africa,International University/College Student,Sharjah,Rented studio/apartment (alone),1500-2000,Rarely/Never,30-50,Once a day,3,4,13.67,3-4,1,2,4,2,2,0
+18-24,Female,East Asia,Local University/College Student,Dubai Academic City,Rented studio/apartment (alone),Less than 500,Rarely/Never,Less than 10,Once a week,4,5,15.04,5-7,3,1,3,1,4,1
+35-44,Male,Middle East/North Africa,Working Professional (Married),Bur Dubai/Deira,Shared apartment with roommates,1000-1500,Rarely/Never,15-20,Rarely,3,4,28.09,3-4,4,5,2,5,3,0
+35-44,Male,Southeast Asia,Working Professional (Bachelor/Single),JLT,University dormitory/hostel,500-1000,Rarely/Never,20-30,4-6 times a week,5,1,27.2,5-7,3,3,1,4,2,1
+35-44,Female,Africa,International University/College Student,Bur Dubai/Deira,Living with family,500-1000,4-6 times a week,15-20,Once a week,1,4,21.27,More than 10,2,2,4,5,2,0
+45-54,Male,Middle East/North Africa,Working Professional (Married),Dubai Academic City,Rented studio/apartment (alone),1500-2000,2-3 times a week,10-15,2-3 times a week,4,3,33.48,8-10,1,2,5,4,4,1
+25-34,Male,Indian Subcontinent,Working Professional (Married),Ajman,Living with family,Less than 500,Once a week,More than 50,Rarely,4,5,31.25,More than 10,4,2,4,5,3,1
+25-34,Male,Southeast Asia,Working Professional (Married),Dubai Academic City,Living with family,1000-1500,2-3 times a week,15-20,Once a day,4,3,33.87,Would not order,2,3,3,4,3,1
+35-44,Female,East Asia,International University/College Student,JLT,Living with family,500-1000,2-3 times a week,20-30,2-3 times a week,3,2,26.01,1-2,1,1,4,4,4,0
+25-34,Female,Southeast Asia,Working Professional (Bachelor/Single),International City,Shared apartment with roommates,2000-3000,2-3 times a week,10-15,4-6 times a week,3,2,31.82,5-7,3,1,3,3,4,0
+25-34,Male,East Asia,Other,International City,Shared apartment with roommates,1000-1500,Once a week,15-20,Once a week,5,4,23.43,3-4,2,4,3,3,2,1
+35-44,Male,Middle East/North Africa,Working Professional (Married),Dubai Marina,Living with family,500-1000,2-3 times a week,15-20,4-6 times a week,2,3,43.43,8-10,1,2,3,5,5,0
+35-44,Male,East Asia,International University/College Student,Dubai Academic City,Shared apartment with roommates,1000-1500,4-6 times a week,Less than 10,4-6 times a week,5,4,20.5,3-4,1,2,3,3,1,1
+18-24,Female,Indian Subcontinent,International University/College Student,Sharjah,University dormitory/hostel,1500-2000,2-3 times a week,10-15,2-3 times a week,4,2,43.84,Would not order,1,4,4,3,2,1
+25-34,Male,Middle East/North Africa,Working Professional (Bachelor/Single),International City,Living with family,More than 3000,2-3 times a week,30-50,Rarely,5,3,27.28,5-7,3,3,3,3,4,1
+18-24,Male,Indian Subcontinent,Freelancer/Entrepreneur,JLT,Company-provided accommodation,500-1000,2-3 times a week,10-15,4-6 times a week,5,4,16.0,8-10,3,2,2,3,2,1
+25-34,Female,Indian Subcontinent,Working Professional (Bachelor/Single),JLT,Shared apartment with roommates,2000-3000,4-6 times a week,10-15,4-6 times a week,3,5,37.94,1-2,2,3,2,3,2,0
+18-24,Male,Middle East/North Africa,Working Professional (Bachelor/Single),International City,University dormitory/hostel,2000-3000,Once a week,15-20,Once a week,4,5,28.01,1-2,4,1,1,1,2,1
+25-34,Female,Middle East/North Africa,International University/College Student,International City,Shared apartment with roommates,2000-3000,Daily,20-30,2-3 times a week,5,2,33.81,5-7,4,3,3,5,3,1
+25-34,Male,Southeast Asia,Working Professional (Bachelor/Single),JLT,Living with family,1000-1500,2-3 times a week,Less than 10,Rarely,4,3,36.79,1-2,3,3,2,3,3,1
+18-24,Male,Middle East/North Africa,Working Professional (Married),Dubai Marina,Company-provided accommodation,1000-1500,Once a week,20-30,4-6 times a week,5,2,29.7,8-10,1,4,1,4,3,1
+25-34,Male,Middle East/North Africa,Local University/College Student,JLT,University dormitory/hostel,1000-1500,2-3 times a week,10-15,Once a week,4,4,22.26,1-2,3,4,3,2,4,1
+18-24,Female,Indian Subcontinent,Working Professional (Married),Dubai Marina,University dormitory/hostel,1500-2000,4-6 times a week,Less than 10,4-6 times a week,2,4,34.81,5-7,2,4,3,1,3,0
+18-24,Female,Middle East/North Africa,Freelancer/Entrepreneur,Bur Dubai/Deira,Company-provided accommodation,1000-1500,Once a week,Less than 10,4-6 times a week,4,5,27.01,3-4,3,4,4,2,2,1
+35-44,Female,Indian Subcontinent,International University/College Student,International City,Shared apartment with roommates,1500-2000,2-3 times a week,30-50,Once a week,5,5,32.49,5-7,3,3,3,4,4,1
+18-24,Male,Indian Subcontinent,Working Professional (Bachelor/Single),JLT,Rented studio/apartment (alone),1000-1500,Once a week,10-15,2-3 times a week,3,3,10.0,5-7,2,2,4,1,2,0
+18-24,Female,Southeast Asia,International University/College Student,Abu Dhabi,Company-provided accommodation,1500-2000,Once a week,Less than 10,Once a week,5,4,30.58,3-4,4,2,4,5,1,1
+25-34,Male,Southeast Asia,Working Professional (Married),Dubai Marina,University dormitory/hostel,1500-2000,Once a week,15-20,4-6 times a week,5,5,21.89,1-2,1,3,4,2,1,1
+35-44,Male,Southeast Asia,Working Professional (Bachelor/Single),Bur Dubai/Deira,Rented studio/apartment (alone),500-1000,2-3 times a week,30-50,2-3 times a week,3,5,40.23,1-2,3,4,3,2,3,0
+18-24,Female,Middle East/North Africa,Working Professional (Bachelor/Single),Dubai Academic City,University dormitory/hostel,1500-2000,Daily,10-15,2-3 times a week,2,1,31.98,5-7,1,2,2,2,1,0
+25-34,Male,Middle East/North Africa,Working Professional (Married),Sharjah,Shared apartment with roommates,1000-1500,4-6 times a week,15-20,Never,5,3,28.92,5-7,4,4,5,1,1,1
+18-24,Male,Africa,Local University/College Student,Sharjah,Living with family,1500-2000,2-3 times a week,Less than 10,4-6 times a week,3,3,30.89,5-7,1,4,2,4,2,0
+18-24,Male,Middle East/North Africa,Freelancer/Entrepreneur,Dubai Marina,Shared apartment with roommates,1000-1500,Once a week,15-20,4-6 times a week,5,2,19.01,5-7,1,5,2,4,2,1
+25-34,Male,Middle East/North Africa,Working Professional (Bachelor/Single),Abu Dhabi,Other,1000-1500,2-3 times a week,20-30,2-3 times a week,4,2,39.99,3-4,2,4,3,4,3,1
+25-34,Male,Indian Subcontinent,International University/College Student,International City,Rented studio/apartment (alone),2000-3000,4-6 times a week,20-30,2-3 times a week,4,1,42.93,3-4,2,2,1,2,4,1
+25-34,Female,Indian Subcontinent,Working Professional (Bachelor/Single),International City,Shared apartment with roommates,500-1000,Daily,15-20,4-6 times a week,5,4,30.14,1-2,1,1,5,3,4,1
+25-34,Male,Middle East/North Africa,Working Professional (Married),Sharjah,Shared apartment with roommates,1500-2000,2-3 times a week,15-20,Rarely,4,3,39.72,3-4,3,1,3,3,2,1
+55+,Female,Middle East/North Africa,Local University/College Student,Sharjah,Shared apartment with roommates,1000-1500,4-6 times a week,10-15,4-6 times a week,4,1,22.45,Would not order,2,2,3,5,2,1
+25-34,Female,Middle East/North Africa,Working Professional (Married),International City,Shared apartment with roommates,1000-1500,Once a week,15-20,Rarely,3,2,20.62,8-10,1,3,3,2,5,0
+18-24,Male,Middle East/North Africa,Freelancer/Entrepreneur,Dubai Academic City,University dormitory/hostel,500-1000,Daily,10-15,Once a day,3,5,27.33,3-4,2,4,3,4,1,0
+35-44,Male,Southeast Asia,International University/College Student,International City,Shared apartment with roommates,1000-1500,Once a week,20-30,Once a week,4,5,30.48,5-7,4,4,1,3,4,1
+18-24,Male,Southeast Asia,Other,Dubai Academic City,Shared apartment with roommates,500-1000,Rarely/Never,More than 50,Rarely,5,4,23.85,8-10,3,3,3,3,2,1
+25-34,Female,East Asia,International University/College Student,Sharjah,Living with family,Less than 500,4-6 times a week,More than 50,4-6 times a week,3,3,31.3,3-4,3,1,3,3,4,0
+18-24,Male,Southeast Asia,International University/College Student,Dubai Marina,Rented studio/apartment (alone),500-1000,2-3 times a week,30-50,Rarely,4,5,29.45,1-2,3,1,3,1,2,1
+18-24,Female,Europe,International University/College Student,JLT,Rented studio/apartment (alone),Less than 500,Daily,20-30,2-3 times a week,4,2,19.01,1-2,2,1,4,4,3,1
+45-54,Male,Indian Subcontinent,Freelancer/Entrepreneur,JLT,University dormitory/hostel,More than 3000,Once a week,20-30,Rarely,3,2,31.15,5-7,1,2,2,2,3,0
+35-44,Female,Indian Subcontinent,Working Professional (Bachelor/Single),International City,University dormitory/hostel,More than 3000,2-3 times a week,15-20,Once a week,3,3,33.91,Would not order,2,3,2,4,3,0
+25-34,Male,Indian Subcontinent,International University/College Student,Dubai Academic City,Rented studio/apartment (alone),1000-1500,2-3 times a week,20-30,4-6 times a week,5,2,28.37,5-7,4,1,2,1,2,1
+25-34,Male,Southeast Asia,Local University/College Student,Bur Dubai/Deira,Shared apartment with roommates,1500-2000,2-3 times a week,15-20,4-6 times a week,5,3,36.22,1-2,5,2,2,5,3,1
+18-24,Female,Africa,Working Professional (Bachelor/Single),Abu Dhabi,University dormitory/hostel,500-1000,Rarely/Never,15-20,4-6 times a week,4,5,17.26,1-2,2,1,4,2,3,1
+18-24,Female,Indian Subcontinent,International University/College Student,Sharjah,Living with family,1500-2000,4-6 times a week,20-30,Once a day,4,4,30.74,5-7,1,3,4,5,1,1
+18-24,Male,Europe,Freelancer/Entrepreneur,International City,Living with family,1500-2000,Daily,15-20,4-6 times a week,1,3,17.64,8-10,1,2,2,4,1,0
+25-34,Female,Indian Subcontinent,Working Professional (Married),Ajman,Rented studio/apartment (alone),2000-3000,Rarely/Never,15-20,Once a day,4,5,18.09,5-7,2,3,3,5,3,1
+25-34,Male,Europe,Working Professional (Bachelor/Single),Sharjah,University dormitory/hostel,1000-1500,2-3 times a week,30-50,2-3 times a week,4,1,21.95,5-7,3,2,3,3,1,1
+25-34,Female,Middle East/North Africa,Freelancer/Entrepreneur,Sharjah,Living with family,1500-2000,Rarely/Never,Less than 10,Once a week,4,2,19.46,1-2,1,4,2,4,3,1
+18-24,Female,Indian Subcontinent,Local University/College Student,JLT,Rented studio/apartment (alone),500-1000,Once a week,15-20,4-6 times a week,3,4,22.62,8-10,4,2,2,3,2,0
+45-54,Male,Middle East/North Africa,Other,JLT,Living with family,More than 3000,Rarely/Never,30-50,4-6 times a week,2,4,25.29,8-10,2,3,5,2,3,0
+25-34,Male,Indian Subcontinent,Working Professional (Bachelor/Single),Dubai Academic City,Living with family,Less than 500,2-3 times a week,20-30,Once a week,2,1,33.7,3-4,4,3,3,3,2,0
+25-34,Male,Indian Subcontinent,Working Professional (Bachelor/Single),International City,Living with family,1000-1500,Once a week,15-20,4-6 times a week,5,3,24.43,5-7,3,3,5,2,3,1
+25-34,Male,Indian Subcontinent,International University/College Student,Dubai Academic City,Shared apartment with roommates,1500-2000,Rarely/Never,10-15,Once a day,4,4,14.31,3-4,3,4,2,5,1,1
+25-34,Female,East Asia,Freelancer/Entrepreneur,Dubai Academic City,University dormitory/hostel,1500-2000,2-3 times a week,15-20,4-6 times a week,4,4,36.12,1-2,3,2,3,1,1,1
+18-24,Male,Middle East/North Africa,Local University/College Student,JLT,Rented studio/apartment (alone),500-1000,4-6 times a week,30-50,Rarely,1,4,20.3,3-4,3,2,2,4,1,0
+18-24,Male,Indian Subcontinent,International University/College Student,Sharjah,Rented studio/apartment (alone),2000-3000,4-6 times a week,15-20,Once a week,1,3,26.53,1-2,3,1,2,4,5,0
+35-44,Female,Southeast Asia,International University/College Student,JLT,Living with family,500-1000,4-6 times a week,15-20,2-3 times a week,5,1,30.57,3-4,3,3,3,3,1,1
+Under 18,Prefer not to say,Southeast Asia,Working Professional (Bachelor/Single),International City,University dormitory/hostel,1000-1500,4-6 times a week,10-15,Once a week,4,3,28.6,3-4,3,2,2,4,3,1
+18-24,Male,Indian Subcontinent,Working Professional (Bachelor/Single),Abu Dhabi,University dormitory/hostel,500-1000,4-6 times a week,Less than 10,2-3 times a week,4,2,35.75,5-7,5,1,2,2,1,1
+18-24,Male,Middle East/North Africa,Working Professional (Married),Abu Dhabi,Company-provided accommodation,500-1000,2-3 times a week,More than 50,Once a week,3,5,30.83,3-4,3,3,2,3,1,0
+18-24,Male,Indian Subcontinent,Freelancer/Entrepreneur,Sharjah,Living with family,1000-1500,Once a week,15-20,Once a week,5,4,20.11,3-4,3,3,1,3,3,1
+35-44,Male,Indian Subcontinent,International University/College Student,Other,Company-provided accommodation,1000-1500,2-3 times a week,20-30,Once a week,2,3,44.43,1-2,4,1,3,5,3,0
+25-34,Female,Southeast Asia,Working Professional (Married),Dubai Marina,Living with family,500-1000,Once a week,Less than 10,4-6 times a week,2,4,28.55,5-7,1,3,3,4,5,0
+25-34,Male,Indian Subcontinent,International University/College Student,Abu Dhabi,Rented studio/apartment (alone),500-1000,Daily,20-30,Once a day,4,4,25.82,3-4,1,3,1,5,4,1
+18-24,Female,Middle East/North Africa,Working Professional (Married),International City,Rented studio/apartment (alone),1000-1500,Daily,30-50,2-3 times a week,3,3,34.71,3-4,2,1,2,1,4,0
+25-34,Male,Southeast Asia,Working Professional (Married),JLT,Company-provided accommodation,1500-2000,4-6 times a week,20-30,Rarely,3,5,29.0,8-10,2,2,1,3,3,0
+25-34,Female,Indian Subcontinent,Working Professional (Bachelor/Single),Dubai Academic City,Rented studio/apartment (alone),2000-3000,2-3 times a week,10-15,2-3 times a week,4,5,30.19,5-7,4,3,3,2,3,1
+18-24,Female,Middle East/North Africa,Working Professional (Married),Dubai Academic City,Rented studio/apartment (alone),Less than 500,4-6 times a week,20-30,Rarely,4,4,46.94,8-10,2,3,1,1,2,1
+25-34,Female,Indian Subcontinent,Local University/College Student,International City,University dormitory/hostel,1000-1500,4-6 times a week,20-30,Never,5,1,24.8,3-4,3,2,4,2,4,1
+25-34,Male,Americas,Working Professional (Bachelor/Single),Bur Dubai/Deira,Shared apartment with roommates,500-1000,2-3 times a week,15-20,4-6 times a week,4,4,24.46,1-2,2,2,1,4,3,1
+25-34,Male,Middle East/North Africa,Working Professional (Married),Sharjah,Rented studio/apartment (alone),Less than 500,Rarely/Never,30-50,Once a week,1,4,27.93,5-7,1,3,2,2,3,0
+25-34,Male,East Asia,Working Professional (Bachelor/Single),Dubai Marina,Shared apartment with roommates,1500-2000,Daily,20-30,Once a week,3,2,35.57,3-4,3,4,4,3,2,0
+18-24,Female,Middle East/North Africa,Local University/College Student,International City,University dormitory/hostel,1000-1500,Once a week,30-50,Rarely,5,2,14.95,3-4,4,3,3,5,1,1
+25-34,Female,Indian Subcontinent,Working Professional (Bachelor/Single),Sharjah,Shared apartment with roommates,500-1000,Once a week,20-30,Never,4,5,11.28,1-2,1,1,1,4,4,1
+25-34,Female,Southeast Asia,Working Professional (Married),Bur Dubai/Deira,Shared apartment with roommates,500-1000,Once a week,10-15,Once a week,5,1,22.3,8-10,3,2,4,3,2,1
+25-34,Female,Europe,Local University/College Student,JLT,University dormitory/hostel,Less than 500,Rarely/Never,15-20,4-6 times a week,1,4,13.93,1-2,3,4,3,3,3,0
+35-44,Female,Southeast Asia,International University/College Student,Bur Dubai/Deira,Shared apartment with roommates,1500-2000,Daily,10-15,Once a week,4,4,23.6,More than 10,1,1,4,3,1,1
+25-34,Male,East Asia,Working Professional (Married),Dubai Academic City,Company-provided accommodation,More than 3000,4-6 times a week,30-50,Once a day,1,3,31.02,8-10,1,5,3,2,4,0
+18-24,Female,Africa,Working Professional (Married),JLT,Shared apartment with roommates,500-1000,Rarely/Never,20-30,Once a week,4,1,19.87,3-4,5,4,3,4,1,1
+18-24,Male,Indian Subcontinent,International University/College Student,Abu Dhabi,University dormitory/hostel,500-1000,2-3 times a week,20-30,Rarely,5,5,15.59,5-7,2,1,5,3,4,1
+25-34,Male,Indian Subcontinent,International University/College Student,Dubai Academic City,University dormitory/hostel,2000-3000,2-3 times a week,15-20,2-3 times a week,5,3,27.55,5-7,1,4,2,4,1,1
+18-24,Male,Southeast Asia,International University/College Student,JLT,Rented studio/apartment (alone),2000-3000,Once a week,10-15,Once a week,4,4,33.9,8-10,1,2,3,4,4,1
+25-34,Male,Middle East/North Africa,Local University/College Student,Ajman,Shared apartment with roommates,1000-1500,Once a week,20-30,2-3 times a week,4,4,13.44,3-4,3,4,3,4,3,1
+45-54,Male,East Asia,Working Professional (Bachelor/Single),Bur Dubai/Deira,Living with family,Less than 500,Rarely/Never,15-20,2-3 times a week,5,4,33.56,8-10,3,2,1,3,1,1
+25-34,Female,Africa,Working Professional (Married),International City,Rented studio/apartment (alone),Less than 500,Rarely/Never,10-15,2-3 times a week,4,5,33.54,3-4,3,2,1,2,3,1
+25-34,Male,Middle East/North Africa,Working Professional (Bachelor/Single),International City,Living with family,1000-1500,Once a week,20-30,Once a week,1,4,34.63,More than 10,1,3,1,4,2,0
+25-34,Female,Indian Subcontinent,Working Professional (Bachelor/Single),International City,Shared apartment with roommates,1000-1500,4-6 times a week,Less than 10,Rarely,4,3,36.75,3-4,4,3,3,3,1,1
+25-34,Male,East Asia,Local University/College Student,Bur Dubai/Deira,Rented studio/apartment (alone),Less than 500,Rarely/Never,15-20,Rarely,3,5,44.62,3-4,2,1,3,2,4,0
+25-34,Male,Indian Subcontinent,Working Professional (Married),JLT,Shared apartment with roommates,1000-1500,Daily,15-20,4-6 times a week,4,4,24.15,8-10,2,3,3,2,2,1
+45-54,Male,East Asia,Working Professional (Bachelor/Single),International City,Company-provided accommodation,Less than 500,4-6 times a week,10-15,Rarely,4,3,27.88,8-10,2,1,1,2,2,1
+25-34,Male,Middle East/North Africa,Freelancer/Entrepreneur,Abu Dhabi,Rented studio/apartment (alone),1500-2000,Rarely/Never,More than 50,Once a week,4,2,23.67,5-7,2,2,3,4,1,1
+45-54,Female,Southeast Asia,Working Professional (Bachelor/Single),Dubai Marina,Shared apartment with roommates,500-1000,4-6 times a week,10-15,4-6 times a week,3,5,27.02,1-2,4,2,4,2,2,0
+45-54,Male,Indian Subcontinent,International University/College Student,Dubai Academic City,Shared apartment with roommates,Less than 500,4-6 times a week,10-15,Once a day,2,3,39.26,3-4,4,2,2,3,4,0
+18-24,Female,Southeast Asia,Working Professional (Bachelor/Single),Dubai Marina,University dormitory/hostel,1000-1500,Daily,10-15,4-6 times a week,4,4,16.24,Would not order,2,2,3,3,2,1
+18-24,Male,Middle East/North Africa,Local University/College Student,Bur Dubai/Deira,Rented studio/apartment (alone),1000-1500,Rarely/Never,20-30,Rarely,5,4,20.11,5-7,4,1,4,3,5,1
+18-24,Female,Middle East/North Africa,Working Professional (Bachelor/Single),International City,University dormitory/hostel,More than 3000,2-3 times a week,15-20,Once a week,4,2,38.02,8-10,3,1,4,4,4,1
+Under 18,Female,Indian Subcontinent,International University/College Student,Dubai Academic City,Rented studio/apartment (alone),1000-1500,Once a week,20-30,Once a week,3,4,35.16,1-2,4,1,3,4,1,0
+18-24,Female,Southeast Asia,International University/College Student,Sharjah,Shared apartment with roommates,500-1000,4-6 times a week,Less than 10,4-6 times a week,5,1,24.09,3-4,1,2,4,3,1,1
+25-34,Male,Africa,Working Professional (Married),JLT,Rented studio/apartment (alone),1500-2000,Once a week,Less than 10,Once a week,5,3,33.84,5-7,3,4,2,1,4,1
+18-24,Male,Indian Subcontinent,International University/College Student,Dubai Marina,Living with family,500-1000,Once a week,15-20,Multiple times a day,3,4,29.73,8-10,2,1,4,3,2,0
+18-24,Male,Indian Subcontinent,Working Professional (Married),JLT,Living with family,2000-3000,4-6 times a week,30-50,2-3 times a week,1,3,39.0,1-2,4,4,2,4,1,0
+35-44,Female,Indian Subcontinent,International University/College Student,International City,Living with family,1000-1500,2-3 times a week,30-50,Once a week,5,4,27.6,8-10,1,3,2,3,2,1
+18-24,Male,Southeast Asia,Working Professional (Bachelor/Single),Dubai Academic City,University dormitory/hostel,1000-1500,4-6 times a week,10-15,4-6 times a week,5,5,35.21,5-7,3,3,1,4,3,1
+35-44,Male,Southeast Asia,Working Professional (Bachelor/Single),JLT,University dormitory/hostel,Less than 500,Rarely/Never,15-20,Once a week,5,4,48.14,1-2,2,3,4,2,4,1
+18-24,Female,Middle East/North Africa,Working Professional (Bachelor/Single),Dubai Academic City,Rented studio/apartment (alone),1000-1500,Once a week,30-50,4-6 times a week,5,1,31.78,3-4,2,4,3,4,1,1
+18-24,Male,Indian Subcontinent,Local University/College Student,International City,Shared apartment with roommates,1500-2000,Rarely/Never,15-20,Once a week,4,2,27.39,3-4,3,1,2,2,1,1
+25-34,Female,Middle East/North Africa,International University/College Student,Sharjah,Shared apartment with roommates,1500-2000,4-6 times a week,30-50,2-3 times a week,4,4,32.78,5-7,4,3,2,4,4,1
+25-34,Male,Middle East/North Africa,International University/College Student,Other,University dormitory/hostel,500-1000,Once a week,10-15,2-3 times a week,1,5,24.08,1-2,3,3,4,3,4,0
+35-44,Male,Middle East/North Africa,Local University/College Student,Sharjah,Shared apartment with roommates,500-1000,Once a week,30-50,Once a day,3,5,46.1,1-2,4,3,4,4,3,0
+25-34,Female,Americas,Working Professional (Bachelor/Single),Ajman,University dormitory/hostel,1500-2000,Once a week,20-30,Multiple times a day,4,5,28.44,8-10,2,4,3,1,4,1
+35-44,Male,Indian Subcontinent,Freelancer/Entrepreneur,Dubai Academic City,Company-provided accommodation,2000-3000,Rarely/Never,30-50,Rarely,4,3,24.82,1-2,2,1,3,3,2,1
+18-24,Female,Southeast Asia,Working Professional (Married),Abu Dhabi,Shared apartment with roommates,Less than 500,2-3 times a week,20-30,4-6 times a week,4,3,20.31,3-4,2,3,3,4,4,1
+18-24,Male,Middle East/North Africa,Working Professional (Married),Dubai Academic City,Rented studio/apartment (alone),1000-1500,Daily,15-20,Once a week,5,4,35.78,3-4,1,3,2,2,2,1
+35-44,Male,Middle East/North Africa,Working Professional (Married),Abu Dhabi,University dormitory/hostel,500-1000,Once a week,30-50,Never,3,2,33.94,5-7,3,2,4,4,2,0
+35-44,Female,Southeast Asia,Working Professional (Bachelor/Single),Other,Rented studio/apartment (alone),2000-3000,Once a week,10-15,4-6 times a week,4,1,23.02,5-7,3,2,1,4,3,1
+55+,Female,Southeast Asia,International University/College Student,Bur Dubai/Deira,Shared apartment with roommates,Less than 500,2-3 times a week,15-20,4-6 times a week,2,5,31.61,3-4,3,3,3,4,2,0
+25-34,Female,Other,Freelancer/Entrepreneur,Other,Company-provided accommodation,500-1000,4-6 times a week,20-30,Once a week,4,2,14.93,8-10,3,4,2,3,5,1
+25-34,Male,Indian Subcontinent,Working Professional (Bachelor/Single),Dubai Marina,Company-provided accommodation,1500-2000,2-3 times a week,20-30,Rarely,5,2,28.48,5-7,3,3,3,3,2,1
+35-44,Female,Indian Subcontinent,Working Professional (Bachelor/Single),Dubai Academic City,Shared apartment with roommates,Less than 500,4-6 times a week,30-50,Rarely,5,1,30.62,1-2,1,4,3,4,4,1
+18-24,Male,Southeast Asia,International University/College Student,JLT,Company-provided accommodation,1000-1500,2-3 times a week,10-15,2-3 times a week,5,5,40.66,1-2,1,2,3,3,4,1
+45-54,Male,Middle East/North Africa,Local University/College Student,Bur Dubai/Deira,Other,1000-1500,Once a week,20-30,Once a week,3,4,20.83,3-4,3,1,1,4,2,0
+35-44,Female,Indian Subcontinent,Working Professional (Bachelor/Single),International City,Living with family,500-1000,Once a week,20-30,4-6 times a week,4,4,16.77,3-4,2,1,3,3,4,1
+25-34,Male,Indian Subcontinent,Working Professional (Married),Bur Dubai/Deira,Living with family,1000-1500,4-6 times a week,Less than 10,Rarely,3,5,19.84,5-7,1,1,2,2,3,0
+35-44,Female,Indian Subcontinent,Working Professional (Bachelor/Single),Other,Shared apartment with roommates,1000-1500,2-3 times a week,15-20,Rarely,4,3,16.31,5-7,2,2,2,2,4,1
+35-44,Male,Africa,Local University/College Student,Dubai Academic City,Rented studio/apartment (alone),500-1000,4-6 times a week,15-20,4-6 times a week,5,4,37.69,3-4,3,2,1,1,3,1
+18-24,Male,Indian Subcontinent,Freelancer/Entrepreneur,Sharjah,University dormitory/hostel,1000-1500,4-6 times a week,15-20,4-6 times a week,5,1,39.39,1-2,2,3,4,3,3,1
+45-54,Male,Indian Subcontinent,International University/College Student,Ajman,University dormitory/hostel,1500-2000,Once a week,More than 50,Once a day,5,2,29.56,3-4,3,3,3,4,3,1
+25-34,Female,Indian Subcontinent,Local University/College Student,Abu Dhabi,Other,1500-2000,Rarely/Never,20-30,4-6 times a week,3,5,36.77,5-7,3,1,3,4,2,0
+35-44,Female,Middle East/North Africa,International University/College Student,Abu Dhabi,Shared apartment with roommates,500-1000,2-3 times a week,20-30,Once a week,5,4,28.07,3-4,2,2,3,2,2,1
+18-24,Female,Indian Subcontinent,Working Professional (Married),Dubai Marina,Living with family,500-1000,Once a week,More than 50,2-3 times a week,1,3,26.24,5-7,3,2,3,5,2,0
+35-44,Female,Middle East/North Africa,Freelancer/Entrepreneur,Abu Dhabi,Living with family,500-1000,Rarely/Never,15-20,Once a day,5,3,24.34,1-2,3,3,3,3,4,1
+25-34,Female,Indian Subcontinent,International University/College Student,Sharjah,Living with family,1000-1500,Rarely/Never,20-30,2-3 times a week,3,4,24.52,5-7,3,1,2,5,3,0
+Under 18,Female,East Asia,Working Professional (Married),Dubai Academic City,Other,1000-1500,4-6 times a week,15-20,Never,3,1,14.62,8-10,3,1,2,4,3,0
+45-54,Male,Indian Subcontinent,International University/College Student,JLT,Shared apartment with roommates,1500-2000,Rarely/Never,30-50,Once a week,4,2,29.11,3-4,1,4,3,4,2,1
+18-24,Male,Middle East/North Africa,Freelancer/Entrepreneur,Bur Dubai/Deira,University dormitory/hostel,Less than 500,2-3 times a week,10-15,2-3 times a week,5,2,26.68,3-4,3,4,3,1,3,1
+18-24,Male,Africa,Working Professional (Married),Dubai Academic City,Shared apartment with roommates,Less than 500,2-3 times a week,30-50,4-6 times a week,1,3,32.96,Would not order,2,1,4,2,1,0
+45-54,Prefer not to say,Southeast Asia,Working Professional (Married),Bur Dubai/Deira,University dormitory/hostel,1000-1500,Daily,10-15,Never,3,5,27.75,3-4,4,2,4,1,4,0
+45-54,Female,Middle East/North Africa,International University/College Student,Bur Dubai/Deira,University dormitory/hostel,1500-2000,2-3 times a week,15-20,Once a week,5,3,25.7,5-7,4,2,2,4,5,1
+25-34,Male,Indian Subcontinent,Freelancer/Entrepreneur,Dubai Academic City,Shared apartment with roommates,500-1000,Daily,20-30,4-6 times a week,4,2,20.03,1-2,3,4,1,3,2,1
+25-34,Female,Indian Subcontinent,Working Professional (Married),Dubai Marina,Living with family,1000-1500,4-6 times a week,15-20,Once a day,2,4,27.58,5-7,2,3,3,4,1,0
+25-34,Female,Southeast Asia,Local University/College Student,Sharjah,Rented studio/apartment (alone),500-1000,4-6 times a week,20-30,Once a day,4,5,32.91,1-2,1,1,2,3,1,1
+18-24,Male,Other,Working Professional (Married),Dubai Marina,Shared apartment with roommates,2000-3000,Rarely/Never,15-20,Once a day,4,2,17.85,Would not order,2,3,1,4,3,1
+18-24,Female,Southeast Asia,International University/College Student,International City,Rented studio/apartment (alone),2000-3000,Rarely/Never,20-30,2-3 times a week,5,1,27.7,5-7,2,2,4,2,3,1
+25-34,Female,Middle East/North Africa,Working Professional (Married),International City,Shared apartment with roommates,500-1000,4-6 times a week,10-15,Rarely,5,3,28.86,8-10,2,2,2,2,4,1
+35-44,Male,Southeast Asia,International University/College Student,JLT,University dormitory/hostel,500-1000,Rarely/Never,Less than 10,2-3 times a week,4,4,21.26,5-7,2,2,4,3,2,1
+35-44,Female,Middle East/North Africa,Working Professional (Married),Abu Dhabi,Living with family,1000-1500,Rarely/Never,15-20,Rarely,5,4,22.3,5-7,1,3,3,3,4,1
+35-44,Male,Indian Subcontinent,Working Professional (Bachelor/Single),Dubai Academic City,Rented studio/apartment (alone),500-1000,Once a week,15-20,2-3 times a week,4,5,28.84,3-4,5,2,4,3,3,1
+18-24,Female,Middle East/North Africa,International University/College Student,Bur Dubai/Deira,Living with family,1500-2000,Daily,10-15,Once a week,1,5,17.93,8-10,1,2,2,4,2,0
+25-34,Female,Europe,International University/College Student,Dubai Academic City,University dormitory/hostel,1500-2000,Once a week,15-20,Once a week,3,4,29.8,Would not order,4,2,2,1,3,0
+18-24,Female,Indian Subcontinent,International University/College Student,Dubai Academic City,Living with family,1500-2000,Rarely/Never,15-20,4-6 times a week,4,4,19.84,3-4,4,1,3,3,1,1
+25-34,Male,Southeast Asia,Working Professional (Bachelor/Single),Sharjah,Rented studio/apartment (alone),1500-2000,Once a week,Less than 10,2-3 times a week,2,4,35.5,More than 10,2,3,2,4,3,0
+25-34,Female,Indian Subcontinent,Local University/College Student,Bur Dubai/Deira,Rented studio/apartment (alone),1000-1500,2-3 times a week,20-30,Once a week,5,1,45.7,5-7,3,1,2,1,4,1
+35-44,Female,Middle East/North Africa,Working Professional (Bachelor/Single),International City,Rented studio/apartment (alone),500-1000,2-3 times a week,30-50,Once a day,5,5,20.11,5-7,2,1,2,5,2,1
+18-24,Male,Indian Subcontinent,International University/College Student,JLT,Living with family,1500-2000,Once a week,10-15,2-3 times a week,3,3,31.27,3-4,3,3,2,5,4,0
+18-24,Female,Middle East/North Africa,International University/College Student,International City,Rented studio/apartment (alone),1000-1500,2-3 times a week,20-30,2-3 times a week,4,2,21.19,3-4,2,3,2,1,3,1
+18-24,Male,Southeast Asia,Working Professional (Married),JLT,Rented studio/apartment (alone),1500-2000,Daily,20-30,Never,5,4,35.33,1-2,2,4,4,3,2,1
+35-44,Female,Indian Subcontinent,International University/College Student,Bur Dubai/Deira,Other,500-1000,4-6 times a week,15-20,2-3 times a week,5,3,16.88,3-4,3,3,2,3,3,1
+25-34,Male,Southeast Asia,Freelancer/Entrepreneur,International City,Living with family,Less than 500,Rarely/Never,20-30,Once a week,5,4,30.84,5-7,2,2,1,4,3,1
+18-24,Male,East Asia,Working Professional (Married),Dubai Academic City,Shared apartment with roommates,More than 3000,Rarely/Never,15-20,2-3 times a week,4,4,20.02,3-4,3,3,3,4,2,1
+18-24,Male,Europe,Working Professional (Bachelor/Single),JLT,Rented studio/apartment (alone),500-1000,Daily,15-20,Once a week,5,3,25.34,3-4,2,3,5,4,1,1
+25-34,Female,Indian Subcontinent,Working Professional (Bachelor/Single),Abu Dhabi,Shared apartment with roommates,More than 3000,Rarely/Never,Less than 10,2-3 times a week,4,5,18.75,Would not order,2,2,2,4,2,1
+18-24,Male,Middle East/North Africa,Freelancer/Entrepreneur,Other,Shared apartment with roommates,More than 3000,4-6 times a week,20-30,Rarely,4,3,33.58,3-4,1,4,1,2,1,1
+35-44,Female,Indian Subcontinent,International University/College Student,International City,Rented studio/apartment (alone),1500-2000,Once a week,20-30,2-3 times a week,2,3,20.3,3-4,1,1,3,4,1,0
+25-34,Male,Other,International University/College Student,Sharjah,Company-provided accommodation,1500-2000,Once a week,Less than 10,2-3 times a week,2,4,31.42,1-2,2,5,4,4,2,0
+18-24,Male,Europe,International University/College Student,JLT,Company-provided accommodation,1000-1500,Rarely/Never,15-20,Once a week,4,4,24.25,1-2,1,4,4,3,2,1
+18-24,Male,Middle East/North Africa,Working Professional (Married),JLT,Shared apartment with roommates,2000-3000,Rarely/Never,More than 50,2-3 times a week,3,4,26.08,5-7,1,3,3,5,4,0
+55+,Female,East Asia,International University/College Student,Sharjah,Rented studio/apartment (alone),500-1000,4-6 times a week,15-20,4-6 times a week,1,3,28.18,5-7,4,4,2,4,2,0
+25-34,Male,Middle East/North Africa,Working Professional (Bachelor/Single),Abu Dhabi,University dormitory/hostel,1000-1500,Rarely/Never,15-20,Once a day,5,4,20.91,5-7,1,3,3,2,4,1
+25-34,Female,Southeast Asia,Other,Abu Dhabi,Other,1000-1500,Daily,30-50,Multiple times a day,1,2,28.68,1-2,3,1,1,3,3,0
+35-44,Female,Indian Subcontinent,Working Professional (Married),Dubai Marina,Other,1000-1500,Once a week,20-30,Rarely,4,5,39.24,5-7,2,2,3,3,3,1
+45-54,Female,Southeast Asia,Working Professional (Bachelor/Single),JLT,Rented studio/apartment (alone),1000-1500,Once a week,20-30,4-6 times a week,4,3,20.78,3-4,4,1,3,1,2,1
+55+,Male,Indian Subcontinent,International University/College Student,Sharjah,Living with family,500-1000,Once a week,20-30,4-6 times a week,5,4,36.37,3-4,2,2,5,5,4,1
+35-44,Male,East Asia,Working Professional (Married),Dubai Academic City,Rented studio/apartment (alone),1000-1500,4-6 times a week,30-50,Once a week,4,1,38.98,1-2,2,3,2,2,3,1
+25-34,Female,East Asia,Working Professional (Bachelor/Single),Dubai Marina,Rented studio/apartment (alone),2000-3000,Rarely/Never,15-20,2-3 times a week,1,2,20.47,1-2,2,2,1,4,4,0
+18-24,Male,Southeast Asia,International University/College Student,JLT,University dormitory/hostel,500-1000,4-6 times a week,15-20,2-3 times a week,4,4,15.36,3-4,2,2,3,3,2,1
+35-44,Female,Indian Subcontinent,International University/College Student,Bur Dubai/Deira,Shared apartment with roommates,2000-3000,Daily,15-20,4-6 times a week,5,5,29.42,1-2,3,3,3,1,1,1
+25-34,Male,Indian Subcontinent,Freelancer/Entrepreneur,Dubai Academic City,Rented studio/apartment (alone),1500-2000,Once a week,More than 50,Rarely,5,4,22.62,Would not order,1,4,4,5,3,1
+25-34,Female,Indian Subcontinent,Working Professional (Bachelor/Single),Dubai Academic City,Rented studio/apartment (alone),1500-2000,2-3 times a week,20-30,Rarely,4,5,41.95,3-4,5,1,2,4,1,1
+45-54,Female,Middle East/North Africa,Working Professional (Married),Abu Dhabi,Shared apartment with roommates,1000-1500,Rarely/Never,10-15,Rarely,3,4,27.28,1-2,2,2,2,3,3,0
+18-24,Prefer not to say,Indian Subcontinent,Working Professional (Married),International City,Company-provided accommodation,1500-2000,2-3 times a week,30-50,2-3 times a week,5,4,20.58,1-2,2,1,3,2,2,1
+25-34,Male,Europe,Working Professional (Bachelor/Single),Dubai Marina,University dormitory/hostel,Less than 500,4-6 times a week,15-20,Once a week,2,2,17.82,5-7,3,3,2,2,3,0
+Under 18,Female,Middle East/North Africa,Working Professional (Bachelor/Single),Dubai Academic City,Shared apartment with roommates,1500-2000,Rarely/Never,Less than 10,4-6 times a week,4,5,35.72,1-2,2,1,4,3,5,1
+25-34,Male,Indian Subcontinent,Local University/College Student,International City,Rented studio/apartment (alone),Less than 500,2-3 times a week,15-20,Multiple times a day,4,2,22.43,8-10,4,3,3,2,3,1
+18-24,Male,Middle East/North Africa,Local University/College Student,International City,Rented studio/apartment (alone),2000-3000,4-6 times a week,15-20,Multiple times a day,1,5,27.35,Would not order,2,2,4,3,4,0
+18-24,Female,Middle East/North Africa,Local University/College Student,Dubai Academic City,Rented studio/apartment (alone),More than 3000,Once a week,30-50,2-3 times a week,3,5,34.65,3-4,3,1,3,5,3,0
+18-24,Female,Southeast Asia,Working Professional (Married),Ajman,Shared apartment with roommates,500-1000,2-3 times a week,10-15,2-3 times a week,3,5,23.13,3-4,1,4,4,3,3,0
+25-34,Prefer not to say,Middle East/North Africa,Working Professional (Bachelor/Single),Dubai Academic City,University dormitory/hostel,500-1000,Once a week,30-50,2-3 times a week,5,4,26.63,1-2,4,1,2,5,4,1
+25-34,Female,Africa,Freelancer/Entrepreneur,Abu Dhabi,Rented studio/apartment (alone),1500-2000,2-3 times a week,15-20,Multiple times a day,5,4,26.87,5-7,3,2,4,4,4,1
+25-34,Male,Middle East/North Africa,Local University/College Student,Dubai Marina,Rented studio/apartment (alone),500-1000,Rarely/Never,Less than 10,2-3 times a week,3,4,32.47,3-4,1,1,2,3,4,0
+45-54,Male,Other,Working Professional (Bachelor/Single),JLT,University dormitory/hostel,2000-3000,Rarely/Never,More than 50,Once a week,5,2,31.73,3-4,1,3,3,4,2,1
+25-34,Female,Africa,Working Professional (Bachelor/Single),Dubai Marina,Rented studio/apartment (alone),500-1000,Once a week,15-20,2-3 times a week,1,4,25.24,3-4,2,3,2,3,3,0
+18-24,Male,Indian Subcontinent,Working Professional (Bachelor/Single),Dubai Marina,Shared apartment with roommates,500-1000,Daily,15-20,Once a week,4,1,27.51,5-7,5,2,3,4,2,1
+35-44,Male,Europe,Working Professional (Married),Sharjah,Rented studio/apartment (alone),More than 3000,Rarely/Never,15-20,4-6 times a week,1,4,24.03,3-4,2,1,2,3,3,0
+18-24,Male,Indian Subcontinent,International University/College Student,Dubai Academic City,Living with family,1500-2000,Once a week,30-50,Once a week,5,2,15.18,1-2,2,2,2,2,3,1
+45-54,Male,East Asia,Working Professional (Bachelor/Single),JLT,University dormitory/hostel,1500-2000,Once a week,15-20,2-3 times a week,5,2,29.06,5-7,1,3,5,4,4,1
+Under 18,Male,Middle East/North Africa,International University/College Student,Ajman,University dormitory/hostel,500-1000,2-3 times a week,10-15,4-6 times a week,4,3,42.14,5-7,2,4,2,4,4,1
+45-54,Male,Africa,Local University/College Student,Abu Dhabi,Living with family,1500-2000,Rarely/Never,10-15,4-6 times a week,5,3,19.93,8-10,3,3,4,5,2,1
+18-24,Male,Africa,Working Professional (Bachelor/Single),Ajman,Rented studio/apartment (alone),1000-1500,Once a week,15-20,Once a week,4,4,20.82,1-2,5,3,5,5,1,1
+35-44,Male,East Asia,Working Professional (Bachelor/Single),JLT,Rented studio/apartment (alone),1000-1500,Daily,20-30,Once a week,5,1,20.03,8-10,2,2,1,1,4,1
+25-34,Prefer not to say,East Asia,Freelancer/Entrepreneur,Sharjah,Living with family,1500-2000,2-3 times a week,15-20,2-3 times a week,5,4,32.8,5-7,4,2,3,3,1,1
+55+,Male,Indian Subcontinent,Working Professional (Bachelor/Single),JLT,Living with family,1000-1500,Rarely/Never,10-15,4-6 times a week,5,2,30.59,1-2,2,1,2,3,3,1
+18-24,Male,Indian Subcontinent,Working Professional (Married),Dubai Marina,Company-provided accommodation,1000-1500,Daily,10-15,Rarely,4,4,25.73,5-7,1,2,1,4,1,1
+25-34,Female,Middle East/North Africa,Working Professional (Bachelor/Single),Dubai Academic City,Rented studio/apartment (alone),500-1000,Rarely/Never,15-20,Once a week,2,4,19.66,3-4,2,2,3,4,2,0
+45-54,Male,Indian Subcontinent,Working Professional (Bachelor/Single),Bur Dubai/Deira,Shared apartment with roommates,1500-2000,Once a week,30-50,2-3 times a week,4,4,27.74,More than 10,3,3,4,3,5,1
+25-34,Female,Southeast Asia,International University/College Student,Dubai Academic City,Shared apartment with roommates,500-1000,Once a week,15-20,2-3 times a week,2,4,14.48,1-2,5,3,1,3,1,0
+25-34,Female,Indian Subcontinent,International University/College Student,JLT,University dormitory/hostel,1500-2000,4-6 times a week,More than 50,4-6 times a week,4,3,28.15,5-7,4,4,3,4,2,1
+25-34,Male,Americas,Local University/College Student,Ajman,Rented studio/apartment (alone),500-1000,4-6 times a week,15-20,Once a week,4,4,33.97,3-4,1,1,3,2,2,1
+25-34,Male,Southeast Asia,Working Professional (Bachelor/Single),Dubai Academic City,Shared apartment with roommates,1000-1500,Rarely/Never,10-15,2-3 times a week,4,3,16.99,Would not order,1,3,4,4,4,1
+25-34,Female,East Asia,International University/College Student,International City,Company-provided accommodation,1500-2000,4-6 times a week,30-50,Never,1,4,14.74,3-4,1,4,1,4,4,0
+25-34,Female,Indian Subcontinent,International University/College Student,International City,Rented studio/apartment (alone),500-1000,Once a week,15-20,2-3 times a week,2,4,39.64,Would not order,4,3,3,5,2,0
+45-54,Male,Africa,International University/College Student,Abu Dhabi,Rented studio/apartment (alone),Less than 500,2-3 times a week,20-30,2-3 times a week,4,1,22.11,More than 10,4,2,3,3,1,1
+18-24,Female,Europe,Freelancer/Entrepreneur,Dubai Marina,Shared apartment with roommates,500-1000,Daily,More than 50,2-3 times a week,5,4,36.09,3-4,3,2,3,2,3,1
+18-24,Male,Middle East/North Africa,Local University/College Student,JLT,University dormitory/hostel,1000-1500,Daily,Less than 10,Rarely,4,4,25.77,8-10,2,1,4,3,2,1
+45-54,Prefer not to say,Southeast Asia,Working Professional (Bachelor/Single),Sharjah,University dormitory/hostel,1500-2000,2-3 times a week,10-15,Once a week,4,3,25.7,Would not order,2,2,4,1,3,1
+35-44,Male,Southeast Asia,International University/College Student,Sharjah,Shared apartment with roommates,Less than 500,Rarely/Never,20-30,2-3 times a week,5,1,30.51,3-4,2,3,1,5,1,1
+25-34,Female,Indian Subcontinent,Working Professional (Bachelor/Single),JLT,University dormitory/hostel,1500-2000,2-3 times a week,15-20,Once a week,4,1,19.93,3-4,2,1,3,1,1,1
+25-34,Female,Middle East/North Africa,International University/College Student,Bur Dubai/Deira,Rented studio/apartment (alone),500-1000,2-3 times a week,10-15,2-3 times a week,3,5,28.06,5-7,2,2,2,4,3,0
+18-24,Female,Middle East/North Africa,International University/College Student,Sharjah,Company-provided accommodation,1000-1500,2-3 times a week,Less than 10,2-3 times a week,4,4,23.95,3-4,1,3,2,3,2,1
+18-24,Male,Indian Subcontinent,Working Professional (Bachelor/Single),Bur Dubai/Deira,Company-provided accommodation,2000-3000,2-3 times a week,Less than 10,4-6 times a week,3,2,16.44,1-2,1,4,3,3,4,0
+25-34,Male,Middle East/North Africa,International University/College Student,Dubai Academic City,Rented studio/apartment (alone),500-1000,2-3 times a week,20-30,2-3 times a week,5,3,29.7,3-4,4,2,2,1,1,1
+18-24,Male,Indian Subcontinent,International University/College Student,Ajman,University dormitory/hostel,1000-1500,Rarely/Never,10-15,4-6 times a week,2,4,24.89,3-4,3,3,3,4,2,0
+25-34,Male,Indian Subcontinent,International University/College Student,Dubai Marina,Living with family,Less than 500,2-3 times a week,15-20,Rarely,3,5,25.74,3-4,2,2,5,4,5,0
+18-24,Male,Indian Subcontinent,International University/College Student,Dubai Academic City,Company-provided accommodation,Less than 500,2-3 times a week,20-30,2-3 times a week,1,1,17.32,1-2,2,1,1,3,3,0
+55+,Female,Americas,International University/College Student,JLT,University dormitory/hostel,500-1000,Daily,15-20,Rarely,3,2,39.73,8-10,2,2,4,5,3,0
+55+,Male,Middle East/North Africa,Local University/College Student,International City,Living with family,Less than 500,Rarely/Never,Less than 10,2-3 times a week,5,5,34.01,5-7,3,3,3,3,2,1
+25-34,Male,Americas,Working Professional (Married),International City,Shared apartment with roommates,1000-1500,4-6 times a week,20-30,Once a week,3,1,34.71,1-2,3,4,3,3,3,0
+25-34,Female,Middle East/North Africa,Working Professional (Bachelor/Single),Sharjah,Living with family,1000-1500,Daily,Less than 10,2-3 times a week,2,2,24.56,5-7,3,1,4,3,3,0
+18-24,Female,Indian Subcontinent,Working Professional (Bachelor/Single),International City,Other,1000-1500,Once a week,20-30,Once a day,4,5,13.17,5-7,3,3,2,2,2,1
+35-44,Female,Middle East/North Africa,International University/College Student,JLT,University dormitory/hostel,500-1000,Once a week,30-50,2-3 times a week,1,4,42.62,Would not order,1,2,3,5,4,0
+25-34,Prefer not to say,Middle East/North Africa,Freelancer/Entrepreneur,Dubai Marina,Company-provided accommodation,500-1000,2-3 times a week,15-20,Once a day,2,3,26.51,1-2,2,3,3,3,3,0
+18-24,Male,Indian Subcontinent,Local University/College Student,International City,Rented studio/apartment (alone),1500-2000,2-3 times a week,15-20,Once a week,5,1,21.01,3-4,2,1,2,1,2,1
+45-54,Male,Southeast Asia,International University/College Student,Abu Dhabi,Other,More than 3000,Once a week,15-20,2-3 times a week,5,1,30.33,More than 10,2,2,4,3,3,1
+35-44,Female,Indian Subcontinent,Working Professional (Bachelor/Single),Dubai Academic City,Shared apartment with roommates,Less than 500,4-6 times a week,15-20,Once a week,5,2,36.34,More than 10,3,4,4,4,3,1
+45-54,Female,Southeast Asia,International University/College Student,Dubai Academic City,Living with family,2000-3000,Rarely/Never,30-50,4-6 times a week,5,5,26.82,5-7,2,3,1,3,1,1
+25-34,Male,Southeast Asia,Local University/College Student,Dubai Academic City,University dormitory/hostel,1000-1500,Once a week,30-50,4-6 times a week,5,3,37.23,5-7,1,2,1,4,2,1
+25-34,Female,Indian Subcontinent,Working Professional (Bachelor/Single),Dubai Academic City,Shared apartment with roommates,1000-1500,2-3 times a week,15-20,2-3 times a week,1,4,35.66,1-2,2,2,3,1,2,0
+25-34,Male,Indian Subcontinent,Working Professional (Married),International City,University dormitory/hostel,1000-1500,2-3 times a week,20-30,Rarely,5,5,18.39,5-7,5,2,1,3,2,1
+45-54,Male,East Asia,Working Professional (Bachelor/Single),Bur Dubai/Deira,Other,Less than 500,4-6 times a week,30-50,Once a week,5,3,21.61,3-4,1,2,3,4,4,1
+35-44,Male,Middle East/North Africa,Working Professional (Married),Abu Dhabi,Living with family,Less than 500,Once a week,More than 50,2-3 times a week,5,2,34.66,1-2,3,4,1,1,3,1
+18-24,Female,Indian Subcontinent,Other,Dubai Academic City,Living with family,1000-1500,2-3 times a week,15-20,2-3 times a week,4,4,10.0,8-10,2,5,3,4,4,1
+18-24,Female,Other,International University/College Student,Bur Dubai/Deira,Company-provided accommodation,500-1000,4-6 times a week,15-20,Once a day,3,5,25.8,1-2,1,2,1,1,2,0
+25-34,Male,Indian Subcontinent,International University/College Student,Sharjah,University dormitory/hostel,2000-3000,Once a week,10-15,Never,5,5,15.55,3-4,2,2,2,4,2,1
+35-44,Female,Southeast Asia,Local University/College Student,Sharjah,Shared apartment with roommates,1000-1500,Rarely/Never,30-50,Once a week,5,1,23.19,More than 10,3,4,3,3,4,1
+55+,Male,Americas,Local University/College Student,JLT,University dormitory/hostel,500-1000,2-3 times a week,10-15,4-6 times a week,5,4,24.61,1-2,2,2,3,4,3,1
+18-24,Male,Indian Subcontinent,Local University/College Student,Dubai Academic City,University dormitory/hostel,1500-2000,Rarely/Never,20-30,2-3 times a week,2,4,24.13,Would not order,4,3,5,2,3,0
+25-34,Female,Indian Subcontinent,Freelancer/Entrepreneur,Dubai Academic City,Shared apartment with roommates,500-1000,2-3 times a week,15-20,Once a day,3,5,22.58,Would not order,2,2,4,1,1,0
+25-34,Female,Indian Subcontinent,Working Professional (Married),Bur Dubai/Deira,Shared apartment with roommates,1000-1500,Daily,10-15,Rarely,3,2,18.22,5-7,1,3,2,2,2,0
+45-54,Female,Indian Subcontinent,Working Professional (Bachelor/Single),Sharjah,Shared apartment with roommates,1500-2000,4-6 times a week,15-20,4-6 times a week,5,4,45.34,1-2,4,3,1,2,2,1
+35-44,Female,Indian Subcontinent,Local University/College Student,Dubai Academic City,University dormitory/hostel,2000-3000,2-3 times a week,More than 50,Once a week,2,5,41.94,3-4,2,4,4,3,5,0
+35-44,Female,Southeast Asia,Working Professional (Married),JLT,University dormitory/hostel,1500-2000,4-6 times a week,Less than 10,4-6 times a week,1,3,17.7,3-4,3,4,4,3,2,0
+25-34,Female,Indian Subcontinent,Freelancer/Entrepreneur,Ajman,University dormitory/hostel,1500-2000,Daily,20-30,Once a week,5,4,39.66,3-4,3,2,4,4,4,1
+25-34,Male,Middle East/North Africa,Working Professional (Married),Sharjah,Other,1500-2000,Rarely/Never,10-15,Once a week,1,1,23.8,3-4,2,3,1,4,3,0
+18-24,Male,Other,International University/College Student,Other,Living with family,2000-3000,Rarely/Never,10-15,Once a week,5,3,28.03,Would not order,3,4,5,4,2,1
+18-24,Male,East Asia,Working Professional (Bachelor/Single),Sharjah,Company-provided accommodation,500-1000,Once a week,15-20,Once a week,3,3,26.49,1-2,1,2,2,4,3,0
+35-44,Male,Southeast Asia,International University/College Student,JLT,Shared apartment with roommates,Less than 500,4-6 times a week,15-20,Rarely,5,5,21.72,5-7,2,1,3,3,4,1
+35-44,Female,Indian Subcontinent,International University/College Student,Bur Dubai/Deira,Shared apartment with roommates,500-1000,Daily,10-15,Once a day,4,3,34.87,1-2,1,1,4,3,4,1
+55+,Male,Southeast Asia,International University/College Student,Bur Dubai/Deira,Living with family,500-1000,Daily,15-20,2-3 times a week,5,4,28.01,5-7,4,2,2,3,1,1
+55+,Male,Middle East/North Africa,Working Professional (Bachelor/Single),International City,Shared apartment with roommates,1500-2000,Once a week,10-15,4-6 times a week,5,4,23.19,More than 10,1,2,4,4,2,1
+25-34,Male,Middle East/North Africa,Working Professional (Bachelor/Single),Dubai Marina,Shared apartment with roommates,1000-1500,Rarely/Never,15-20,Never,1,2,16.56,3-4,3,3,2,2,2,0
+35-44,Female,Indian Subcontinent,International University/College Student,Bur Dubai/Deira,Shared apartment with roommates,1000-1500,2-3 times a week,More than 50,2-3 times a week,1,4,19.85,1-2,4,1,5,1,1,0
+45-54,Male,Africa,Local University/College Student,Dubai Academic City,University dormitory/hostel,Less than 500,Daily,30-50,Once a week,3,4,13.87,5-7,2,4,2,4,3,0
+35-44,Female,Middle East/North Africa,Working Professional (Bachelor/Single),Sharjah,Shared apartment with roommates,1500-2000,2-3 times a week,15-20,Once a week,4,5,27.1,5-7,2,2,5,2,4,1
+18-24,Male,Indian Subcontinent,Local University/College Student,Dubai Marina,Shared apartment with roommates,500-1000,2-3 times a week,20-30,4-6 times a week,5,4,17.43,5-7,2,2,1,5,2,1
+25-34,Male,Middle East/North Africa,International University/College Student,Abu Dhabi,Rented studio/apartment (alone),1500-2000,2-3 times a week,30-50,4-6 times a week,4,4,24.88,3-4,2,3,3,4,3,1
+18-24,Female,Middle East/North Africa,Local University/College Student,International City,University dormitory/hostel,1000-1500,Once a week,Less than 10,4-6 times a week,4,2,37.96,3-4,2,3,3,1,3,1
+45-54,Female,East Asia,Working Professional (Married),Dubai Academic City,University dormitory/hostel,500-1000,Once a week,30-50,2-3 times a week,2,5,36.59,Would not order,3,2,3,2,2,0
+25-34,Male,Southeast Asia,International University/College Student,Bur Dubai/Deira,Living with family,500-1000,Daily,30-50,4-6 times a week,5,2,26.74,More than 10,5,2,2,3,1,1
+18-24,Female,Southeast Asia,International University/College Student,Dubai Academic City,University dormitory/hostel,Less than 500,Daily,10-15,Multiple times a day,5,4,26.3,3-4,4,1,3,4,3,1
+25-34,Female,Indian Subcontinent,Local University/College Student,Bur Dubai/Deira,Shared apartment with roommates,1500-2000,Rarely/Never,10-15,Rarely,3,3,42.04,8-10,4,3,2,2,4,0
+25-34,Male,Middle East/North Africa,Freelancer/Entrepreneur,Sharjah,Living with family,2000-3000,4-6 times a week,More than 50,Rarely,4,5,31.17,3-4,4,3,3,4,3,1
+18-24,Female,Middle East/North Africa,Working Professional (Bachelor/Single),International City,University dormitory/hostel,1000-1500,Daily,15-20,2-3 times a week,2,4,24.38,3-4,2,2,2,4,1,0
+18-24,Female,Indian Subcontinent,Working Professional (Bachelor/Single),Dubai Marina,University dormitory/hostel,500-1000,4-6 times a week,Less than 10,2-3 times a week,4,4,15.59,1-2,3,3,5,3,2,1
+25-34,Female,Indian Subcontinent,Local University/College Student,Dubai Marina,Shared apartment with roommates,1000-1500,Daily,10-15,Multiple times a day,4,2,30.15,3-4,4,3,1,1,1,1
+25-34,Female,Southeast Asia,Working Professional (Bachelor/Single),JLT,Shared apartment with roommates,1500-2000,2-3 times a week,15-20,Once a week,2,3,33.63,5-7,2,1,2,4,3,0
+35-44,Female,Indian Subcontinent,International University/College Student,Abu Dhabi,Rented studio/apartment (alone),1500-2000,Rarely/Never,20-30,Once a week,4,4,21.95,1-2,5,5,2,2,4,1
+25-34,Female,Middle East/North Africa,Working Professional (Bachelor/Single),Sharjah,Living with family,500-1000,2-3 times a week,20-30,4-6 times a week,3,4,29.33,3-4,2,4,3,4,1,0
+35-44,Female,Indian Subcontinent,Freelancer/Entrepreneur,Bur Dubai/Deira,University dormitory/hostel,Less than 500,2-3 times a week,More than 50,4-6 times a week,4,2,24.09,8-10,3,2,2,3,4,1
+25-34,Female,Indian Subcontinent,Working Professional (Bachelor/Single),Bur Dubai/Deira,Rented studio/apartment (alone),1500-2000,Once a week,15-20,Once a week,4,5,25.53,5-7,3,1,3,3,3,1
+25-34,Female,Indian Subcontinent,Working Professional (Married),JLT,Shared apartment with roommates,1000-1500,2-3 times a week,15-20,Once a week,1,5,10.0,5-7,5,1,4,4,3,0
+35-44,Female,Americas,Working Professional (Married),Abu Dhabi,University dormitory/hostel,500-1000,Rarely/Never,15-20,Once a day,5,3,25.23,More than 10,1,1,3,4,5,1
+25-34,Female,East Asia,International University/College Student,Bur Dubai/Deira,Rented studio/apartment (alone),Less than 500,Rarely/Never,15-20,Once a week,5,5,34.75,1-2,3,3,3,3,1,1
+18-24,Male,Europe,Freelancer/Entrepreneur,Bur Dubai/Deira,Shared apartment with roommates,1000-1500,Daily,10-15,4-6 times a week,3,4,21.95,5-7,2,2,1,2,4,0
+18-24,Female,Middle East/North Africa,International University/College Student,Ajman,Shared apartment with roommates,2000-3000,Once a week,More than 50,2-3 times a week,1,4,27.42,8-10,2,4,3,4,1,0
+35-44,Female,Indian Subcontinent,Working Professional (Bachelor/Single),Dubai Academic City,University dormitory/hostel,More than 3000,2-3 times a week,30-50,Once a week,5,3,20.95,5-7,3,3,2,3,2,1
+25-34,Male,Middle East/North Africa,International University/College Student,Sharjah,Shared apartment with roommates,1000-1500,Rarely/Never,15-20,Once a week,5,4,29.88,3-4,3,3,4,2,4,1
+25-34,Female,Middle East/North Africa,International University/College Student,Dubai Academic City,Shared apartment with roommates,1000-1500,2-3 times a week,20-30,2-3 times a week,3,4,25.27,1-2,3,3,2,5,4,0
+18-24,Male,East Asia,Local University/College Student,JLT,Living with family,Less than 500,Rarely/Never,10-15,Rarely,3,3,19.49,8-10,2,1,3,2,3,0
+18-24,Male,Indian Subcontinent,International University/College Student,JLT,University dormitory/hostel,1000-1500,Once a week,15-20,2-3 times a week,2,4,37.66,3-4,2,2,2,1,3,0
+Under 18,Female,Middle East/North Africa,Working Professional (Bachelor/Single),Abu Dhabi,Shared apartment with roommates,1000-1500,4-6 times a week,20-30,Once a week,4,4,34.43,8-10,3,3,4,1,3,1
+18-24,Male,Indian Subcontinent,Working Professional (Bachelor/Single),Ajman,Shared apartment with roommates,1000-1500,2-3 times a week,15-20,2-3 times a week,2,4,22.16,5-7,2,1,1,4,4,0
+25-34,Female,Indian Subcontinent,International University/College Student,Bur Dubai/Deira,Living with family,1000-1500,Rarely/Never,More than 50,Rarely,3,1,30.98,5-7,1,1,3,4,1,0
+25-34,Female,Southeast Asia,International University/College Student,Bur Dubai/Deira,Rented studio/apartment (alone),500-1000,Rarely/Never,20-30,Rarely,5,5,31.3,8-10,5,4,1,3,4,1
+25-34,Male,Middle East/North Africa,Working Professional (Bachelor/Single),Dubai Marina,Rented studio/apartment (alone),Less than 500,Daily,15-20,Once a day,4,4,32.14,5-7,2,3,3,3,3,1
+45-54,Male,Middle East/North Africa,Local University/College Student,Abu Dhabi,Living with family,500-1000,Once a week,20-30,Rarely,4,3,13.45,3-4,3,2,4,3,3,1
+18-24,Male,Middle East/North Africa,Working Professional (Married),Dubai Marina,Living with family,Less than 500,2-3 times a week,10-15,Once a week,4,2,35.05,5-7,2,3,3,4,2,1
+25-34,Female,Middle East/North Africa,Working Professional (Bachelor/Single),JLT,Shared apartment with roommates,500-1000,Daily,15-20,Once a week,4,4,22.44,8-10,2,4,3,1,3,1
+35-44,Prefer not to say,East Asia,Working Professional (Married),Dubai Academic City,Rented studio/apartment (alone),More than 3000,2-3 times a week,15-20,4-6 times a week,1,5,24.14,3-4,2,2,4,5,4,0
+25-34,Female,Africa,Working Professional (Bachelor/Single),Sharjah,Living with family,1000-1500,4-6 times a week,15-20,Once a week,1,3,48.1,3-4,2,1,3,2,3,0
+25-34,Male,Europe,Local University/College Student,Sharjah,Other,1000-1500,Rarely/Never,20-30,Rarely,5,4,29.41,1-2,2,4,3,5,5,1
+35-44,Female,East Asia,Working Professional (Bachelor/Single),JLT,Company-provided accommodation,2000-3000,2-3 times a week,15-20,4-6 times a week,1,1,23.91,More than 10,2,2,3,2,2,0
+45-54,Male,Indian Subcontinent,International University/College Student,International City,Shared apartment with roommates,More than 3000,Rarely/Never,20-30,Rarely,5,4,10.0,1-2,2,1,3,4,3,1
+18-24,Female,Southeast Asia,Local University/College Student,Sharjah,University dormitory/hostel,1000-1500,Daily,20-30,Once a day,5,5,38.12,5-7,1,3,1,2,4,1
+45-54,Male,Middle East/North Africa,Working Professional (Married),International City,Shared apartment with roommates,1500-2000,4-6 times a week,15-20,4-6 times a week,3,4,16.24,3-4,2,3,4,1,3,0
+25-34,Female,Indian Subcontinent,Local University/College Student,Bur Dubai/Deira,Living with family,500-1000,4-6 times a week,20-30,2-3 times a week,3,2,18.97,3-4,1,2,3,4,3,0
+18-24,Male,East Asia,Working Professional (Married),Abu Dhabi,Shared apartment with roommates,500-1000,4-6 times a week,10-15,2-3 times a week,4,4,24.35,5-7,1,2,1,4,3,1
+25-34,Female,Indian Subcontinent,Working Professional (Married),JLT,Shared apartment with roommates,1000-1500,Daily,10-15,Once a week,5,2,38.33,1-2,4,2,4,3,4,1
+55+,Male,Africa,Working Professional (Married),Dubai Academic City,Living with family,1500-2000,4-6 times a week,15-20,Multiple times a day,5,3,33.19,5-7,3,5,2,4,4,1
+25-34,Female,Middle East/North Africa,Freelancer/Entrepreneur,Bur Dubai/Deira,Shared apartment with roommates,1500-2000,2-3 times a week,10-15,Rarely,5,4,25.74,5-7,3,1,1,3,1,1
+18-24,Female,Southeast Asia,Local University/College Student,Sharjah,Living with family,500-1000,4-6 times a week,Less than 10,Once a day,2,4,29.47,8-10,2,3,3,4,4,0
+25-34,Male,Southeast Asia,Local University/College Student,Dubai Marina,Shared apartment with roommates,500-1000,2-3 times a week,20-30,4-6 times a week,4,2,22.2,1-2,4,4,4,3,2,1
+18-24,Female,Africa,Working Professional (Bachelor/Single),Abu Dhabi,Shared apartment with roommates,1000-1500,2-3 times a week,15-20,Multiple times a day,4,5,28.12,8-10,3,1,4,3,2,1
+18-24,Female,Southeast Asia,Local University/College Student,International City,Shared apartment with roommates,500-1000,Rarely/Never,15-20,2-3 times a week,4,4,27.59,5-7,3,5,5,3,4,1
+18-24,Male,Southeast Asia,Working Professional (Bachelor/Single),Dubai Marina,Living with family,1000-1500,Rarely/Never,More than 50,Rarely,1,3,34.75,8-10,2,4,4,3,3,0
+18-24,Male,Indian Subcontinent,Working Professional (Married),Bur Dubai/Deira,University dormitory/hostel,1500-2000,2-3 times a week,20-30,Once a week,2,4,34.74,3-4,5,4,1,5,4,0
+18-24,Female,Middle East/North Africa,Working Professional (Bachelor/Single),Ajman,University dormitory/hostel,1500-2000,2-3 times a week,30-50,Once a week,5,4,30.95,5-7,4,2,2,2,2,1
+18-24,Male,Indian Subcontinent,Local University/College Student,Dubai Academic City,Company-provided accommodation,1500-2000,Daily,10-15,Multiple times a day,4,4,24.1,More than 10,4,3,4,2,1,1
+25-34,Female,Southeast Asia,International University/College Student,Sharjah,University dormitory/hostel,2000-3000,Rarely/Never,20-30,2-3 times a week,3,4,32.93,8-10,1,3,2,3,3,0
+18-24,Male,Middle East/North Africa,Local University/College Student,Dubai Marina,Rented studio/apartment (alone),1000-1500,Daily,30-50,2-3 times a week,4,4,26.26,3-4,2,5,3,4,1,1
+18-24,Female,Southeast Asia,International University/College Student,JLT,Rented studio/apartment (alone),1500-2000,4-6 times a week,20-30,2-3 times a week,5,2,18.34,3-4,2,1,3,2,4,1
+35-44,Male,Indian Subcontinent,Freelancer/Entrepreneur,International City,Shared apartment with roommates,1000-1500,4-6 times a week,20-30,Once a day,5,5,23.77,3-4,2,3,2,3,2,1
+25-34,Female,Indian Subcontinent,Local University/College Student,Ajman,Rented studio/apartment (alone),500-1000,4-6 times a week,15-20,Once a week,3,4,27.68,3-4,4,2,4,5,3,0
+25-34,Female,Southeast Asia,International University/College Student,Dubai Academic City,Shared apartment with roommates,Less than 500,4-6 times a week,10-15,2-3 times a week,2,2,34.28,3-4,1,1,3,2,1,0
+18-24,Female,Indian Subcontinent,International University/College Student,Dubai Academic City,Rented studio/apartment (alone),500-1000,Once a week,15-20,Once a week,3,4,25.53,3-4,1,2,3,4,2,0
+18-24,Female,Indian Subcontinent,Working Professional (Bachelor/Single),Dubai Academic City,Shared apartment with roommates,1000-1500,Daily,15-20,2-3 times a week,5,5,17.33,8-10,2,4,5,4,4,1
+18-24,Male,Indian Subcontinent,Working Professional (Bachelor/Single),Ajman,Rented studio/apartment (alone),1000-1500,Once a week,30-50,4-6 times a week,4,5,27.45,1-2,1,2,3,3,1,1
