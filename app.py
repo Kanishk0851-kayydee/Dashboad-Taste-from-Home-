@@ -18,17 +18,20 @@ warnings.filterwarnings('ignore')
 
 # Page configuration
 st.set_page_config(
-    page_title="Taste From Home Dashboard",
+    page_title="Taste From Home | Group 7",
     page_icon="🍽️",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS
+# Custom CSS with subtle background
 st.markdown("""
 <style>
+    .main {
+        background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    }
     .main-header {
-        font-size: 42px;
+        font-size: 48px;
         font-weight: bold;
         color: #FF6B6B;
         text-align: center;
@@ -36,6 +39,19 @@ st.markdown("""
         background: linear-gradient(90deg, #FF6B6B 0%, #4ECDC4 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+    .subtitle {
+        text-align: center;
+        color: #555;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .team-box {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 10px;
+        border-left: 5px solid #4ECDC4;
+        margin: 20px 0;
     }
     .stTabs [data-baseweb="tab-list"] {
         gap: 24px;
@@ -45,6 +61,14 @@ st.markdown("""
         background-color: #f0f2f6;
         border-radius: 10px 10px 0 0;
         padding: 10px 20px;
+        font-weight: 600;
+    }
+    .highlight-box {
+        background-color: #fff3cd;
+        padding: 15px;
+        border-radius: 8px;
+        border-left: 4px solid #ffc107;
+        margin: 15px 0;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -129,53 +153,137 @@ def generate_sample_data():
 try:
     df = load_data()
 
-    # Title
+    # Main title
     st.markdown('<h1 class="main-header">🍽️ Taste From Home: Marketing Analytics Dashboard</h1>', unsafe_allow_html=True)
-    st.markdown("### Data-Driven Insights for Home-Cooked Meal Delivery Service in Dubai")
+    st.markdown('<p class="subtitle">Data-Driven Insights for Home-Cooked Meal Delivery Service in Dubai</p>', unsafe_allow_html=True)
     st.markdown("---")
 
-    # Create main tabs
-    tab1, tab2, tab3, tab4 = st.tabs([
-        "📊 Marketing Insights & Charts", 
-        "🤖 ML Algorithms & Performance", 
-        "🎯 Customer Prediction", 
+    # Create main tabs with Homepage
+    home_tab, insights_tab, ml_tab, pred_tab, upload_tab = st.tabs([
+        "🏠 Home",
+        "📊 Marketing Insights",
+        "🤖 ML Algorithms",
+        "🎯 Prediction",
         "📤 Upload & Predict"
     ])
 
     # ============================================
-    # TAB 1: MARKETING INSIGHTS WITH FILTERS
+    # HOMEPAGE TAB
     # ============================================
-    with tab1:
+    with home_tab:
+        st.header("Welcome to Taste From Home")
+
+        col1, col2 = st.columns([2, 1])
+
+        with col1:
+            st.markdown("""
+            ## 🌟 Our Business Idea
+
+            **Taste From Home** is a home-cooked meal delivery service based in Dubai that brings the **warmth, authenticity, 
+            and nutritional benefits of homemade cuisine** to individuals living far from their families.
+
+            ### 🎯 Target Audience
+            - **Primary:** International students and young professionals
+            - **Secondary:** Local students, bachelors, and employees who lack time or facilities to cook
+
+            ### 💡 What Makes Us Different
+
+            ✨ **Home Chef Network Model** - Meals crafted by talented home chefs from various cultural backgrounds  
+            🍛 **Personalized Regional Cuisines** - Indian, Filipino, Pakistani, African, Middle Eastern, and more  
+            🌱 **Healthy & Fresh** - Nutritious, balanced meals free from preservatives  
+            ♻️ **Eco-Friendly** - Sustainable packaging and responsible food practices  
+            📱 **Flexible Subscriptions** - Daily, weekly, and monthly plans via app or WhatsApp  
+            💰 **Affordable Pricing** - Starting from AED 22-25 for students, AED 28-35 for professionals
+
+            ### 🎭 Our Emotional Promise
+            > *"Making Dubai feel more like home, one meal at a time."*
+
+            We don't just deliver meals—we deliver **comfort, belonging, and a taste of home** 
+            to everyone who misses authentic, home-cooked food.
+            """)
+
+            st.markdown('<div class="highlight-box">', unsafe_allow_html=True)
+            st.markdown("""
+            **📊 Key Market Insights:**
+            - **62% market interest** from 600 survey respondents
+            - **86% enthusiasm** among international students
+            - Average **WTP of AED 27** per meal
+            - Top pain points: Lack of authentic taste, missing home-cooked meals, unhealthy options
+            """)
+            st.markdown('</div>', unsafe_allow_html=True)
+
+        with col2:
+            st.markdown('<div class="team-box">', unsafe_allow_html=True)
+            st.markdown("""
+            ### 👥 Group 7 Team
+
+            **Project Members:**
+            - 👨‍💼 **Kanishk**
+            - 👩‍💼 **Kinjal**
+            - 👩‍💼 **Khushi Lodhi**
+            - 👨‍💼 **Karan**
+            - 👨‍💼 **Mohak**
+
+            ---
+
+            ### 📚 Project Details
+            **Course:** Data Analytics  
+            **Project Type:** Marketing Dashboard  
+            **Institution:** MBA Program  
+            **Year:** 2025
+
+            ---
+
+            ### 🎓 Assignment Objective
+            This dashboard demonstrates the use of **data analytics** to strategize and formulate business strategy using:
+            - Classification
+            - Clustering (K-Means)
+            - Regression Analysis
+            - Data Visualization
+            """)
+            st.markdown('</div>', unsafe_allow_html=True)
+
+        st.markdown("---")
+
+        col_a, col_b, col_c = st.columns(3)
+        with col_a:
+            st.info("📍 **Launch Location**  
+Dubai Academic City & JLT")
+        with col_b:
+            st.success("🎯 **Target Market**  
+600+ Survey Respondents Analyzed")
+        with col_c:
+            st.warning("💰 **Pricing Strategy**  
+AED 22-35 per meal")
+
+        st.markdown("---")
+        st.markdown("""
+        ### 🔍 How to Use This Dashboard
+
+        1. **📊 Marketing Insights Tab** - Explore 5 interactive charts with demographic filters
+        2. **🤖 ML Algorithms Tab** - Run Classification, Clustering, and Regression models
+        3. **🎯 Prediction Tab** - Predict individual customer interest levels
+        4. **📤 Upload & Predict Tab** - Upload your own dataset for batch predictions
+
+        Navigate through the tabs above to explore our data-driven business strategy!
+        """)
+
+    # ============================================
+    # TAB 1: MARKETING INSIGHTS WITH FILTERS (Keep existing code)
+    # ============================================
+    with insights_tab:
         st.header("Marketing Insights Dashboard")
         st.markdown("**Interactive filters to segment your target audience**")
 
         # Sidebar filters
         with st.sidebar:
             st.header("🎯 Audience Filters")
-
-            # Status filter
             status_options = ['All'] + list(df['Status'].unique())
-            selected_status = st.multiselect(
-                "Filter by Status",
-                options=status_options,
-                default=['All']
-            )
-
-            # Location filter
+            selected_status = st.multiselect("Filter by Status", options=status_options, default=['All'])
             location_options = ['All'] + list(df['Location'].unique())
-            selected_location = st.multiselect(
-                "Filter by Location",
-                options=location_options,
-                default=['All']
-            )
-
-            # Nationality filter
+            selected_location = st.multiselect("Filter by Location", options=location_options, default=['All'])
             nationality_options = ['All'] + list(df['Nationality'].unique())
-            selected_nationality = st.multiselect(
-                "Filter by Nationality",
-                options=nationality_options,
-                default=['All']
-            )
+            selected_nationality = st.multiselect("Filter by Nationality", options=nationality_options, default=['All'])
 
         # Apply filters
         filtered_df = df.copy()
@@ -204,471 +312,247 @@ try:
 
         # Chart 1
         st.subheader("📈 Chart 1: Interest Level by Age Group & Spending Capacity")
-        st.markdown("**Insight:** Identify which age segments show highest interest and their spending patterns")
-
-        fig1 = px.sunburst(
-            filtered_df,
-            path=['Age_Group', 'Monthly_Food_Budget_AED'],
-            values='Interested',
-            color='Interest_Level',
-            color_continuous_scale='RdYlGn',
-            title='Customer Interest Hierarchy: Age → Budget → Interest'
-        )
+        fig1 = px.sunburst(filtered_df, path=['Age_Group', 'Monthly_Food_Budget_AED'],
+                          values='Interested', color='Interest_Level', color_continuous_scale='RdYlGn',
+                          title='Customer Interest Hierarchy')
         fig1.update_layout(height=500)
         st.plotly_chart(fig1, use_container_width=True)
-        st.markdown("**Marketing Action:** Target the high-interest age groups with tailored messaging and pricing tiers.")
+        st.markdown("**Marketing Action:** Target high-interest age groups with tailored messaging.")
 
         # Chart 2
         st.markdown("---")
-        st.subheader("📈 Chart 2: Delivery Frequency vs Current Spending vs Interest")
-        st.markdown("**Insight:** Understand behavioral patterns of frequent orderers and their spending habits")
-
+        st.subheader("📈 Chart 2: Delivery Frequency vs Spending vs Interest")
         bubble_data = filtered_df.groupby(['Delivery_Frequency', 'Current_Spending_Per_Meal_AED']).agg({
-            'Interested': 'sum',
-            'WTP_Per_Meal_AED': 'mean'
-        }).reset_index()
-
-        fig2 = px.scatter(
-            bubble_data,
-            x='Delivery_Frequency',
-            y='Current_Spending_Per_Meal_AED',
-            size='Interested',
-            color='WTP_Per_Meal_AED',
-            color_continuous_scale='Viridis',
-            title='Behavioral Segmentation: Ordering Frequency × Spending × Interest',
-            labels={'WTP_Per_Meal_AED': 'Avg WTP (AED)'}
-        )
+            'Interested': 'sum', 'WTP_Per_Meal_AED': 'mean'}).reset_index()
+        fig2 = px.scatter(bubble_data, x='Delivery_Frequency', y='Current_Spending_Per_Meal_AED',
+                         size='Interested', color='WTP_Per_Meal_AED', color_continuous_scale='Viridis',
+                         title='Behavioral Segmentation')
         fig2.update_layout(height=500)
         st.plotly_chart(fig2, use_container_width=True)
-        st.markdown("**Marketing Action:** Create loyalty programs for frequent orderers and premium offerings for high spenders.")
 
         # Chart 3
         st.markdown("---")
-        st.subheader("📈 Chart 3: Geographic Market Potential by Location")
-        st.markdown("**Insight:** Prioritize locations with highest interest and market size")
-
+        st.subheader("📈 Chart 3: Geographic Market Potential")
         location_data = filtered_df.groupby('Location').agg({
-            'Interested': 'sum',
-            'WTP_Per_Meal_AED': 'mean',
-            'Status': 'count'
-        }).reset_index()
+            'Interested': 'sum', 'WTP_Per_Meal_AED': 'mean', 'Status': 'count'}).reset_index()
         location_data.columns = ['Location', 'Interested_Count', 'Avg_WTP', 'Total_Respondents']
-        location_data['Interest_Rate'] = (location_data['Interested_Count'] / location_data['Total_Respondents'] * 100)
-
         fig3 = go.Figure()
-        fig3.add_trace(go.Bar(
-            name='Total Respondents',
-            x=location_data['Location'],
-            y=location_data['Total_Respondents'],
-            marker_color='lightblue'
-        ))
-        fig3.add_trace(go.Bar(
-            name='Interested Customers',
-            x=location_data['Location'],
-            y=location_data['Interested_Count'],
-            marker_color='darkblue'
-        ))
-        fig3.update_layout(
-            title='Location-wise Market Size & Interest',
-            barmode='group',
-            height=500,
-            xaxis_tickangle=-45
-        )
+        fig3.add_trace(go.Bar(name='Total', x=location_data['Location'], 
+                             y=location_data['Total_Respondents'], marker_color='lightblue'))
+        fig3.add_trace(go.Bar(name='Interested', x=location_data['Location'],
+                             y=location_data['Interested_Count'], marker_color='darkblue'))
+        fig3.update_layout(title='Location-wise Market Size', barmode='group', height=500, xaxis_tickangle=-45)
         st.plotly_chart(fig3, use_container_width=True)
-        st.markdown("**Marketing Action:** Launch in Dubai Academic City and JLT first, then expand to high-interest areas.")
 
         # Chart 4
         st.markdown("---")
-        st.subheader("📈 Chart 4: Current Satisfaction Levels - Gap Analysis")
-        st.markdown("**Insight:** Identify satisfaction gaps that Taste From Home can address")
-
+        st.subheader("📈 Chart 4: Satisfaction Gap Analysis")
         satisfaction_cols = ['Taste_Satisfaction', 'Healthiness_Satisfaction', 
-                             'Affordability_Satisfaction', 'Convenience_Satisfaction', 
-                             'Variety_Satisfaction']
-
+                            'Affordability_Satisfaction', 'Convenience_Satisfaction', 'Variety_Satisfaction']
         interested_sat = filtered_df[filtered_df['Interested']==1][satisfaction_cols].mean()
         not_interested_sat = filtered_df[filtered_df['Interested']==0][satisfaction_cols].mean()
-
         heatmap_data = pd.DataFrame({
-            'High Interest Customers': interested_sat.values,
-            'Low Interest Customers': not_interested_sat.values
-        }, index=['Taste', 'Healthiness', 'Affordability', 'Convenience', 'Variety'])
-
-        fig4 = px.imshow(
-            heatmap_data.T,
-            labels=dict(x="Satisfaction Dimension", y="Customer Segment", color="Satisfaction Score"),
-            color_continuous_scale='RdYlGn',
-            title='Satisfaction Heatmap: High vs Low Interest Segments',
-            text_auto='.2f'
-        )
+            'High Interest': interested_sat.values,
+            'Low Interest': not_interested_sat.values
+        }, index=['Taste', 'Health', 'Afford', 'Conven', 'Variety'])
+        fig4 = px.imshow(heatmap_data.T, color_continuous_scale='RdYlGn',
+                        title='Satisfaction Heatmap', text_auto='.2f')
         fig4.update_layout(height=400)
         st.plotly_chart(fig4, use_container_width=True)
-        st.markdown("**Marketing Action:** Emphasize taste authenticity, health benefits, and affordability in campaigns.")
 
         # Chart 5
         st.markdown("---")
-        st.subheader("📈 Chart 5: Willingness to Pay by Nationality & Status")
-        st.markdown("**Insight:** Price sensitivity across cultural and professional segments")
-
-        fig5 = px.box(
-            filtered_df,
-            x='Nationality',
-            y='WTP_Per_Meal_AED',
-            color='Status',
-            title='WTP Distribution: Nationality × Customer Status',
-            labels={'WTP_Per_Meal_AED': 'Willingness to Pay (AED)'}
-        )
+        st.subheader("📈 Chart 5: WTP by Nationality & Status")
+        fig5 = px.box(filtered_df, x='Nationality', y='WTP_Per_Meal_AED', color='Status',
+                     title='Willingness to Pay Distribution')
         fig5.update_layout(height=500, xaxis_tickangle=-45)
         st.plotly_chart(fig5, use_container_width=True)
-        st.markdown("**Marketing Action:** Develop tiered pricing: AED 22-25 for students, AED 28-35 for professionals.")
 
     # ============================================
     # TAB 2: ML ALGORITHMS WITH SUB-TABS
     # ============================================
-    with tab2:
-        st.header("🤖 Machine Learning Algorithms & Performance Metrics")
-
-        # Create ML sub-tabs
-        ml_tab1, ml_tab2, ml_tab3 = st.tabs([
-            "🎯 Classification",
-            "🔍 Clustering",
-            "💰 Regression"
-        ])
+    with ml_tab:
+        st.header("🤖 Machine Learning Algorithms & Performance")
+        ml_tab1, ml_tab2, ml_tab3 = st.tabs(["🎯 Classification", "🔍 Clustering", "💰 Regression"])
 
         # Classification
         with ml_tab1:
             st.subheader("Classification Models: Predicting Customer Interest")
-
             if st.button("🚀 Run Classification Algorithms", key="run_classify"):
-                with st.spinner("Training classification models..."):
+                with st.spinner("Training models..."):
                     df_ml = df.copy()
                     le = LabelEncoder()
                     categorical_cols = ['Age_Group', 'Gender', 'Nationality', 'Status', 'Location', 
                                        'Living_Situation', 'Monthly_Food_Budget_AED', 'Cooking_Frequency',
                                        'Current_Spending_Per_Meal_AED', 'Delivery_Frequency', 'Meals_Per_Week']
-
                     for col in categorical_cols:
                         df_ml[col + '_Encoded'] = le.fit_transform(df_ml[col])
-
                     feature_cols = [col for col in df_ml.columns if col.endswith('_Encoded')] +                                   ['Interest_Level', 'Subscription_Preference', 'WTP_Per_Meal_AED',
                                    'Taste_Satisfaction', 'Healthiness_Satisfaction', 'Affordability_Satisfaction',
                                    'Convenience_Satisfaction', 'Variety_Satisfaction']
-
                     X = df_ml[feature_cols]
                     y = df_ml['Interested']
                     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
-
                     models = {
                         'Logistic Regression': LogisticRegression(max_iter=1000, random_state=42),
                         'Decision Tree': DecisionTreeClassifier(random_state=42),
                         'Random Forest': RandomForestClassifier(n_estimators=100, random_state=42),
                         'Gradient Boosting': GradientBoostingClassifier(n_estimators=100, random_state=42)
                     }
-
                     results = []
                     for model_name, model in models.items():
                         model.fit(X_train, y_train)
                         y_pred = model.predict(X_test)
-                        accuracy = accuracy_score(y_test, y_pred)
-                        precision = precision_score(y_test, y_pred)
-                        recall = recall_score(y_test, y_pred)
-                        f1 = f1_score(y_test, y_pred)
-                        cv_scores = cross_val_score(model, X, y, cv=5, scoring='accuracy')
-
                         results.append({
                             'Model': model_name,
-                            'Accuracy': accuracy,
-                            'Precision': precision,
-                            'Recall': recall,
-                            'F1-Score': f1,
-                            'CV Score (mean)': cv_scores.mean(),
-                            'CV Score (std)': cv_scores.std()
+                            'Accuracy': accuracy_score(y_test, y_pred),
+                            'Precision': precision_score(y_test, y_pred),
+                            'Recall': recall_score(y_test, y_pred),
+                            'F1-Score': f1_score(y_test, y_pred),
+                            'CV Score': cross_val_score(model, X, y, cv=5, scoring='accuracy').mean()
                         })
-
                     results_df = pd.DataFrame(results)
-                    st.dataframe(results_df.style.highlight_max(axis=0, subset=['Accuracy', 'Precision', 'Recall', 'F1-Score']), use_container_width=True)
-
-                    # Feature importance
+                    st.dataframe(results_df.style.highlight_max(axis=0), use_container_width=True)
                     best_model = models['Random Forest']
                     best_model.fit(X_train, y_train)
                     feature_importance = pd.DataFrame({
                         'Feature': feature_cols,
                         'Importance': best_model.feature_importances_
                     }).sort_values('Importance', ascending=False).head(10)
-
                     fig_imp = px.bar(feature_importance, x='Importance', y='Feature', orientation='h',
-                                    title='Top 10 Most Important Features',
-                                    color='Importance', color_continuous_scale='Viridis')
+                                    title='Top 10 Features', color='Importance', color_continuous_scale='Viridis')
                     st.plotly_chart(fig_imp, use_container_width=True)
-                    st.success("✅ Classification models executed successfully!")
+                    st.success("✅ Classification complete!")
 
         # Clustering
         with ml_tab2:
             st.subheader("K-Means Clustering: Customer Segmentation")
-
-            if st.button("🔍 Run Clustering Algorithm", key="run_cluster"):
-                with st.spinner("Running clustering analysis..."):
+            if st.button("🔍 Run Clustering", key="run_cluster"):
+                with st.spinner("Clustering..."):
                     cluster_features = ['WTP_Per_Meal_AED', 'Interest_Level', 'Subscription_Preference',
                                        'Taste_Satisfaction', 'Affordability_Satisfaction']
-                    X_cluster = df[cluster_features].copy()
                     scaler = StandardScaler()
-                    X_cluster_scaled = scaler.fit_transform(X_cluster)
+                    X_cluster = scaler.fit_transform(df[cluster_features])
                     kmeans = KMeans(n_clusters=4, random_state=42, n_init=10)
-                    df['Cluster'] = kmeans.fit_predict(X_cluster_scaled)
-
-                    cluster_summary = df.groupby('Cluster').agg({
-                        'WTP_Per_Meal_AED': 'mean',
-                        'Interest_Level': 'mean',
-                        'Interested': 'sum',
-                        'Status': 'count'
-                    }).reset_index()
-                    cluster_summary.columns = ['Cluster', 'Avg_WTP', 'Avg_Interest', 'Interested_Count', 'Total']
-
+                    df['Cluster'] = kmeans.fit_predict(X_cluster)
+                    cluster_summary = df.groupby('Cluster')[cluster_features].mean().round(1)
                     st.dataframe(cluster_summary, use_container_width=True)
-
-                    fig_cluster = px.scatter(
-                        df,
-                        x='WTP_Per_Meal_AED',
-                        y='Interest_Level',
-                        color='Cluster',
-                        size='Subscription_Preference',
-                        title='Customer Segments: WTP vs Interest Level',
-                        labels={'Cluster': 'Customer Segment'},
-                        color_continuous_scale='Portland'
-                    )
-                    st.plotly_chart(fig_cluster, use_container_width=True)
-                    st.success("✅ Clustering analysis completed!")
+                    fig_clus = px.scatter(df, x='WTP_Per_Meal_AED', y='Interest_Level', color='Cluster',
+                                         title='Customer Segments')
+                    st.plotly_chart(fig_clus, use_container_width=True)
+                    st.success("✅ Clustering complete!")
 
         # Regression
         with ml_tab3:
             st.subheader("Regression: Predicting Willingness to Pay")
-
-            if st.button("💰 Run Regression Algorithm", key="run_regress"):
-                with st.spinner("Training regression model..."):
+            if st.button("💰 Run Regression", key="run_regress"):
+                with st.spinner("Training regression..."):
                     df_ml = df.copy()
                     le = LabelEncoder()
                     categorical_cols = ['Age_Group', 'Gender', 'Nationality', 'Status', 'Location', 
                                        'Living_Situation', 'Monthly_Food_Budget_AED', 'Cooking_Frequency',
                                        'Current_Spending_Per_Meal_AED', 'Delivery_Frequency', 'Meals_Per_Week']
-
                     for col in categorical_cols:
                         df_ml[col + '_Encoded'] = le.fit_transform(df_ml[col])
-
-                    feature_cols = [col for col in df_ml.columns if col.endswith('_Encoded')] +                                   ['Interest_Level', 'Subscription_Preference',
-                                   'Taste_Satisfaction', 'Healthiness_Satisfaction', 'Affordability_Satisfaction',
+                    feature_cols = [col for col in df_ml.columns if col.endswith('_Encoded')] +                                   ['Interest_Level', 'Subscription_Preference', 'Taste_Satisfaction',
+                                   'Healthiness_Satisfaction', 'Affordability_Satisfaction',
                                    'Convenience_Satisfaction', 'Variety_Satisfaction']
-
                     y_reg = df_ml['WTP_Per_Meal_AED']
                     X_reg = df_ml[feature_cols]
-                    X_train_reg, X_test_reg, y_train_reg, y_test_reg = train_test_split(
-                        X_reg, y_reg, test_size=0.3, random_state=42
-                    )
-
-                    lr_model = LinearRegression()
-                    lr_model.fit(X_train_reg, y_train_reg)
-                    y_pred_reg = lr_model.predict(X_test_reg)
-
-                    rmse = np.sqrt(mean_squared_error(y_test_reg, y_pred_reg))
-                    mae = mean_absolute_error(y_test_reg, y_pred_reg)
-                    r2 = r2_score(y_test_reg, y_pred_reg)
-
+                    X_train, X_test, y_train, y_test = train_test_split(X_reg, y_reg, test_size=0.3, random_state=42)
+                    lr = LinearRegression()
+                    lr.fit(X_train, y_train)
+                    y_pred = lr.predict(X_test)
                     col1, col2, col3 = st.columns(3)
-                    with col1:
-                        st.metric("RMSE", f"{rmse:.2f} AED")
-                    with col2:
-                        st.metric("MAE", f"{mae:.2f} AED")
-                    with col3:
-                        st.metric("R² Score", f"{r2:.3f}")
-
-                    reg_comparison = pd.DataFrame({
-                        'Actual': y_test_reg.values,
-                        'Predicted': y_pred_reg
-                    })
-
-                    fig_reg = px.scatter(
-                        reg_comparison,
-                        x='Actual',
-                        y='Predicted',
-                        title='Actual vs Predicted WTP',
-                        labels={'Actual': 'Actual WTP (AED)', 'Predicted': 'Predicted WTP (AED)'},
-                        trendline='ols'
-                    )
-                    fig_reg.add_trace(go.Scatter(
-                        x=[10, 60], y=[10, 60],
-                        mode='lines',
-                        name='Perfect Prediction',
-                        line=dict(dash='dash', color='red')
-                    ))
+                    col1.metric("RMSE", f"{np.sqrt(mean_squared_error(y_test, y_pred)):.2f} AED")
+                    col2.metric("MAE", f"{mean_absolute_error(y_test, y_pred):.2f} AED")
+                    col3.metric("R²", f"{r2_score(y_test, y_pred):.3f}")
+                    fig_reg = px.scatter(x=y_test, y=y_pred, labels={'x':'Actual WTP', 'y':'Predicted WTP'},
+                                        title='Actual vs Predicted', trendline='ols')
                     st.plotly_chart(fig_reg, use_container_width=True)
-                    st.success("✅ Regression analysis completed!")
+                    st.success("✅ Regression complete!")
 
     # ============================================
     # TAB 3: CUSTOMER PREDICTION
     # ============================================
-    with tab3:
-        st.header("🎯 Individual Customer Interest Prediction")
-        st.markdown("**Enter customer details to predict their interest and spending potential**")
-
+    with pred_tab:
+        st.header("🎯 Individual Customer Prediction")
         col1, col2, col3 = st.columns(3)
-
         with col1:
             age = st.selectbox("Age Group", df['Age_Group'].unique())
             gender = st.selectbox("Gender", df['Gender'].unique())
             nationality = st.selectbox("Nationality", df['Nationality'].unique())
             status = st.selectbox("Status", df['Status'].unique())
-
         with col2:
             location = st.selectbox("Location", df['Location'].unique())
             living = st.selectbox("Living Situation", df['Living_Situation'].unique())
             budget = st.selectbox("Monthly Food Budget", df['Monthly_Food_Budget_AED'].unique())
             cooking = st.selectbox("Cooking Frequency", df['Cooking_Frequency'].unique())
-
         with col3:
-            spending = st.selectbox("Current Spending Per Meal", df['Current_Spending_Per_Meal_AED'].unique())
+            spending = st.selectbox("Current Spending", df['Current_Spending_Per_Meal_AED'].unique())
             delivery = st.selectbox("Delivery Frequency", df['Delivery_Frequency'].unique())
-            taste_sat = st.slider("Taste Satisfaction (1-5)", 1, 5, 3)
-            health_sat = st.slider("Healthiness Satisfaction (1-5)", 1, 5, 3)
+            taste_sat = st.slider("Taste Satisfaction", 1, 5, 3)
+            health_sat = st.slider("Health Satisfaction", 1, 5, 3)
 
         if st.button("🔮 Predict Interest", type="primary"):
-            st.markdown("### Prediction Results")
-
-            interest_score = 0
-
-            if status == 'International University/College Student':
-                interest_score += 30
-            elif status == 'Local University/College Student':
-                interest_score += 25
-            elif 'Working Professional' in status:
-                interest_score += 20
-
+            score = 0
+            if 'Student' in status:
+                score += 30
             if budget in ['500-1000', '1000-1500']:
-                interest_score += 20
-
+                score += 20
             if taste_sat <= 3:
-                interest_score += 15
-            if health_sat <= 3:
-                interest_score += 10
+                score += 15
+            if location in ['Dubai Academic City', 'JLT']:
+                score += 15
+            if delivery in ['2-3 times a week', '4-6 times a week']:
+                score += 10
+            interest_prob = min(score, 100)
 
-            if location in ['Dubai Academic City', 'JLT', 'International City']:
-                interest_score += 15
-
-            if delivery in ['2-3 times a week', '4-6 times a week', 'Once a day']:
-                interest_score += 10
-
-            interest_probability = min(interest_score, 100)
-
-            col1, col2, col3 = st.columns(3)
-
-            with col1:
-                if interest_probability >= 70:
-                    st.success(f"✅ High Interest: {interest_probability}%")
-                    st.markdown("**Recommendation:** Priority target for marketing")
-                elif interest_probability >= 50:
-                    st.warning(f"⚠️ Moderate Interest: {interest_probability}%")
-                    st.markdown("**Recommendation:** Nurture with trials and offers")
+            col_a, col_b, col_c = st.columns(3)
+            with col_a:
+                if interest_prob >= 70:
+                    st.success(f"✅ High Interest: {interest_prob}%")
+                elif interest_prob >= 50:
+                    st.warning(f"⚠️ Moderate: {interest_prob}%")
                 else:
-                    st.error(f"❌ Low Interest: {interest_probability}%")
-                    st.markdown("**Recommendation:** May not be ideal target")
-
-            with col2:
-                wtp_estimate = 27.0
+                    st.error(f"❌ Low: {interest_prob}%")
+            with col_b:
+                wtp = 27.0
                 if 'Student' in status:
-                    wtp_estimate = 22.5
+                    wtp = 22.5
                 elif 'Professional' in status:
-                    wtp_estimate = 32.0
-                st.metric("Estimated WTP", f"AED {wtp_estimate:.2f}")
-
-            with col3:
-                if delivery in ['2-3 times a week', '4-6 times a week']:
-                    plan = "Weekly Plan (5 meals)"
-                elif delivery in ['Once a day', 'Multiple times a day']:
-                    plan = "Daily Plan (7 meals)"
-                else:
-                    plan = "Flexible Pay-per-order"
+                    wtp = 32.0
+                st.metric("Est. WTP", f"AED {wtp:.2f}")
+            with col_c:
+                plan = "Weekly Plan" if delivery in ['2-3 times a week'] else "Flexible"
                 st.info(f"📦 {plan}")
 
     # ============================================
     # TAB 4: UPLOAD & PREDICT
     # ============================================
-    with tab4:
-        st.header("📤 Upload New Dataset & Predict Interest")
-        st.markdown("**Upload a CSV file with customer data to predict interest and download results**")
-
-        st.markdown("""
-        **Required columns:**
-        - Age_Group, Gender, Nationality, Status, Location, Living_Situation
-        - Monthly_Food_Budget_AED, Cooking_Frequency, Current_Spending_Per_Meal_AED
-        - Delivery_Frequency, Taste_Satisfaction, Healthiness_Satisfaction, etc.
-        """)
-
-        uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
-
-        if uploaded_file is not None:
-            try:
-                new_data = pd.read_csv(uploaded_file)
-                st.success(f"✅ File uploaded successfully! {len(new_data)} rows detected.")
-
-                st.subheader("Preview of Uploaded Data")
-                st.dataframe(new_data.head(10), use_container_width=True)
-
-                if st.button("🚀 Run Prediction", type="primary"):
-                    with st.spinner("Predicting interest levels..."):
-                        predictions = []
-
-                        for idx, row in new_data.iterrows():
-                            score = 0
-
-                            if 'Student' in str(row.get('Status', '')):
-                                score += 30
-                            if row.get('Monthly_Food_Budget_AED', '') in ['500-1000', '1000-1500']:
-                                score += 20
-                            if row.get('Location', '') in ['Dubai Academic City', 'JLT']:
-                                score += 15
-                            if row.get('Taste_Satisfaction', 3) <= 3:
-                                score += 15
-                            if row.get('Delivery_Frequency', '') in ['2-3 times a week', '4-6 times a week']:
-                                score += 10
-
-                            interest_prob = min(score, 100) / 100
-                            predictions.append({
-                                'Interested_Prediction': 1 if interest_prob >= 0.5 else 0,
-                                'Interest_Probability': interest_prob,
-                                'Confidence': 'High' if interest_prob >= 0.7 or interest_prob <= 0.3 else 'Medium'
-                            })
-
-                        pred_df = pd.DataFrame(predictions)
-                        result_df = pd.concat([new_data, pred_df], axis=1)
-
-                        st.success("✅ Predictions completed!")
-                        st.subheader("Results Preview")
-                        st.dataframe(result_df.head(10), use_container_width=True)
-
-                        col1, col2, col3 = st.columns(3)
-                        with col1:
-                            st.metric("Total Records", len(result_df))
-                        with col2:
-                            interested_count = result_df['Interested_Prediction'].sum()
-                            st.metric("Predicted Interested", interested_count)
-                        with col3:
-                            interest_rate = (interested_count / len(result_df) * 100)
-                            st.metric("Interest Rate", f"{interest_rate:.1f}%")
-
-                        csv = result_df.to_csv(index=False)
-                        st.download_button(
-                            label="📥 Download Predictions CSV",
-                            data=csv,
-                            file_name="taste_from_home_predictions.csv",
-                            mime="text/csv",
-                            type="primary"
-                        )
-
-            except Exception as e:
-                st.error(f"Error processing file: {str(e)}")
-                st.info("Please ensure your CSV has the required columns and proper formatting.")
+    with upload_tab:
+        st.header("📤 Upload Dataset & Predict")
+        uploaded_file = st.file_uploader("Upload CSV", type="csv")
+        if uploaded_file:
+            new_data = pd.read_csv(uploaded_file)
+            st.success(f"✅ {len(new_data)} rows loaded")
+            st.dataframe(new_data.head(10))
+            if st.button("🚀 Run Prediction", type="primary"):
+                predictions = []
+                for idx, row in new_data.iterrows():
+                    score = 0
+                    if 'Student' in str(row.get('Status', '')):
+                        score += 30
+                    if row.get('Monthly_Food_Budget_AED', '') in ['500-1000']:
+                        score += 20
+                    predictions.append({'Interested': 1 if score >= 50 else 0, 'Probability': score/100})
+                result_df = pd.concat([new_data, pd.DataFrame(predictions)], axis=1)
+                st.dataframe(result_df.head(10))
+                st.download_button("📥 Download", result_df.to_csv(index=False), 
+                                  "predictions.csv", "text/csv", type="primary")
 
     st.markdown("---")
-    st.markdown("**Taste From Home Dashboard** | Built with Streamlit | © 2025")
+    st.markdown("**Taste From Home Dashboard** | Group 7 | Built with Streamlit | © 2025")
 
 except Exception as e:
-    st.error(f"❌ Critical Error: {str(e)}")
-    st.info("Please check that all required files are present and properly formatted.")
+    st.error(f"Error: {str(e)}")
