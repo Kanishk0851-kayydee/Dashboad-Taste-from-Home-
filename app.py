@@ -260,28 +260,32 @@ with tab1:
 # ============================================
 # TAB 2: ML ALGORITHMS & PERFORMANCE
 # ============================================
-# Create ML tabs
 cl_tab, clust_tab, reg_tab = st.tabs([
     "🎯 Classification", 
     "🔍 Clustering", 
     "💰 Regression"
 ])
 
-# === Classification Tab ===
+# === Classification ===
 with cl_tab:
     st.header("Classification Models")
-    # Place your code for LabelEncoder, feature extraction, train-test split, and classifiers here
-    # Include classification metrics and charts
+    if st.button("🚀 Run Classification Algorithms", key="run_classify"):
+        # Classification code here
+        st.success("Classification models executed.")
 
-# === Clustering Tab ===
+# === Clustering ===
 with clust_tab:
-    st.header("Clustering (K-Means)")
-    # Place your code for selecting features, scaling, running KMeans, and plotting clusters here
+    st.header("Clustering")
+    if st.button("🔍 Run Clustering Algorithm", key="run_cluster"):
+        # Clustering code here
+        st.success("Clustering executed.")
 
-# === Regression Tab ===
+# === Regression ===
 with reg_tab:
-    st.header("Regression (Predict WTP)")
-    # Place your regression code including train-test split, running LinearRegression, calculating RMSE, MAE, R², and plotting results here
+    st.header("Regression")
+    if st.button("💰 Run Regression Algorithm", key="run_regress"):
+        # Regression code here
+        st.success("Regression analysis executed.")
 
 # ============================================
 # TAB 3: CUSTOMER PREDICTION
