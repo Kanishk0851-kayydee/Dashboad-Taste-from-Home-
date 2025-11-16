@@ -544,7 +544,12 @@ with ml_tab:
                 results_df = pd.DataFrame(results)
 
                 st.markdown("### Classification Model Performance")
-                st.dataframe(results_df, use_container_width=True)
+                st.dataframe(
+                    results_df.style
+                    .highlight_max(axis=0, subset=['Accuracy', 'Precision', 'Recall', 'F1-Score', 'CV Score'])
+                    .background_gradient(subset=['Accuracy', 'Precision', 'Recall', 'F1-Score', 'CV Score'], cmap='RdYlGn')
+                    .format("{:.4f}", subset=['Accuracy', 'Precision', 'Recall', 'F1-Score', 'CV Score']),
+                    use_container_width=True)
 
                 # Conclusions
                 st.markdown("---")
