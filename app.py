@@ -194,7 +194,7 @@ with home_tab:
         **Type:** Marketing Dashboard  
         **Year:** 2025
         **Institution:** SP Jain School of Global Management, Dubai
-        """)
+        """")
         st.markdown('</div>', unsafe_allow_html=True)
 
     st.markdown("---")
