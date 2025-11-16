@@ -287,28 +287,7 @@ with insights_tab:
 
 with ml_tab:
     st.header("🤖 ML Algorithms & Performance")
-
-    st.markdown('<div class="filter-box">', unsafe_allow_html=True)
-    st.markdown("**🎯 Filter Your Data:**")
-    ml_filter_col1, ml_filter_col2, ml_filter_col3 = st.columns(3)
-    with ml_filter_col1:
-        ml_status = st.multiselect("Status", options=['All'] + list(df['Status'].unique()), 
-                                   default=['All'], key='status_ml')
-    with ml_filter_col2:
-        ml_location = st.multiselect("Location", options=['All'] + list(df['Location'].unique()), 
-                                    default=['All'], key='location_ml')
-    with ml_filter_col3:
-        ml_nationality = st.multiselect("Nationality", options=['All'] + list(df['Nationality'].unique()), 
-                                       default=['All'], key='nationality_ml')
-    st.markdown('</div>', unsafe_allow_html=True)
-
-    ml_df = df.copy()
-    if 'All' not in ml_status:
-        ml_df = ml_df[ml_df['Status'].isin(ml_status)]
-    if 'All' not in ml_location:
-        ml_df = ml_df[ml_df['Location'].isin(ml_location)]
-    if 'All' not in ml_nationality:
-        ml_df = ml_df[ml_df['Nationality'].isin(ml_nationality)]
+    st.info("📊 All algorithms run on complete dataset (600 respondents) for robust model training")
 
     st.markdown("---")
     ml_tab1, ml_tab2, ml_tab3 = st.tabs(["🎯 Classification", "🔍 Clustering", "💰 Regression"])
@@ -396,7 +375,7 @@ with ml_tab:
 
         if st.button("🚀 Run Classification", key="run_classify"):
             with st.spinner("Training models..."):
-                df_ml = ml_df.copy()
+                df_ml = df.copy()
                 le = LabelEncoder()
                 categorical_cols = ['Age_Group', 'Gender', 'Nationality', 'Status', 'Location', 
                                    'Living_Situation', 'Monthly_Food_Budget_AED', 'Cooking_Frequency',
@@ -514,11 +493,11 @@ with ml_tab:
                 cluster_features = ['WTP_Per_Meal_AED', 'Interest_Level', 'Subscription_Preference',
                                    'Taste_Satisfaction', 'Affordability_Satisfaction']
                 scaler = StandardScaler()
-                X_cluster = scaler.fit_transform(ml_df[cluster_features])
+                X_cluster = scaler.fit_transform(df[cluster_features])
                 kmeans = KMeans(n_clusters=4, random_state=42, n_init=10)
-                ml_df['Cluster'] = kmeans.fit_predict(X_cluster)
+                df['Cluster'] = kmeans.fit_predict(X_cluster)
 
-                cluster_summary = ml_df.groupby('Cluster')[cluster_features].mean().round(2)
+                cluster_summary = df.groupby('Cluster')[cluster_features].mean().round(2)
                 st.markdown("### Cluster Summary Statistics")
                 st.dataframe(cluster_summary, use_container_width=True)
 
@@ -532,7 +511,7 @@ with ml_tab:
                 - Different acquisition & retention approaches
                 """)
 
-                fig_clus = px.scatter(ml_df, x='WTP_Per_Meal_AED', y='Interest_Level', 
+                fig_clus = px.scatter(df, x='WTP_Per_Meal_AED', y='Interest_Level', 
                                      color='Cluster', size='Subscription_Preference',
                                      title='Customer Segments Distribution')
                 fig_clus.update_layout(height=500)
@@ -582,7 +561,7 @@ with ml_tab:
 
         if st.button("💰 Run Regression", key="run_regress"):
             with st.spinner("Training..."):
-                df_ml = ml_df.copy()
+                df_ml = df.copy()
                 le = LabelEncoder()
                 categorical_cols = ['Age_Group', 'Gender', 'Nationality', 'Status', 'Location', 
                                    'Living_Situation', 'Monthly_Food_Budget_AED', 'Cooking_Frequency',
