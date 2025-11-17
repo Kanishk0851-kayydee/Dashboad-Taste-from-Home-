@@ -148,16 +148,17 @@ with col2:
     **Project Members:**
     - Kanishk
     - Kinjal
-    - Khushi Lodhi
+    - Khushi
     - Karan
     - Mohak
 
     ---
 
     ### 📚 Project Details
-    **Course:** Data Analytics  
-    **Type:** Marketing Dashboard  
-    **Year:** 2025
+    **Course:** Data Analytics and Insights  
+    **Type:** PBL Group Assignment 2  
+    **Year:** 2025  
+    **Institute:** SP Jain School of Global Management, Dubai Campus
 
     ---
 
