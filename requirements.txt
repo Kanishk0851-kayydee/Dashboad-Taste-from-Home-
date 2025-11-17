@@ -7,3 +7,4 @@ statsmodels
 openpyxl
 google-generativeai
 matplotlib
+mlxtend
