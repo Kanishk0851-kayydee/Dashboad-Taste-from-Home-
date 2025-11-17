@@ -12,6 +12,8 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.metrics import (accuracy_score, precision_score, recall_score, 
                              f1_score, confusion_matrix, classification_report,
                              mean_squared_error, r2_score, mean_absolute_error)
+from mlxtend.frequent_patterns import apriori, association_rules
+from mlxtend.preprocessing import TransactionEncoder
 import google.generativeai as genai
 import warnings
 import os
@@ -148,17 +150,16 @@ with col2:
     **Project Members:**
     - Kanishk
     - Kinjal
-    - Khushi
+    - Khushi Lodhi
     - Karan
     - Mohak
 
     ---
 
     ### 📚 Project Details
-    **Course:** Data Analytics and Insights  
-    **Type:** PBL Group Assignment 2  
-    **Year:** 2025  
-    **Institute:** SP Jain School of Global Management, Dubai Campus
+    **Course:** Data Analytics  
+    **Type:** Marketing Dashboard  
+    **Year:** 2025
 
     ---
 
@@ -166,6 +167,7 @@ with col2:
     - Market Insights Analysis
     - ML-Powered Predictions
     - Customer Segmentation
+    - Association Rule Mining
     - Interactive Visualizations
     """)
     st.markdown('</div>', unsafe_allow_html=True)
@@ -192,14 +194,13 @@ st.markdown("""
 
 Upload your CSV file to unlock:
 - 📊 Marketing Insights with Interactive Charts
-- 🤖 ML Algorithms (Classification, Clustering, Regression)
+- 🤖 ML Algorithms (Classification, Clustering, Regression, Association Rules)
 - 🎯 Customer Interest Predictions
 - 📤 Batch Processing & Downloads
 
 **Expected Format:**
 - CSV file with 19 columns
 - Minimum 50 records recommended
-- Columns: Age_Group, Gender, Nationality, Status, Location, Living_Situation, Monthly_Food_Budget_AED, Cooking_Frequency, Current_Spending_Per_Meal_AED, Delivery_Frequency, Meals_Per_Week, Interest_Level, Subscription_Preference, WTP_Per_Meal_AED, Taste_Satisfaction, Healthiness_Satisfaction, Affordability_Satisfaction, Convenience_Satisfaction, Variety_Satisfaction
 """)
 st.markdown('</div>', unsafe_allow_html=True)
 
@@ -343,7 +344,7 @@ if st.session_state.data_loaded and st.session_state.df_uploaded is not None:
         st.info(f"📊 All algorithms run on complete dataset ({len(df)} records) for robust model training")
 
         st.markdown("---")
-        ml_tab1, ml_tab2, ml_tab3 = st.tabs(["🎯 Classification", "🔍 Clustering", "💰 Regression"])
+        ml_tab1, ml_tab2, ml_tab3, ml_tab4 = st.tabs(["🎯 Classification", "🔍 Clustering", "💰 Regression", "🔗 Association Rules"])
 
         with ml_tab1:
             st.subheader("Classification Models: Predicting Customer Interest")
@@ -411,21 +412,6 @@ if st.session_state.data_loaded and st.session_state.df_uploaded is not None:
 
             st.markdown("---")
 
-            with st.expander("📈 Understanding Performance Metrics"):
-                col_m1, col_m2 = st.columns(2)
-                with col_m1:
-                    st.markdown("""
-                    **Accuracy:** % correct predictions overall  
-                    **Precision:** % positive predictions that were correct  
-                    **Formula (Precision):** TP / (TP + FP)
-                    """)
-                with col_m2:
-                    st.markdown("""
-                    **Recall:** % actual positives identified correctly  
-                    **Formula (Recall):** TP / (TP + FN)  
-                    **F1-Score:** Harmonic mean of Precision & Recall
-                    """)
-
             if st.button("🚀 Run Classification", key="run_classify"):
                 with st.spinner("Training models..."):
                     df_ml = df.copy()
@@ -477,40 +463,14 @@ if st.session_state.data_loaded and st.session_state.df_uploaded is not None:
                     st.markdown("---")
                     st.markdown("### 📌 Key Conclusions")
 
-                    # Check if results show perfect accuracy
                     if results_df['Accuracy'].min() == 1.0:
                         st.info("""
                         **Note on Perfect Accuracy (1.000):**
                         All models achieved perfect accuracy because the dataset has very clear, separable patterns. 
-                        This is common with synthetic/sample data where the "Interested" label is directly derived from features like Interest_Level.
-                        In real-world scenarios with noisy, complex data, we'd expect accuracies between 70-90%.
-                        This result validates that our ML pipeline and feature engineering work correctly!
+                        In real-world scenarios with noisy data, we'd expect accuracies between 70-90%.
                         """)
 
                     st.success("✅ **Best Model:** Random Forest")
-                    st.info("📊 **Insight:** Random Forest handles complex customer behavior patterns effectively")
-
-                    best_model = trained_models['Random Forest']
-                    feature_importance = pd.DataFrame({
-                        'Feature': feature_cols,
-                        'Importance': best_model.feature_importances_
-                    }).sort_values('Importance', ascending=False).head(15)
-
-                    st.markdown("---")
-                    st.markdown("### 🔍 Top 15 Most Important Features")
-                    fig_imp = px.bar(feature_importance, x='Importance', y='Feature', orientation='h',
-                                    title='Feature Importance Rankings', color='Importance', color_continuous_scale='Viridis')
-                    fig_imp.update_layout(height=500)
-                    st.plotly_chart(fig_imp, use_container_width=True)
-
-                    st.markdown("---")
-                    st.markdown("### 💡 Business Insights")
-                    st.markdown("""
-                    - **Interest_Level & Subscription_Preference** are strongest predictors
-                    - **Location & Status** significantly affect interest
-                    - **Satisfaction scores** correlate with customer interest
-                    - **Marketing Focus:** Target students in Academic City & JLT
-                    """)
                     st.success("✅ Classification analysis complete!")
 
         with ml_tab2:
@@ -520,36 +480,6 @@ if st.session_state.data_loaded and st.session_state.df_uploaded is not None:
                 st.markdown("""
                 **Clustering** groups similar customers together for targeted strategies.
                 **Unsupervised:** No pre-defined labels, machine finds patterns.
-                """)
-
-            with st.expander("📊 Features Used (5 Selected)"):
-                st.markdown("""
-                1. **WTP_Per_Meal_AED** - Value indicator/pricing sensitivity
-                2. **Interest_Level** - Engagement with service
-                3. **Subscription_Preference** - Loyalty potential
-                4. **Taste_Satisfaction** - Content satisfaction
-                5. **Affordability_Satisfaction** - Price sensitivity
-
-                **Preprocessing:** StandardScaler (normalized for fair weighting)
-                """)
-
-            with st.expander("🎯 4 Customer Segments"):
-                st.markdown("""
-                **Cluster 0: Budget Seekers**
-                - Low WTP, students
-                - Strategy: Entry pricing (AED 20-23), discounts
-
-                **Cluster 1: High Value**
-                - High WTP, professionals
-                - Strategy: Premium pricing (AED 32-35)
-
-                **Cluster 2: Undecided**
-                - Mixed metrics
-                - Strategy: Trial offers, testimonials
-
-                **Cluster 3: Enthusiasts**
-                - High scores, loyal
-                - Strategy: Subscription plans, rewards
                 """)
 
             if st.button("🔍 Run Clustering", key="run_cluster"):
@@ -565,15 +495,6 @@ if st.session_state.data_loaded and st.session_state.df_uploaded is not None:
                     st.markdown("### Cluster Summary Statistics")
                     st.dataframe(cluster_summary, use_container_width=True)
 
-                    st.markdown("---")
-                    st.markdown("### 📌 Segmentation Conclusions")
-                    st.markdown("""
-                    ✅ **4 Distinct Segments Identified**
-                    - Each with unique characteristics
-                    - Tailored marketing strategies needed
-                    - Targeted pricing opportunities
-                    """)
-
                     fig_clus = px.scatter(df, x='WTP_Per_Meal_AED', y='Interest_Level', 
                                          color='Cluster', size='Subscription_Preference',
                                          title='Customer Segments Distribution')
@@ -583,42 +504,6 @@ if st.session_state.data_loaded and st.session_state.df_uploaded is not None:
 
         with ml_tab3:
             st.subheader("Linear Regression: Predicting Willingness to Pay")
-
-            with st.expander("ℹ️ What is Regression?"):
-                st.markdown("""
-                **Regression** predicts continuous values (not categories).
-                **Target:** WTP_Per_Meal_AED (continuous, range: AED 10-60)
-                """)
-
-            with st.expander("📊 All 19 Variables Used"):
-                st.markdown("""
-                **11 Encoded Demographics** + **8 Direct Features**
-                (Same as Classification for consistency)
-
-                **Goal:** Understand which factors drive willingness to pay
-                """)
-
-            with st.expander("🔬 Regression Metrics Explained"):
-                col_r1, col_r2, col_r3 = st.columns(3)
-                with col_r1:
-                    st.markdown("""
-                    **RMSE** (Root Mean Squared Error)
-                    - Avg prediction error in AED
-                    - Lower = Better
-                    """)
-                with col_r2:
-                    st.markdown("""
-                    **MAE** (Mean Absolute Error)
-                    - Avg absolute error in AED
-                    - Lower = Better
-                    """)
-                with col_r3:
-                    st.markdown("""
-                    **R² Score**
-                    - % of variance explained
-                    - Range: 0-1
-                    - Higher = Better
-                    """)
 
             if st.button("💰 Run Regression", key="run_regress"):
                 with st.spinner("Training..."):
@@ -652,36 +537,129 @@ if st.session_state.data_loaded and st.session_state.df_uploaded is not None:
                     col2.metric("MAE", f"AED {mae:.2f}")
                     col3.metric("R² Score", f"{r2:.3f}")
 
-                    st.markdown("---")
-                    st.markdown("### 📌 Model Fit Conclusions")
-                    if r2 > 0.7:
-                        st.success("🟢 **Excellent:** Model explains >70% of WTP variation")
-                    elif r2 > 0.5:
-                        st.info("🟡 **Good:** Model explains 50-70% of WTP variation")
-                    else:
-                        st.warning("🟠 **Moderate:** Other factors also influence WTP")
-
-                    st.markdown("---")
-                    st.markdown("### 💡 Business Implications")
-                    st.markdown(f"""
-                    - Average prediction error: ±{mae:.1f} AED
-                    - Model explains {r2*100:.1f}% of price variation
-                    - Student segment: Lower WTP (AED 20-25)
-                    - Professional segment: Higher WTP (AED 30-35)
-                    """)
-
-                    st.markdown("---")
-                    st.markdown("### 📊 Actual vs Predicted WTP")
-                    fig_reg = px.scatter(x=y_test, y=y_pred, labels={'x':'Actual WTP (AED)', 'y':'Predicted WTP (AED)'},
-                                        title='Regression Model Performance', trendline='ols',
-                                        color_discrete_sequence=['#FF6B6B'])
-                    fig_reg.add_trace(go.Scatter(x=[y_test.min(), y_test.max()], 
-                                                 y=[y_test.min(), y_test.max()],
-                                                 mode='lines', name='Perfect Fit',
-                                                 line=dict(dash='dash', color='green')))
-                    fig_reg.update_layout(height=500)
-                    st.plotly_chart(fig_reg, use_container_width=True)
                     st.success("✅ Regression analysis complete!")
+
+        with ml_tab4:
+            st.subheader("🔗 Association Rule Mining: Finding Customer Patterns")
+
+            with st.expander("ℹ️ What is Association Rule Mining?"):
+                st.markdown("""
+                **Association Rule Mining** discovers interesting relationships between variables/attributes.
+
+                **Key Metrics:**
+                - **Support:** How often items appear together (frequency)
+                - **Confidence:** If A occurs, probability B also occurs
+                - **Lift:** How much more likely B occurs if A occurs
+
+                **Example Rule:** {Student, Dubai Academic City} → {Interested}
+                - Support: 15% (15% have all these attributes)
+                - Confidence: 85% (85% of students in Dubai Academic City are interested)
+                - Lift: 1.5 (1.5x more likely to be interested)
+                """)
+
+            with st.expander("📊 Attributes Selected"):
+                st.markdown("""
+                **Categorical Features for Rule Mining:**
+                - **Status:** Student / Professional / Freelancer
+                - **Location:** Dubai Academic City, JLT, etc.
+                - **Monthly_Food_Budget_AED:** Budget ranges
+                - **Interest_Level:** High (4-5) / Medium (2-3) / Low (1)
+                - **Interested:** Target output (Yes/No)
+                """)
+
+            if st.button("🔗 Run Association Rules", key="run_arm"):
+                with st.spinner("Mining association rules..."):
+                    # Prepare data for transaction encoding
+                    df_arm = df.copy()
+
+                    # Categorize continuous variables
+                    df_arm['Interest_Cat'] = pd.cut(df_arm['Interest_Level'], bins=[0, 2, 4, 5], 
+                                                     labels=['Low', 'Medium', 'High'])
+                    df_arm['Interested_Cat'] = df_arm['Interested'].map({0: 'Not_Interested', 1: 'Interested'})
+
+                    # Create transactions (baskets of attributes)
+                    transactions = []
+                    for idx, row in df_arm.iterrows():
+                        transaction = [
+                            f"Status={row['Status'][:20]}",  # Shorten for readability
+                            f"Location={row['Location'][:20]}",
+                            f"Budget={row['Monthly_Food_Budget_AED']}",
+                            f"Interest={row['Interest_Cat']}",
+                            f"Interested={row['Interested_Cat']}"
+                        ]
+                        transactions.append(transaction)
+
+                    # Create one-hot encoded dataframe
+                    te = TransactionEncoder()
+                    te_ary = te.fit(transactions).transform(transactions)
+                    df_encoded = pd.DataFrame(te_ary, columns=te.columns_)
+
+                    # Apply Apriori algorithm
+                    frequent_itemsets = apriori(df_encoded, min_support=0.05, use_colnames=True)
+
+                    if len(frequent_itemsets) > 0:
+                        # Generate association rules
+                        rules = association_rules(frequent_itemsets, metric="confidence", min_threshold=0.5)
+
+                        if len(rules) > 0:
+                            # Calculate additional metrics
+                            rules['antecedent_str'] = rules['antecedents'].apply(lambda x: ', '.join(list(x)))
+                            rules['consequent_str'] = rules['consequents'].apply(lambda x: ', '.join(list(x)))
+
+                            # Display top rules
+                            st.markdown("### 🔗 Top Association Rules (by Lift)")
+
+                            top_rules = rules.nlargest(15, 'lift')[['antecedent_str', 'consequent_str', 
+                                                                      'support', 'confidence', 'lift']]
+                            top_rules.columns = ['If (Antecedent)', 'Then (Consequent)', 'Support', 'Confidence', 'Lift']
+                            top_rules_display = top_rules.copy()
+                            top_rules_display['Support'] = top_rules_display['Support'].apply(lambda x: f"{x:.2%}")
+                            top_rules_display['Confidence'] = top_rules_display['Confidence'].apply(lambda x: f"{x:.2%}")
+                            top_rules_display['Lift'] = top_rules_display['Lift'].apply(lambda x: f"{x:.2f}")
+
+                            st.dataframe(top_rules_display, use_container_width=True)
+
+                            st.markdown("---")
+                            st.markdown("### 💡 Business Insights from Rules")
+
+                            # Filter rules where consequent contains "Interested"
+                            interested_rules = rules[rules['consequents'].apply(lambda x: any('Interested' in str(item) for item in x))]
+
+                            if len(interested_rules) > 0:
+                                st.success(f"✅ Found {len(interested_rules)} rules predicting customer interest")
+
+                                # Show top 5 rules with highest confidence for being interested
+                                top_interest = interested_rules.nlargest(5, 'confidence')
+
+                                for idx, rule in top_interest.iterrows():
+                                    antecedent = ', '.join(list(rule['antecedents']))
+                                    confidence = f"{rule['confidence']:.1%}"
+                                    lift = f"{rule['lift']:.2f}"
+                                    st.info(f"""
+                                    **Rule:** {antecedent}  
+                                    **→ Interested with {confidence} confidence (Lift: {lift}x)**
+                                    """)
+                            else:
+                                st.warning("No specific rules found for interest prediction")
+
+                            st.markdown("---")
+                            st.markdown("### 📊 Rule Distribution Visualization")
+
+                            # Visualize confidence vs lift
+                            if len(rules) > 0:
+                                fig_arm = px.scatter(rules, x='support', y='confidence', 
+                                                    size='lift', color='lift',
+                                                    hover_data=['antecedent_str', 'consequent_str'],
+                                                    title='Association Rules: Support vs Confidence (size=Lift)',
+                                                    color_continuous_scale='Viridis')
+                                fig_arm.update_layout(height=500)
+                                st.plotly_chart(fig_arm, use_container_width=True)
+
+                            st.success("✅ Association Rule Mining complete!")
+                        else:
+                            st.warning("⚠️ No rules found with min confidence of 50%. Try lowering the threshold.")
+                    else:
+                        st.warning("⚠️ No frequent itemsets found. Try lowering the minimum support threshold.")
 
     with pred_tab:
         st.header("🎯 Customer Prediction")
@@ -757,7 +735,6 @@ if st.session_state.data_loaded and st.session_state.df_uploaded is not None:
 
     with ai_tab:
         st.header("💬 Ask AI About This Project")
-        st.markdown("Ask questions about Taste From Home, data analysis, ML models, or business strategy!")
 
         api_key_col, _ = st.columns([2, 1])
         with api_key_col:
@@ -793,7 +770,7 @@ else:
 
     ✨ **Interactive Dashboards:**
     - 📊 Marketing Insights with 5 Charts
-    - 🤖 ML Algorithms (Classification, Clustering, Regression)
+    - 🤖 ML Algorithms (Classification, Clustering, Regression, Association Rules)
     - 🎯 Individual Customer Predictions
     - 📤 Batch Processing & Downloads
     - 💬 AI-Powered Q&A
